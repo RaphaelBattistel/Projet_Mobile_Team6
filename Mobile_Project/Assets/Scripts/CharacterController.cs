@@ -14,12 +14,11 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Vector2 groundCheck;
     [SerializeField] private float groundCastDistance;
 
-    [Header("WALL CHECK")]
+    [Header("FRONT CHECK")]
     [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private Vector2 wallCheck;
+    [SerializeField] private LayerMask actionLayer;
+    [SerializeField] private Vector2 frontCheck;
     [SerializeField] private float wallCastDistance;
-
-
 
     void Start()
     {
@@ -29,7 +28,7 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        if (IsGrounded())
+        if (IsGrounded() && !IsActionInFront())
         {
             Move();
         }
@@ -37,7 +36,7 @@ public class CharacterController : MonoBehaviour
 
     private void Move()
     {
-        if (WallInFront())
+        if (IsWallInFront())
         {
             if (sprite.flipX)
             {
@@ -69,9 +68,21 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    private bool WallInFront()
+    private bool IsWallInFront()
     {
-        if (Physics2D.BoxCast(transform.position, wallCheck, 0, transform.right, wallCastDistance, wallLayer))
+        if (Physics2D.BoxCast(transform.position, frontCheck, 0, transform.right, wallCastDistance, wallLayer))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private bool IsActionInFront()
+    {
+        if (Physics2D.BoxCast(transform.position, frontCheck, 0, transform.right, wallCastDistance, actionLayer))
         {
             return true;
         }
@@ -84,7 +95,7 @@ public class CharacterController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, groundCheck);
-        Gizmos.DrawWireCube(transform.position + transform.right * wallCastDistance, wallCheck);
+        Gizmos.DrawWireCube(transform.position + transform.right * wallCastDistance, frontCheck);
 
     }
 
