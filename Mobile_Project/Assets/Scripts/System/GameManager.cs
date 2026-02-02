@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreDisplay;
 
     [Header("Game Over")]
-    [SerializeField] private GameObject gameOver;
+    [SerializeField] private UnityEngine.GameObject gameOver;
 
 
 
