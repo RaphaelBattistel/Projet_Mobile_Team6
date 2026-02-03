@@ -8,7 +8,7 @@ public class InventoryContainer : MonoBehaviour
 
     private readonly List<GameObject> _buttons = new ();
 
-    void Start()
+    void Awake()
     {
         Build(LevelManager.Instance.CurrentLevel.AvailableItems);
     }
