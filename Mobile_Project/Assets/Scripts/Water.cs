@@ -4,11 +4,10 @@ using UnityEngine;
 public class Water : MonoBehaviour
 {
     [SerializeField] private LayerMask waterLayer;
-    [SerializeField] private Vector2 dropCheck;
-    [SerializeField] private float groundCastDistance;
+    [SerializeField] private Vector2 scaleLimit;
+    [SerializeField] private Vector2 waterDropCheck;
 
     [SerializeField] private float animDuration = 1f;
-    [SerializeField] private float compteur = 0;
 
     float startValue;
     float endValue;
@@ -17,42 +16,49 @@ public class Water : MonoBehaviour
     void Start()
     {
         startValue = transform.localScale.y;
-        endValue = dropCheck.y;
+        endValue = scaleLimit.y;
 
     }
-
-    private void UpdateHealthDisplay(float scaleValue, float maxScaleValue)
+    void Update()
     {
+        if (IsDropOfWater())
+        {
+            UpdateScale(transform.localScale.y, scaleLimit.y);
+        }
+    }
+
+
+
+    private bool IsDropOfWater()
+    {
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, waterDropCheck, 0f, Vector2.up, 0f, waterLayer);
+
+        if (hit.collider != null)
+        {
+            Destroy(hit.collider.gameObject);
+            return true;
+        }
+
+        return false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position, scaleLimit);
+        Gizmos.DrawWireCube(transform.position + transform.up, waterDropCheck);
+    }
+
+
+
+
+    private void UpdateScale(float scaleValue, float maxScaleValue)
+    {
+
         if (isAnimating) return;
 
         startValue = transform.localScale.y;
         endValue = maxScaleValue;
         StartCoroutine(ScaleWater());
-    }
-
-    void Update()
-    {
-        if (IsInGround())
-        {
-            UpdateHealthDisplay(transform.localScale.y, dropCheck.y);
-        }
-    }
-
-    private bool IsInGround()
-    {
-        if (Physics2D.BoxCast(transform.position, dropCheck, 0, transform.up, groundCastDistance, waterLayer))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, dropCheck);
     }
 
     private IEnumerator ScaleWater()
@@ -75,15 +81,5 @@ public class Water : MonoBehaviour
         }
 
         isAnimating = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (IsInGround())
-        {
-            Debug.Log("Yipi");
-            Destroy(collision.gameObject);
-        }
-        Debug.Log("WompWomp");
     }
 }

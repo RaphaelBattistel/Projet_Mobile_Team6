@@ -128,8 +128,11 @@ public class CharacterController : MonoBehaviour
         }
 
     }
+
     private void ClimbMove()
     {
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x + wallCastDistance, transform.position.y), transform.right, frontCheck.x, actionLayer);
+        selectedObject = hit.collider.gameObject;
         float targetY = 
             selectedObject.transform.position.y
             + selectedObject.transform.localScale.y / 2
