@@ -32,6 +32,11 @@ public class CharacterController : MonoBehaviour
         {
             Move();
         }
+
+        else if (IsGrounded() && IsActionInFront())
+        {
+            Climb();
+        }
     }
 
     private void Move()
@@ -99,7 +104,13 @@ public class CharacterController : MonoBehaviour
 
     }
 
+    private void Climb()
+    {
+        Vector3 direction = Vector3.up;
 
+
+        transform.position += direction * speed;
+    }
 
 
 

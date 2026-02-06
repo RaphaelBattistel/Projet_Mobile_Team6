@@ -1,29 +1,46 @@
+using System.Collections;
 using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Vector2 groundCheck;
+    [SerializeField] private LayerMask waterLayer;
+    [SerializeField] private Vector2 dropCheck;
     [SerializeField] private float groundCastDistance;
-    [SerializeField] private float test = 1;
-    
+
+    [SerializeField] private float animDuration = 1f;
+    [SerializeField] private float compteur = 0;
+
+    float startValue;
+    float endValue;
+    bool isAnimating = false;
+
     void Start()
     {
-        
+        startValue = transform.localScale.y;
+        endValue = dropCheck.y;
+
     }
 
+    private void UpdateHealthDisplay(float scaleValue, float maxScaleValue)
+    {
+        if (isAnimating) return;
+
+        startValue = transform.localScale.y;
+        endValue = maxScaleValue;
+        StartCoroutine(ScaleWater());
+    }
 
     void Update()
     {
         if (IsInGround())
         {
-            Debug.Log("TUEZ-MOI RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH");
+            UpdateHealthDisplay(transform.localScale.y, dropCheck.y);
         }
     }
 
     private bool IsInGround()
     {
-        if (Physics2D.BoxCast(transform.position, groundCheck, 0, transform.up, groundCastDistance, groundLayer))
+        if (Physics2D.BoxCast(transform.position, dropCheck, 0, transform.up, groundCastDistance, waterLayer))
         {
             return true;
         }
@@ -35,6 +52,38 @@ public class Water : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, groundCheck);
+        Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, dropCheck);
+    }
+
+    private IEnumerator ScaleWater()
+    {
+        isAnimating = true;
+
+        float elapsed = 0f;
+        Vector3 startScale = transform.localScale;
+
+        while (elapsed < animDuration)
+        {
+            float ratio = elapsed / animDuration;
+
+            Vector3 newScale = startScale;
+            newScale.y = Mathf.Lerp(startValue, endValue, ratio);
+            transform.localScale = newScale;
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        isAnimating = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (IsInGround())
+        {
+            Debug.Log("Yipi");
+            Destroy(collision.gameObject);
+        }
+        Debug.Log("WompWomp");
     }
 }
