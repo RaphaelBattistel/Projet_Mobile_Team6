@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -6,7 +7,8 @@ public class CharacterController : MonoBehaviour
     private SpriteRenderer sprite;
 
     [Header("MOVE")]
-    [SerializeField] private float speed;
+    [SerializeField] private float runSpeed;
+    [SerializeField] private float climbSpeed;
     private int horizontal = 1;
     
     [Header("GROUND CHECK")]
@@ -20,22 +22,30 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Vector2 frontCheck;
     [SerializeField] private float wallCastDistance;
 
+    private GameObject selectedObject;
+    private bool isClimbing;
+
     void Start()
     {
         TryGetComponent(out rb2d);
         TryGetComponent(out sprite);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (IsGrounded() && !IsActionInFront())
+        if (isClimbing)
         {
-            Move();
+            ClimbMove();
+            return;
         }
+
+        if (IsGrounded() && !IsActionInFront())
+            Move();
 
         else if (IsGrounded() && IsActionInFront())
         {
-            Climb();
+            isClimbing = true;
+            rb2d.simulated = false;
         }
     }
 
@@ -58,7 +68,7 @@ public class CharacterController : MonoBehaviour
         Vector3 direction = horizontal * Vector2.right;
 
 
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += direction * runSpeed * Time.deltaTime;
     }
 
     private bool IsGrounded()
@@ -104,14 +114,41 @@ public class CharacterController : MonoBehaviour
 
     }
 
-    private void Climb()
+    private bool CanClimb()
     {
-        Vector3 direction = Vector3.up;
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x + wallCastDistance, transform.position.y), transform.right, frontCheck.x, actionLayer);
+        if (hit.collider != null)
+        {
+            selectedObject = hit.collider.gameObject;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
 
-
-        transform.position += direction * speed;
     }
+    private void ClimbMove()
+    {
+        float targetY = 
+            selectedObject.transform.position.y
+            + selectedObject.transform.localScale.y / 2
+            + transform.localScale.y / 2;
 
+        Vector2 targetPos = new Vector2(transform.position.x, targetY);
+
+        transform.position = Vector2.MoveTowards(
+            transform.position,
+            targetPos,
+            climbSpeed * Time.fixedDeltaTime
+        );
+
+        if (Mathf.Abs(transform.position.y - targetY) < 0.01f)
+        {
+            isClimbing = false;
+            rb2d.simulated = true;
+        }
+    }
 
 
 }
