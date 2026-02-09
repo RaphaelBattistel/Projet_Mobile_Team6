@@ -1,120 +1,115 @@
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using static UnityEditor.PlayerSettings;
 
 public class testGrid : MonoBehaviour
 {
+    [Header("Settings")]
     [SerializeField] private Grid grid;
-    [SerializeField] private Camera camera;
-    [SerializeField] private LayerMask objectMask;
+    [SerializeField] private LayerMask draggableLayer; 
+    
+    [Header("Debug")]
+    private Camera _mainCamera;
+    private GameObject _selectedObject;
+    private bool _isDragging;
+    private Vector3 _offset; 
 
-    private GameObject selectedObject;
-    private bool isDragging;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        _mainCamera = Camera.main;
+        if (_mainCamera == null) _mainCamera = FindFirstObjectByType<Camera>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            DragAndDrop();
-        }
-
-        if (isDragging)
-        {
-            if(selectedObject.TryGetComponent(out Collider2D objectCollider))
-            {
-                objectCollider.isTrigger = true;
-            }
-            if(selectedObject.TryGetComponent(out Rigidbody2D objectRB2D))
-            {
-                objectRB2D.simulated = false;
-            }
-            Vector3 pos = mousePos();
-            //selectedObject.transform.position = pos;
-            selectedObject.transform.position = FindCellCenter();
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (selectedObject.TryGetComponent(out Collider2D objectCollider))
-            {
-                objectCollider.isTrigger = false;
-            }
-            if (selectedObject.TryGetComponent(out Rigidbody2D objectRB2D))
-            {
-                objectRB2D.simulated = true;
-            }
-            isDragging = false;
-            //selectedObject.transform.position = FindCellCenter();
-        }
+        HandleInput();
     }
 
-    private Vector2 FindCellCenter()
+    private void HandleInput()
     {
-        Vector2 mouseCellPlacement = new Vector2();
+        bool isPressing = Input.GetMouseButton(0) || (Input.touchCount > 0);
+        bool isDown = Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+        bool isUp = Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended);
+        
+        Vector3 inputPos = Vector3.zero;
 
-        switch (mousePos().x)
-        {
-            case < 0:
-                mouseCellPlacement.x = (grid.cellSize.x * (int)(mousePos().x / grid.cellSize.x)) - grid.cellSize.x;
-                break;
-            default:
-                mouseCellPlacement.x = grid.cellSize.x * (int)(mousePos().x / grid.cellSize.x);
-                break;
-        }
-        switch (mousePos().y)
-        {
-            case < 0:
-                mouseCellPlacement.y = (grid.cellSize.y * (int)(mousePos().y / grid.cellSize.y)) - grid.cellSize.y;
-                break;
-            default:
-                mouseCellPlacement.y = grid.cellSize.y * (int)(mousePos().y / grid.cellSize.y);
-                break;
-        }
-
-        Vector2 mouseCellCenter = new Vector2(mouseCellPlacement.x + (grid.cellSize.x / 2), mouseCellPlacement.y + (grid.cellSize.y / 2));
-
-        //Debug.DrawLine(mouseCellPlacement, new Vector2(mouseCellPlacement.x + grid.cellSize.x, mouseCellPlacement.y), Color.red, 1.0f);
-        //Debug.DrawLine(mouseCellPlacement, new Vector2(mouseCellPlacement.x, mouseCellPlacement.y + grid.cellSize.y), Color.red, 1.0f);
-        //Debug.DrawLine(mouseCellPlacement, mouseCellCenter, Color.forestGreen, 1.0f);
-
-        return mouseCellCenter;
-    }
-
-    private void DragAndDrop()
-    {
-        Vector2 mousePosition = Input.mousePosition;
-
-        Ray ray = camera.ScreenPointToRay(mousePosition);
-
-        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 1000, objectMask);
-        if (hit.collider != null)
-        {
-            Debug.Log("Hit!");
-            selectedObject = hit.collider.gameObject;
-            isDragging = true;
-        }
+        if (Input.touchCount > 0)
+            inputPos = Input.GetTouch(0).position;
         else
+            inputPos = Input.mousePosition;
+
+        Vector3 worldPos = GetWorldPosition(inputPos);
+
+        if (isDown)
         {
-            Debug.Log("HELL NAH");
+            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
+            
+            if (hit.collider != null)
+            {
+                _selectedObject = hit.collider.gameObject;
+                _isDragging = true;
+                
+                SetObjectPhysics(_selectedObject, false);
+            }
+        }
+
+        if (_isDragging && _selectedObject != null)
+        {
+            _selectedObject.transform.position = new Vector3(worldPos.x, worldPos.y, 0);
+        }
+
+        if (isUp && _isDragging && _selectedObject != null)
+        {
+            DropObject();
+            _isDragging = false;
+            _selectedObject = null;
         }
     }
 
-    Vector2 mousePos()
+    private void DropObject()
     {
-        Vector3 mouseScreenPosition = Input.mousePosition;
-        mouseScreenPosition.z = Mathf.Abs(camera.transform.position.z);
-        Vector2 mouseWorldPosition = camera.ScreenToWorldPoint(mouseScreenPosition);
+        Vector3 finalPos = FindCellCenter(_selectedObject.transform.position);
+        _selectedObject.transform.position = finalPos;
 
-        return mouseWorldPosition;
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(finalPos, 0.2f, draggableLayer);
+        
+        bool fusionHappened = false;
+
+        foreach (var hit in hitColliders)
+        {
+            if (hit.gameObject != _selectedObject)
+            {
+                if (FusionManager.Instance.TryToFuse(_selectedObject, hit.gameObject))
+                {
+                    fusionHappened = true;
+                    break; 
+                }
+            }
+        }
+
+        if (!fusionHappened)
+        {
+            SetObjectPhysics(_selectedObject, true);
+        }
     }
 
+
+    private Vector3 GetWorldPosition(Vector3 screenPos)
+    {
+        screenPos.z = Mathf.Abs(_mainCamera.transform.position.z);
+        return _mainCamera.ScreenToWorldPoint(screenPos);
+    }
+
+    private void SetObjectPhysics(GameObject obj, bool isActive)
+    {
+        if (obj.TryGetComponent(out Rigidbody2D rb))
+            rb.simulated = isActive;
+        
+        if (obj.TryGetComponent(out Collider2D col))
+            col.isTrigger = !isActive; 
+    }
+
+    private Vector3 FindCellCenter(Vector3 targetPos)
+    {
+        Vector3Int cellPos = grid.WorldToCell(targetPos);
+        return grid.GetCellCenterWorld(cellPos);
+    }
 }
