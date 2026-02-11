@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebdb2a3889fb8c44945bb08446baaed, type: 3}
+  m_Name: Path
+  m_EditorClassIdentifier: Assembly-CSharp::PathData
+  PointsPathData:
+  - {fileID: 11400000, guid: e5bca8d65f1c3c04a9db09c4713a24d3, type: 2}
+  - {fileID: 11400000, guid: e5bca8d65f1c3c04a9db09c4713a24d3, type: 2}
+  - {fileID: 11400000, guid: ed8ea320988e232438b0c3faef192654, type: 2}
+  - {fileID: 11400000, guid: e5bca8d65f1c3c04a9db09c4713a24d3, type: 2}
+  - {fileID: 11400000, guid: b07306bbdc0ad4142a260b986d531f7d, type: 2}
