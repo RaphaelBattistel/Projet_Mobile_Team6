@@ -111,14 +111,14 @@ public class TestSceneTool : EditorWindow
         }
 
         // 3. On installe la grille de jeu
-        if (FindFirstObjectByType<testGrid>() == null)
+        if (FindFirstObjectByType<GridManager>() == null)
         {
             GameObject gridObj = new GameObject("Grid System");
             Grid grid = gridObj.AddComponent<Grid>();
             
-            grid.cellSize = new Vector3(1, 1, 0); 
-            
-            testGrid tester = gridObj.AddComponent<testGrid>();
+            grid.cellSize = new Vector3(1, 1, 0);
+
+            GridManager tester = gridObj.AddComponent<GridManager>();
             
             // On paramètre la grille automatiquement (Layer -1 veut dire qu'on check tout)
             SerializedObject so = new SerializedObject(tester);

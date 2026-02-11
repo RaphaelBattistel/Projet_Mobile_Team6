@@ -28,7 +28,8 @@ public class Water : MonoBehaviour
     }
 
 
-
+    //Check si il y a interraction avec goutte d'eau
+    //Détruis la goutte d'eau si il y a collision
     private bool IsDropOfWater()
     {
         RaycastHit2D hit = Physics2D.BoxCast(transform.position, waterDropCheck, 0f, Vector2.up, 0f, waterLayer);
@@ -50,7 +51,7 @@ public class Water : MonoBehaviour
 
 
 
-
+    //Modifie la scale en Y en prenant la scaleLimite en Y
     private void UpdateScale(float scaleValue, float maxScaleValue)
     {
 
@@ -61,6 +62,7 @@ public class Water : MonoBehaviour
         StartCoroutine(ScaleWater());
     }
 
+    //Anime le scale de l'eau avec un Lerp
     private IEnumerator ScaleWater()
     {
         isAnimating = true;

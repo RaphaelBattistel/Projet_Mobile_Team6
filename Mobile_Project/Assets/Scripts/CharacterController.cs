@@ -39,10 +39,12 @@ public class CharacterController : MonoBehaviour
             return;
         }
 
-        if (IsGrounded() && !IsActionInFront())
+        if (IsGrounded() && !IsIvyInFront())
+        {
             Move();
+        }
 
-        else if (IsGrounded() && IsActionInFront())
+        else if (IsGrounded() && IsIvyInFront())
         {
             isClimbing = true;
             rb2d.simulated = false;
@@ -95,7 +97,7 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    private bool IsActionInFront()
+    private bool IsIvyInFront()
     {
         if (Physics2D.BoxCast(transform.position, frontCheck, 0, transform.right, wallCastDistance, actionLayer))
         {
@@ -114,43 +116,46 @@ public class CharacterController : MonoBehaviour
 
     }
 
-    private bool CanClimb()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x + wallCastDistance, transform.position.y), transform.right, frontCheck.x, actionLayer);
-        if (hit.collider != null)
-        {
-            selectedObject = hit.collider.gameObject;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-
-    }
 
     private void ClimbMove()
     {
-        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x + wallCastDistance, transform.position.y), transform.right, frontCheck.x, actionLayer);
-        selectedObject = hit.collider.gameObject;
-        float targetY = 
-            selectedObject.transform.position.y
-            + selectedObject.transform.localScale.y / 2
-            + transform.localScale.y / 2;
-
-        Vector2 targetPos = new Vector2(transform.position.x, targetY);
-
+        Vector2 target = TargetUp();
         transform.position = Vector2.MoveTowards(
             transform.position,
-            targetPos,
+            target,
             climbSpeed * Time.fixedDeltaTime
         );
 
-        if (Mathf.Abs(transform.position.y - targetY) < 0.01f)
+        // Vérifie si le personnage est arrivé en haut
+        if (Vector2.Distance(transform.position, target) < 0.01f)
         {
             isClimbing = false;
             rb2d.simulated = true;
+            Move(); // Reprend le mouvement
         }
+    }
+
+    private Vector2 TargetUp()
+    {
+        Vector2 targetPos = transform.position;
+        RaycastHit2D hit = Physics2D.Raycast(
+            new Vector2(transform.position.x + wallCastDistance, -transform.up.y),
+            transform.right,
+            frontCheck.x,
+            actionLayer
+        );
+
+        if (hit.collider != null)
+        {
+            selectedObject = hit.collider.gameObject;
+            float targetY =
+                selectedObject.transform.position.y
+                + selectedObject.transform.localScale.y / 2
+                + transform.localScale.y; // On ajoute juste la moitié de la hauteur du personnage
+            targetPos = new Vector2(transform.position.x, targetY);
+            return targetPos;
+        }
+        return transform.position;
     }
 
 
