@@ -36,7 +36,6 @@ public class CharacterController : MonoBehaviour
         if (isClimbing)
         {
             ClimbMove();
-            return;
         }
 
         if (IsGrounded() && !IsIvyInFront())
@@ -125,21 +124,13 @@ public class CharacterController : MonoBehaviour
             target,
             climbSpeed * Time.fixedDeltaTime
         );
-
-        // Vérifie si le personnage est arrivé en haut
-        if (Vector2.Distance(transform.position, target) < 0.01f)
-        {
-            isClimbing = false;
-            rb2d.simulated = true;
-            Move(); // Reprend le mouvement
-        }
     }
 
     private Vector2 TargetUp()
     {
         Vector2 targetPos = transform.position;
         RaycastHit2D hit = Physics2D.Raycast(
-            new Vector2(transform.position.x + wallCastDistance, -transform.up.y),
+            new Vector2(transform.position.x + wallCastDistance, transform.position.y - transform.localScale.y/2),
             transform.right,
             frontCheck.x,
             actionLayer
@@ -155,7 +146,11 @@ public class CharacterController : MonoBehaviour
             targetPos = new Vector2(transform.position.x, targetY);
             return targetPos;
         }
-        return transform.position;
+        else
+        {
+            rb2d.simulated = true;
+        }
+        return targetPos;
     }
 
 
