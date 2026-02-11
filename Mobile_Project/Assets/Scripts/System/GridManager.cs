@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class testGrid : MonoBehaviour
+public class GridManager : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private Grid grid;
@@ -32,9 +32,13 @@ public class testGrid : MonoBehaviour
         Vector3 inputPos = Vector3.zero;
 
         if (Input.touchCount > 0)
+        {
             inputPos = Input.GetTouch(0).position;
+        }
         else
+        {
             inputPos = Input.mousePosition;
+        }
 
         Vector3 worldPos = GetWorldPosition(inputPos);
 
@@ -101,10 +105,14 @@ public class testGrid : MonoBehaviour
     private void SetObjectPhysics(GameObject obj, bool isActive)
     {
         if (obj.TryGetComponent(out Rigidbody2D rb))
+        {
             rb.simulated = isActive;
+        }
         
         if (obj.TryGetComponent(out Collider2D col))
+        {
             col.isTrigger = !isActive; 
+        }
     }
 
     private Vector3 FindCellCenter(Vector3 targetPos)

@@ -97,14 +97,14 @@ public class TestSceneTool : EditorWindow
             Undo.RegisterCreatedObjectUndo(managerObj, "Create Managers");
         }
 
-        if (FindFirstObjectByType<testGrid>() == null)
+        if (FindFirstObjectByType<GridManager>() == null)
         {
             GameObject gridObj = new GameObject("Grid System");
             Grid grid = gridObj.AddComponent<Grid>();
             
-            grid.cellSize = new Vector3(1, 1, 0); 
-            
-            testGrid tester = gridObj.AddComponent<testGrid>();
+            grid.cellSize = new Vector3(1, 1, 0);
+
+            GridManager tester = gridObj.AddComponent<GridManager>();
             
             SerializedObject so = new SerializedObject(tester);
             so.FindProperty("grid").objectReferenceValue = grid;

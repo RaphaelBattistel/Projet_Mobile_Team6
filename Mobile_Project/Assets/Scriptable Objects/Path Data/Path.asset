@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebdb2a3889fb8c44945bb08446baaed, type: 3}
   m_Name: Path
   m_EditorClassIdentifier: Assembly-CSharp::PathData
-  PointsPathData:
-  - {fileID: 11400000, guid: e5bca8d65f1c3c04a9db09c4713a24d3, type: 2}
-  - {fileID: 11400000, guid: e5bca8d65f1c3c04a9db09c4713a24d3, type: 2}
-  - {fileID: 11400000, guid: ed8ea320988e232438b0c3faef192654, type: 2}
-  - {fileID: 11400000, guid: e5bca8d65f1c3c04a9db09c4713a24d3, type: 2}
-  - {fileID: 11400000, guid: b07306bbdc0ad4142a260b986d531f7d, type: 2}
+  PointsPath:
+  - {fileID: 3335289907387288442, guid: bec142d9ef64fdb4196aec963b9efe28, type: 3}
+  - {fileID: 3825102429882422092, guid: 0bd7cc55040606549ba059cf8da10233, type: 3}
+  - {fileID: 3335289907387288442, guid: bec142d9ef64fdb4196aec963b9efe28, type: 3}
+  - {fileID: 8562230738448993197, guid: b35b7fab3e55d3f43bdccd768799ede9, type: 3}
+  - {fileID: 3335289907387288442, guid: bec142d9ef64fdb4196aec963b9efe28, type: 3}
+  - {fileID: 2591039241227143493, guid: 45828e12eff396042ad92ef1a6850f24, type: 3}
