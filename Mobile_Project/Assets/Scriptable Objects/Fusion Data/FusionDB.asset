@@ -19,3 +19,6 @@ MonoBehaviour:
   - ElementA: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
     ElementB: {fileID: 11400000, guid: 36b2fc53284b1044ab9d417e478ed690, type: 2}
     Resultat: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+  - ElementA: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+    ElementB: {fileID: 11400000, guid: 36b2fc53284b1044ab9d417e478ed690, type: 2}
+    Resultat: {fileID: 11400000, guid: e061e7cea3b238540b62225fc0658e76, type: 2}

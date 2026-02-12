@@ -1,10 +1,12 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    private SpriteRenderer sprite;
+
+    [SerializeField] private List<Transform> spriteList;
 
     [Header("MOVE")]
     [SerializeField] private float runSpeed;
@@ -28,7 +30,6 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         TryGetComponent(out rb2d);
-        TryGetComponent(out sprite);
     }
 
     void FixedUpdate()
@@ -54,14 +55,13 @@ public class CharacterController : MonoBehaviour
     {
         if (IsWallInFront())
         {
-            if (sprite.flipX)
-            {
-                sprite.flipX = false;
-            }
-            else
-            {
-                sprite.flipX = true;
-            }
+            
+            //foreach (Transform sprite in spriteList)
+            //{
+            //    sprite.position *= new Vector3(1, 1, -1); 
+            //    sprite.eulerAngles += new Vector3(0, 180, 0);
+            //}
+            
             wallCastDistance *= -1;
             horizontal *= -1;
         }
