@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FusionManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class FusionManager : MonoBehaviour
     
     [Header("Configuration")]
     [SerializeField] private FusionDatabase _database; // N'oublie pas de glisser ton livre de recettes ici !
+    [SerializeField] private UnityEvent onFuse;
 
     void Awake()
     {
@@ -34,6 +36,7 @@ public class FusionManager : MonoBehaviour
         if (resultData != null)
         {
             Debug.Log($"FUSION ! {dataA.Label} + {dataB.Label} = {resultData.Label}");
+            onFuse?.Invoke();
             PerformFusion(heldObject, targetObject, resultData); // On lance le spectacle
             return true;
         }

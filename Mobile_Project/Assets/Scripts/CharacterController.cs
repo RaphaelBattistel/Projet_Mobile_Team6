@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterController : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class CharacterController : MonoBehaviour
     [Header("MOVE")]
     [SerializeField] private float runSpeed;
     [SerializeField] private float climbSpeed;
-    private int horizontal = 1;
+    [SerializeField] private UnityEvent onWalk;
+    [SerializeField] private UnityEvent onClimb;
+    private int horizontal = 1; //Permet de savoir si on va à gauche ou à droite pour l'instant
     
     [Header("GROUND CHECK")]
     [SerializeField] private LayerMask groundLayer;
@@ -39,12 +42,14 @@ public class CharacterController : MonoBehaviour
         //Si le perso peut monter alors il monte
         if (isClimbing)
         {
+            onClimb?.Invoke();
             ClimbMove();
         }
 
         //Si le perso est au sol et qu'il n'y a pas de lierre devant alors le perso bouge
         if (IsGrounded() && !IsIvyInFront())
         {
+            onWalk?.Invoke();
             Move();
         }
 

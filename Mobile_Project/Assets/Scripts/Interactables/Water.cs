@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Water : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class Water : MonoBehaviour
     [SerializeField] private Vector2 waterDropCheck;
 
     [SerializeField] private float animDuration = 1f;
+
+    [SerializeField] private UnityEvent onSplash;
+    [SerializeField] private UnityEvent onProgress;
 
     float startValue;
     float endValue;
@@ -59,6 +63,7 @@ public class Water : MonoBehaviour
 
         startValue = transform.localScale.y;
         endValue = maxScaleValue;
+        onProgress?.Invoke();
         StartCoroutine(ScaleWater());
     }
 
@@ -83,5 +88,10 @@ public class Water : MonoBehaviour
         }
 
         isAnimating = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        onSplash?.Invoke();
     }
 }
