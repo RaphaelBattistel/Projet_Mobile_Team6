@@ -1,0 +1,2500 @@
+fileFormatVersion: 2
+guid: 91328024085f431428a6623085b575e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3367245801671930759
+    second: tileset_correction_faite_0
+  - first:
+      213: -8782758508286737648
+    second: tileset_correction_faite_1
+  - first:
+      213: -990991253458545793
+    second: tileset_correction_faite_2
+  - first:
+      213: 7844092138051720869
+    second: tileset_correction_faite_3
+  - first:
+      213: -7808212124746128290
+    second: tileset_correction_faite_4
+  - first:
+      213: -7156785127106934759
+    second: tileset_correction_faite_5
+  - first:
+      213: 2830272338429154314
+    second: tileset_correction_faite_6
+  - first:
+      213: 4992446341714155015
+    second: tileset_correction_faite_7
+  - first:
+      213: -5775854223535337868
+    second: tileset_correction_faite_8
+  - first:
+      213: -2758904499693560251
+    second: tileset_correction_faite_9
+  - first:
+      213: 3594081874685292029
+    second: tileset_correction_faite_10
+  - first:
+      213: 7733706217372491377
+    second: tileset_correction_faite_11
+  - first:
+      213: 804438460112622268
+    second: tileset_correction_faite_12
+  - first:
+      213: -6833878589476758702
+    second: tileset_correction_faite_13
+  - first:
+      213: -5388151303085472633
+    second: tileset_correction_faite_14
+  - first:
+      213: 420485836320295048
+    second: tileset_correction_faite_15
+  - first:
+      213: -6719665837317944575
+    second: tileset_correction_faite_16
+  - first:
+      213: -6858746504900574560
+    second: tileset_correction_faite_17
+  - first:
+      213: -3662539263302899039
+    second: tileset_correction_faite_18
+  - first:
+      213: 4642386908556461861
+    second: tileset_correction_faite_19
+  - first:
+      213: -956674696647290602
+    second: tileset_correction_faite_20
+  - first:
+      213: -3078852283786871537
+    second: tileset_correction_faite_21
+  - first:
+      213: 2648646658541897608
+    second: tileset_correction_faite_22
+  - first:
+      213: -2342881100985267399
+    second: tileset_correction_faite_23
+  - first:
+      213: 5586490278687342250
+    second: tileset_correction_faite_24
+  - first:
+      213: -4091768172000168383
+    second: tileset_correction_faite_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset_correction_faite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783b418573cdabe20800000000000000
+      internalID: 3367245801671930759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01387857baf5d1680800000000000000
+      internalID: -8782758508286737648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73951a94ba4f32f0800000000000000
+      internalID: -990991253458545793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6d1026d30dbdc60800000000000000
+      internalID: 7844092138051720869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54eb953178a3a390800000000000000
+      internalID: -7808212124746128290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9180efc58ddfdac90800000000000000
+      internalID: -7156785127106934759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a041fa542b5274720800000000000000
+      internalID: 2830272338429154314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70612162f7bb84540800000000000000
+      internalID: 4992446341714155015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_8
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e8cbb7f2b08dfa0800000000000000
+      internalID: -5775854223535337868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_9
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ed98e89f666b9d0800000000000000
+      internalID: -2758904499693560251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_10
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd694a3c6eb0e130800000000000000
+      internalID: 3594081874685292029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e97bb64d4a35b60800000000000000
+      internalID: 7733706217372491377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2dca27480f92b00800000000000000
+      internalID: 804438460112622268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b171c51af2921a0800000000000000
+      internalID: -6833878589476758702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784488fffe07935b0800000000000000
+      internalID: -5388151303085472633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_15
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88844fae3add5d500800000000000000
+      internalID: 420485836320295048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_16
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b0655f583feb2a0800000000000000
+      internalID: -6719665837317944575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_17
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a203fa9466d0d0a0800000000000000
+      internalID: -6858746504900574560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_18
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aae8eae1fb0c2dc0800000000000000
+      internalID: -3662539263302899039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_19
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5278e620c421d6040800000000000000
+      internalID: 4642386908556461861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_20
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611dbbc9e6539b2f0800000000000000
+      internalID: -956674696647290602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dbbfc0928b545d0800000000000000
+      internalID: -3078852283786871537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8874ae15a12e1c420800000000000000
+      internalID: 2648646658541897608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b0cc04d0a6c7fd0800000000000000
+      internalID: -2342881100985267399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_24
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaef45a5f43378d40800000000000000
+      internalID: 5586490278687342250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_25
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1463ea4d68e1737c0800000000000000
+      internalID: -4091768172000168383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_26
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77784cdc51ff77e43994a5a62ca17369
+      internalID: 28059091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_27
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7598e6674801447bc05aedb2582870
+      internalID: -1323949571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_28
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7807a4626cc0d42b9225feaa70b518
+      internalID: -1890522221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_29
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409a2b57e90719c44b1e3d3591ec64cb
+      internalID: 642056967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_30
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1710ef2f75149da41967be5e20273ebd
+      internalID: -1112148523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_31
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61af8c9164db4747b9564e0070efc0f
+      internalID: 1508341500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_32
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5474105a1319da84aba8b1168b8a031d
+      internalID: -1398242054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_33
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be776f30ed42ba44b91747bd9ad72a1
+      internalID: 866388873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_34
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babd5d78693471f4aaedcfb52c73e867
+      internalID: -1549924799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_35
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f197598e8eab1c54991f68f88d08ec7c
+      internalID: -430602570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576d33f3b09c4d8468b49aad3da52980
+      internalID: 243208695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dff3d66d044aaf47a0f0def8899eda7
+      internalID: 1427675133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_38
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e11c9adecb0f2f4481dc1304ce37b99
+      internalID: 707651812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa2f39df2e11f6438efc871fb6046e8
+      internalID: 836301362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd977f82d37dd0a4485e3ef7e6b0ea46
+      internalID: -1330604565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_41
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e67c666e7aae142bd4065ce0b5774b
+      internalID: -1319674523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_42
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e89a53a2ac80464aba0a86d46849a13
+      internalID: -1214515427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_43
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3351c58fb6bd544cbbeb260dc7f7c80
+      internalID: 562689948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_44
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19153e0bbf6d0e74e9a1ac8ec8f468f6
+      internalID: -636138692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_45
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025d768368eb998489d7d720cbb5919a
+      internalID: 1931046466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_46
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f779971c1f8a954e836c6337dc24d7f
+      internalID: 1302103879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_47
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b90b2736e074fe4c99f38cc418b45a4
+      internalID: 575477701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ae0e70fa049664486952a847004cc9
+      internalID: -740133563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_49
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c124b95a7586d478164fc1c8516f07
+      internalID: -1423015107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_50
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164483cb6cf6fcd468e51ef11ac69143
+      internalID: -294713676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_51
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a214032e797ab224db3f8e3778f1e7f9
+      internalID: 661079835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119b7dc94a98191468e99b88b0370991
+      internalID: -185273908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_53
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cbde265dbbf314aad5923893f9c79f
+      internalID: -1349208105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_54
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c5b6c0c2069a1498c9bea1a911f74c
+      internalID: -1951201492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_55
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41153a148428394687a3d86a3371c1c
+      internalID: -1904869873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_56
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be70937a7471d6442b45e731f5a1208b
+      internalID: -775591891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_57
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a421637e258113479d71dbc04404786
+      internalID: -966108220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_58
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a97ea9fb9d85498d14f1084520c44
+      internalID: 1951211382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_59
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4882f6838ec03f94b9ce25e0085dafba
+      internalID: -320249141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d9ca1b73c80364dbbe35d7907ceaef
+      internalID: 1963276012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_61
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44477d2f0d6f79e459229b8911704e47
+      internalID: 1276508508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_62
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc836be3ea2957d448778300edaab4c4
+      internalID: -1084326773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_63
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b013bd9c181ca3047a1894fbe4c7792b
+      internalID: -55911789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_64
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e78a48e57d3e648a4e1ba3d868338e
+      internalID: -1990967474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_65
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5c490774d4c7e4f95943ed055853ad
+      internalID: 610111825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_66
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8101d3eba6ad859439066c2e810f5c98
+      internalID: 1908001021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_67
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6f86fd2282a9a41b078c9b99b8c30a
+      internalID: 1111342893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_68
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdad7a64d3f93d34f85bfd53da805bfa
+      internalID: -1588647929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_69
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de09f6f99384a994fa971f0baaf0b9b4
+      internalID: 1135051513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_70
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db224b120b755c04984b29e7aaab2de1
+      internalID: -1601750714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_71
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c8c6d9af21cdc43b34ac422f033546
+      internalID: -384735266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_72
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62caa1d444d50644ac0250a3a56240f
+      internalID: 1804934700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_73
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5367621a282b03f41b8445544e252a15
+      internalID: -156596470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_74
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95d0651d2d113745b9c4227b562b4c6
+      internalID: 1373464917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_75
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b672e5eef73bda4a934856e48fa7153
+      internalID: -1755493987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_76
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aff04c5543b703469ac1a9907abbc75
+      internalID: 1673321937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_77
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c630e40e03d6fe4d9527d9ea6212b2f
+      internalID: -554034344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_78
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f3f5a61446e6443910ca421c7a75e7
+      internalID: -422187468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_79
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98dc5133b2e4c74d953758f6b02548f
+      internalID: -143058843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_80
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2a3b9a103ea8d4db7c09ab850d0f8d
+      internalID: 224220055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c10fce4f34188499aa4e147ba38b85
+      internalID: 591334388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_82
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ace3564fc56ad4ab06ef7555f808a0
+      internalID: -1887719709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_83
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a6de4f6502273418c05ddb29d0cd52
+      internalID: 1637221715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_84
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159178ee00f740a408ee273e6bba84ec
+      internalID: -1952131181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_85
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea6983ddb0860a4286fd23fe905dca1
+      internalID: 1374654555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_86
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd44b1c40914aa499b2111ba452a377
+      internalID: -1736315907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_87
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d3042665f64fc4ba10a7000ddbca7d
+      internalID: 1813704298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_88
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8007d74bec03eb41997f2989aced3cf
+      internalID: 1745043302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_89
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da106d4ba1588a74886500cd853e24a0
+      internalID: 2098540779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_90
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a00d0ae8850da47b67e82ba0e7fbb1
+      internalID: 1399944056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78a35ba7cb1454459ddd53084ba2eb0
+      internalID: 694580250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_92
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88638448eb7f8143b74fdf93fcc9b5d
+      internalID: -1891517285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_93
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc62b2fcdabec545b7efd88ce1bfe68
+      internalID: 213163229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_94
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4128ace0c63d21459e6d5a95068e7d8
+      internalID: 403458336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_95
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d24be22a2932d64cacfa48ffb7b0c34
+      internalID: -688175940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_96
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37058612b4d99b442b35335f2d236248
+      internalID: 347870100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_97
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de685c64dcf4b24da4ab88808b30608
+      internalID: -1848201723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_correction_faite_98
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c06f969ea8d644e96ddada84334e2e
+      internalID: -678624607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36c244d90ee782d4bb525e9bcd790b4b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tileset_correction_faite_0: 3367245801671930759
+      tileset_correction_faite_1: -8782758508286737648
+      tileset_correction_faite_10: 3594081874685292029
+      tileset_correction_faite_11: 7733706217372491377
+      tileset_correction_faite_12: 804438460112622268
+      tileset_correction_faite_13: -6833878589476758702
+      tileset_correction_faite_14: -5388151303085472633
+      tileset_correction_faite_15: 420485836320295048
+      tileset_correction_faite_16: -6719665837317944575
+      tileset_correction_faite_17: -6858746504900574560
+      tileset_correction_faite_18: -3662539263302899039
+      tileset_correction_faite_19: 4642386908556461861
+      tileset_correction_faite_2: -990991253458545793
+      tileset_correction_faite_20: -956674696647290602
+      tileset_correction_faite_21: -3078852283786871537
+      tileset_correction_faite_22: 2648646658541897608
+      tileset_correction_faite_23: -2342881100985267399
+      tileset_correction_faite_24: 5586490278687342250
+      tileset_correction_faite_25: -4091768172000168383
+      tileset_correction_faite_26: 28059091
+      tileset_correction_faite_27: -1323949571
+      tileset_correction_faite_28: -1890522221
+      tileset_correction_faite_29: 642056967
+      tileset_correction_faite_3: 7844092138051720869
+      tileset_correction_faite_30: -1112148523
+      tileset_correction_faite_31: 1508341500
+      tileset_correction_faite_32: -1398242054
+      tileset_correction_faite_33: 866388873
+      tileset_correction_faite_34: -1549924799
+      tileset_correction_faite_35: -430602570
+      tileset_correction_faite_36: 243208695
+      tileset_correction_faite_37: 1427675133
+      tileset_correction_faite_38: 707651812
+      tileset_correction_faite_39: 836301362
+      tileset_correction_faite_4: -7808212124746128290
+      tileset_correction_faite_40: -1330604565
+      tileset_correction_faite_41: -1319674523
+      tileset_correction_faite_42: -1214515427
+      tileset_correction_faite_43: 562689948
+      tileset_correction_faite_44: -636138692
+      tileset_correction_faite_45: 1931046466
+      tileset_correction_faite_46: 1302103879
+      tileset_correction_faite_47: 575477701
+      tileset_correction_faite_48: -740133563
+      tileset_correction_faite_49: -1423015107
+      tileset_correction_faite_5: -7156785127106934759
+      tileset_correction_faite_50: -294713676
+      tileset_correction_faite_51: 661079835
+      tileset_correction_faite_52: -185273908
+      tileset_correction_faite_53: -1349208105
+      tileset_correction_faite_54: -1951201492
+      tileset_correction_faite_55: -1904869873
+      tileset_correction_faite_56: -775591891
+      tileset_correction_faite_57: -966108220
+      tileset_correction_faite_58: 1951211382
+      tileset_correction_faite_59: -320249141
+      tileset_correction_faite_6: 2830272338429154314
+      tileset_correction_faite_60: 1963276012
+      tileset_correction_faite_61: 1276508508
+      tileset_correction_faite_62: -1084326773
+      tileset_correction_faite_63: -55911789
+      tileset_correction_faite_64: -1990967474
+      tileset_correction_faite_65: 610111825
+      tileset_correction_faite_66: 1908001021
+      tileset_correction_faite_67: 1111342893
+      tileset_correction_faite_68: -1588647929
+      tileset_correction_faite_69: 1135051513
+      tileset_correction_faite_7: 4992446341714155015
+      tileset_correction_faite_70: -1601750714
+      tileset_correction_faite_71: -384735266
+      tileset_correction_faite_72: 1804934700
+      tileset_correction_faite_73: -156596470
+      tileset_correction_faite_74: 1373464917
+      tileset_correction_faite_75: -1755493987
+      tileset_correction_faite_76: 1673321937
+      tileset_correction_faite_77: -554034344
+      tileset_correction_faite_78: -422187468
+      tileset_correction_faite_79: -143058843
+      tileset_correction_faite_8: -5775854223535337868
+      tileset_correction_faite_80: 224220055
+      tileset_correction_faite_81: 591334388
+      tileset_correction_faite_82: -1887719709
+      tileset_correction_faite_83: 1637221715
+      tileset_correction_faite_84: -1952131181
+      tileset_correction_faite_85: 1374654555
+      tileset_correction_faite_86: -1736315907
+      tileset_correction_faite_87: 1813704298
+      tileset_correction_faite_88: 1745043302
+      tileset_correction_faite_89: 2098540779
+      tileset_correction_faite_9: -2758904499693560251
+      tileset_correction_faite_90: 1399944056
+      tileset_correction_faite_91: 694580250
+      tileset_correction_faite_92: -1891517285
+      tileset_correction_faite_93: 213163229
+      tileset_correction_faite_94: 403458336
+      tileset_correction_faite_95: -688175940
+      tileset_correction_faite_96: 347870100
+      tileset_correction_faite_97: -1848201723
+      tileset_correction_faite_98: -678624607
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
