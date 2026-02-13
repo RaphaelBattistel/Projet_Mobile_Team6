@@ -1,0 +1,2279 @@
+fileFormatVersion: 2
+guid: 9d8665927b1933b478561f3ed8032a63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2759216301239438536
+    second: tileset_neige_fin_0
+  - first:
+      213: 3400515318135947095
+    second: tileset_neige_fin_1
+  - first:
+      213: -119356048564639340
+    second: tileset_neige_fin_2
+  - first:
+      213: -2671634660857327815
+    second: tileset_neige_fin_3
+  - first:
+      213: 5751580995084807944
+    second: tileset_neige_fin_4
+  - first:
+      213: 6319163591218584031
+    second: tileset_neige_fin_5
+  - first:
+      213: 417879881589166696
+    second: tileset_neige_fin_6
+  - first:
+      213: -8409428188685681757
+    second: tileset_neige_fin_7
+  - first:
+      213: 4574243189432784083
+    second: tileset_neige_fin_8
+  - first:
+      213: 6778279694810074378
+    second: tileset_neige_fin_9
+  - first:
+      213: 9210216350361479301
+    second: tileset_neige_fin_10
+  - first:
+      213: -911271311522012605
+    second: tileset_neige_fin_11
+  - first:
+      213: -7813642586945819803
+    second: tileset_neige_fin_12
+  - first:
+      213: 4032562097088921486
+    second: tileset_neige_fin_13
+  - first:
+      213: 7011109618513404897
+    second: tileset_neige_fin_14
+  - first:
+      213: -6600920070764960766
+    second: tileset_neige_fin_15
+  - first:
+      213: -7214671562787953154
+    second: tileset_neige_fin_16
+  - first:
+      213: 5972007394716044898
+    second: tileset_neige_fin_17
+  - first:
+      213: 3630882925910902972
+    second: tileset_neige_fin_18
+  - first:
+      213: 6259355189026744574
+    second: tileset_neige_fin_19
+  - first:
+      213: 396194241794739229
+    second: tileset_neige_fin_20
+  - first:
+      213: 2942473402194465212
+    second: tileset_neige_fin_21
+  - first:
+      213: -2243684972778507926
+    second: tileset_neige_fin_22
+  - first:
+      213: -7400860539257968603
+    second: tileset_neige_fin_23
+  - first:
+      213: 4534028436468913051
+    second: tileset_neige_fin_24
+  - first:
+      213: -1125131882312168156
+    second: tileset_neige_fin_25
+  - first:
+      213: -3031812941399449920
+    second: tileset_neige_fin_26
+  - first:
+      213: 389384452694659512
+    second: tileset_neige_fin_27
+  - first:
+      213: 5665729786439491378
+    second: tileset_neige_fin_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset_neige_fin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833f72a946b45b9d0800000000000000
+      internalID: -2759216301239438536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f74c64aae013f20800000000000000
+      internalID: 3400515318135947095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499a2836e46f75ef0800000000000000
+      internalID: -119356048564639340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f4afd4e627cead0800000000000000
+      internalID: -2671634660857327815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80feaec1178b1df40800000000000000
+      internalID: 5751580995084807944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd95a2c4ecd22b750800000000000000
+      internalID: 6319163591218584031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86297ecc98b9cc500800000000000000
+      internalID: 417879881589166696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abbb311e95bb4b80800000000000000
+      internalID: -8409428188685681757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_8
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4146602f9fa7f30800000000000000
+      internalID: 4574243189432784083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_9
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dc5653879411e50800000000000000
+      internalID: 6778279694810074378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_10
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 4507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5886acb09f241df70800000000000000
+      internalID: 9210216350361479301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342e9bef1938a53f0800000000000000
+      internalID: -911271311522012605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bea33377d509390800000000000000
+      internalID: -7813642586945819803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f70b3acd986f730800000000000000
+      internalID: 4032562097088921486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3e0d43d077c4160800000000000000
+      internalID: 7011109618513404897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204ee473b22d464a0800000000000000
+      internalID: -6600920070764960766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_16
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef569e8407650eb90800000000000000
+      internalID: -7214671562787953154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_17
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e4e0e9515d0e250800000000000000
+      internalID: 5972007394716044898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_18
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb843fba8cc736230800000000000000
+      internalID: 3630882925910902972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_19
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 4007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8efe48162bdd650800000000000000
+      internalID: 6259355189026744574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c0b3450909f7500800000000000000
+      internalID: 396194241794739229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb116da28f3c5d820800000000000000
+      internalID: 2942473402194465212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61b7a1a764dcd0e0800000000000000
+      internalID: -2243684972778507926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_23
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528a25d0d8cda4990800000000000000
+      internalID: -7400860539257968603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_24
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93df3537da1cee30800000000000000
+      internalID: 4534028436468913051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_25
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d0155a38ab260f0800000000000000
+      internalID: -1125131882312168156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_26
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce147a6136dce5d0800000000000000
+      internalID: -3031812941399449920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_27
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1dcefb81f576500800000000000000
+      internalID: 389384452694659512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_28
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 3507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f5312f837b0ae40800000000000000
+      internalID: 5665729786439491378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fe2a997fe2f294e9a7805ade6764a6
+      internalID: 1756945243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_30
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4f1aa54a20991499b09eb3e974c464
+      internalID: 1059225705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_31
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07a0c01ac1cda746a2129b52050b34a
+      internalID: -1524850311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_32
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6d9e37c378e0042ae153e62f2f2c2b
+      internalID: -2070861823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_33
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fe2a23228b7d642b7a448403c51e4c
+      internalID: 748949007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d48bc720389f7948a5f1bcee79e0e0d
+      internalID: 720162579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf340f59a231b941afe275829f5d6d2
+      internalID: -69067028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_36
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53662a0dceb445c4c9909ef82253b8e4
+      internalID: -1974845373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_37
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757bce15575cd65429c2961a823d555f
+      internalID: -671128148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_38
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f227d8f620caf6b41893f7ed3cb3077e
+      internalID: -1439031873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_39
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e94aef349264e6479014f577c614699
+      internalID: -237053716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_40
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d19ada87ea060746962580bfe6b0acb
+      internalID: -1956447978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_41
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa61f14d72663ae48aabff391d6536d7
+      internalID: -2108343811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_42
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce02cfb29a6a0849b7f28dee67d1152
+      internalID: 876544238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_43
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a8a796b108dc5449ff96ddf9311c63
+      internalID: -1757763878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83e4dba09e7864498f3072c3e929e9e
+      internalID: 208476191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390510dae5bfe86429c08ea028cce095
+      internalID: -1374287911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_46
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71a7ed7f41ce5942b1e88a0bb7e1f2a
+      internalID: 878903687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_47
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c421d3c9cfa6ef4696176bd826a4c2d
+      internalID: 551145618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_48
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9004e8cf54beb33438570fcde61f00bc
+      internalID: -865259463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_49
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61af04976946bbd449b0018cb9fb3381
+      internalID: -1934701865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_50
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a420ef04c7c4a1943b8f8b96e0fd8899
+      internalID: -1885636193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_51
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b84da9d5a62a04bb7eee526b784e25
+      internalID: -1291385765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_52
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9f6022fd6bc644caf8e84622ba2fd7
+      internalID: -1878421138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_53
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff1d6c8339fa6d45b672bca376c595e
+      internalID: 869640798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_54
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca845eb75cd31e8488f35d26ed3f706d
+      internalID: -2122063593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_55
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bf038334065604da0d0e04f844300c
+      internalID: 2098730254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_56
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc936ed952fd16e4e81c93ca0f4ab926
+      internalID: -189725089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_57
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b643a93de505144b769d9e11094d96
+      internalID: -1388093052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_58
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aa58003e3fe9e44bb4879274e22ad9
+      internalID: 1446600885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_59
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0911e160e4258ee40967ce6eff0d75c3
+      internalID: 1971125473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_60
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b22a9d71dcdfc843bfc2a78d9a0bd3f
+      internalID: 345023309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_61
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47f48145f5ff6d4f89da2603b905efa
+      internalID: -871041823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_62
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b5cf6d3fbf4c14a9ea60b2c54e1947
+      internalID: -1985732314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_63
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee423263eb7ebf4caa32fa5e438b44e
+      internalID: -68499429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_64
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579e9809aa64086449122840c0f5a80c
+      internalID: 892835843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_65
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff561ce264f89f4439573c725fe091d2
+      internalID: -2023392817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_66
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e924e5c1c1599bb41bbafdc34d142005
+      internalID: 1842707667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_67
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1b585bc2e562243b89ec76ad5928a7
+      internalID: 2135009695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_68
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7eaaacf106e4b4684a79b0f01206ad
+      internalID: 526387802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_69
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f11f62ba4afc884496a96096d1edd22
+      internalID: -1960218640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_70
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b6e28f5ea53f45bfa4412358b4439
+      internalID: -1771448946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_71
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec514593a1de6c04a9099000f3fde0c4
+      internalID: -1373099119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_72
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a347584668a6521409d5fdc4757ca485
+      internalID: -1658987085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_73
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e735cf09eeecff4fb18d72bfe97a89e
+      internalID: -1247834940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_74
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 1007
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe6423e121f4fb4c8b449e7ac6a8e3c
+      internalID: 1140569372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7fc5a470b64304e878e01a50aeeb20
+      internalID: -2105906379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ce0f21f4ee3fd4b852ee326443fccd
+      internalID: -1103952604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_77
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c719a4451e614246bfb94ea45350ab4
+      internalID: 2109542110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_78
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f8f406e22d3b345b079514c071b827
+      internalID: -2070316662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_79
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427a079140317b44cb1bb8bf5e10d7d4
+      internalID: 1310886873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_80
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b2e8729fed89e419355dd1a1cee9dd
+      internalID: 1961784735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_81
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fcd4e4c75a1ef429f776c40e00cf5c
+      internalID: 2027606385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_82
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187cbdb89e695c94dbc2afb9818480d6
+      internalID: 1298918797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_83
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96258b44d7fbc6f4ba5efeb2140d5602
+      internalID: 1480199174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_84
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a36b6f7a6ee4f4aa4e8f6e25310535
+      internalID: 1767530414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_85
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 507
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a3ead39fe11c2478953073f0f39a36
+      internalID: 1902328545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd274334d64ed2046ae1dada9902a676
+      internalID: -1139761546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_87
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18db6d15664bf4d4ca57834d1e357139
+      internalID: -93692666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_neige_fin_88
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 7
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee244ae2897c40c40bea3156a6ef12d7
+      internalID: 993809316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 48d2c55663fcf1d4899d941d0a6d1612
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tileset_neige_fin_0: -2759216301239438536
+      tileset_neige_fin_1: 3400515318135947095
+      tileset_neige_fin_10: 9210216350361479301
+      tileset_neige_fin_11: -911271311522012605
+      tileset_neige_fin_12: -7813642586945819803
+      tileset_neige_fin_13: 4032562097088921486
+      tileset_neige_fin_14: 7011109618513404897
+      tileset_neige_fin_15: -6600920070764960766
+      tileset_neige_fin_16: -7214671562787953154
+      tileset_neige_fin_17: 5972007394716044898
+      tileset_neige_fin_18: 3630882925910902972
+      tileset_neige_fin_19: 6259355189026744574
+      tileset_neige_fin_2: -119356048564639340
+      tileset_neige_fin_20: 396194241794739229
+      tileset_neige_fin_21: 2942473402194465212
+      tileset_neige_fin_22: -2243684972778507926
+      tileset_neige_fin_23: -7400860539257968603
+      tileset_neige_fin_24: 4534028436468913051
+      tileset_neige_fin_25: -1125131882312168156
+      tileset_neige_fin_26: -3031812941399449920
+      tileset_neige_fin_27: 389384452694659512
+      tileset_neige_fin_28: 5665729786439491378
+      tileset_neige_fin_29: 1756945243
+      tileset_neige_fin_3: -2671634660857327815
+      tileset_neige_fin_30: 1059225705
+      tileset_neige_fin_31: -1524850311
+      tileset_neige_fin_32: -2070861823
+      tileset_neige_fin_33: 748949007
+      tileset_neige_fin_34: 720162579
+      tileset_neige_fin_35: -69067028
+      tileset_neige_fin_36: -1974845373
+      tileset_neige_fin_37: -671128148
+      tileset_neige_fin_38: -1439031873
+      tileset_neige_fin_39: -237053716
+      tileset_neige_fin_4: 5751580995084807944
+      tileset_neige_fin_40: -1956447978
+      tileset_neige_fin_41: -2108343811
+      tileset_neige_fin_42: 876544238
+      tileset_neige_fin_43: -1757763878
+      tileset_neige_fin_44: 208476191
+      tileset_neige_fin_45: -1374287911
+      tileset_neige_fin_46: 878903687
+      tileset_neige_fin_47: 551145618
+      tileset_neige_fin_48: -865259463
+      tileset_neige_fin_49: -1934701865
+      tileset_neige_fin_5: 6319163591218584031
+      tileset_neige_fin_50: -1885636193
+      tileset_neige_fin_51: -1291385765
+      tileset_neige_fin_52: -1878421138
+      tileset_neige_fin_53: 869640798
+      tileset_neige_fin_54: -2122063593
+      tileset_neige_fin_55: 2098730254
+      tileset_neige_fin_56: -189725089
+      tileset_neige_fin_57: -1388093052
+      tileset_neige_fin_58: 1446600885
+      tileset_neige_fin_59: 1971125473
+      tileset_neige_fin_6: 417879881589166696
+      tileset_neige_fin_60: 345023309
+      tileset_neige_fin_61: -871041823
+      tileset_neige_fin_62: -1985732314
+      tileset_neige_fin_63: -68499429
+      tileset_neige_fin_64: 892835843
+      tileset_neige_fin_65: -2023392817
+      tileset_neige_fin_66: 1842707667
+      tileset_neige_fin_67: 2135009695
+      tileset_neige_fin_68: 526387802
+      tileset_neige_fin_69: -1960218640
+      tileset_neige_fin_7: -8409428188685681757
+      tileset_neige_fin_70: -1771448946
+      tileset_neige_fin_71: -1373099119
+      tileset_neige_fin_72: -1658987085
+      tileset_neige_fin_73: -1247834940
+      tileset_neige_fin_74: 1140569372
+      tileset_neige_fin_75: -2105906379
+      tileset_neige_fin_76: -1103952604
+      tileset_neige_fin_77: 2109542110
+      tileset_neige_fin_78: -2070316662
+      tileset_neige_fin_79: 1310886873
+      tileset_neige_fin_8: 4574243189432784083
+      tileset_neige_fin_80: 1961784735
+      tileset_neige_fin_81: 2027606385
+      tileset_neige_fin_82: 1298918797
+      tileset_neige_fin_83: 1480199174
+      tileset_neige_fin_84: 1767530414
+      tileset_neige_fin_85: 1902328545
+      tileset_neige_fin_86: -1139761546
+      tileset_neige_fin_87: -93692666
+      tileset_neige_fin_88: 993809316
+      tileset_neige_fin_9: 6778279694810074378
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
