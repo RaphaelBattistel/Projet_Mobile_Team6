@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4336667731591223016}
   - component: {fileID: 648301983392441939}
   m_Layer: 0
-  m_Name: Managers
+  m_Name: Fusion Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

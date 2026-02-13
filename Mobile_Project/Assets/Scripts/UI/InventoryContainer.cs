@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class InventoryContainer : MonoBehaviour
 {
@@ -19,10 +21,25 @@ public class InventoryContainer : MonoBehaviour
 
         foreach (var item in items)
         {
-            var gameObject = Instantiate(_buttonPrefab, _container);
-            var button = gameObject.GetComponent<InventoryButton>();
+            GameObject gameObject = Instantiate(_buttonPrefab, _container);
+            InventoryButton button = gameObject.GetComponent<InventoryButton>();
 
             button.Init(item);
+
+            // Affecte le sprite du bouton à partir de l'item lié
+            Image image = gameObject.GetComponent<Image>();
+            if (image != null && button.Item != null)
+            {
+                image.sprite = button.Item.Sprite;
+            }
+
+            // Ajoute l'événement de log sur le clic
+            Button uiButton = gameObject.GetComponent<Button>();
+            if (uiButton != null)
+            {
+                uiButton.onClick.AddListener(button.LogItemLabel);
+            }
+
             _buttons.Add(gameObject);
         }
     }
@@ -36,4 +53,6 @@ public class InventoryContainer : MonoBehaviour
 
         _buttons.Clear();
     }
+
+
 }
