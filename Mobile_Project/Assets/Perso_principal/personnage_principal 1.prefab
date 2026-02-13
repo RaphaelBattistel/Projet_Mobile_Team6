@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326794235924f2c4d840ac3c487de0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  coll2d: {fileID: 8537825762967142145}
   spriteList:
   - {fileID: 7530079605406277038}
   - {fileID: 2338140631370295511}

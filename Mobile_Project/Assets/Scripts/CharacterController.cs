@@ -8,6 +8,7 @@ public class CharacterController : MonoBehaviour
 
     [SerializeField] private List<Transform> spriteList;
 
+
     [Header("MOVE")]
     [SerializeField] private float runSpeed;
     [SerializeField] private float climbSpeed;
@@ -113,6 +114,15 @@ public class CharacterController : MonoBehaviour
         Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, groundCheck);
         Gizmos.DrawWireCube(transform.position + transform.right * wallCastDistance, frontCheck);
 
+        // Visualisation du Raycast de TargetUp
+        Vector3 rayOrigin = new Vector3(
+            transform.position.x, 
+            transform.position.y + groundCastDistance,
+            transform.position.z
+        );
+        Vector3 rayDirection = transform.right * (frontCheck.x + wallCastDistance);
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(rayOrigin, rayOrigin + rayDirection);
     }
 
 
@@ -129,20 +139,25 @@ public class CharacterController : MonoBehaviour
     private Vector2 TargetUp()
     {
         Vector2 targetPos = transform.position;
-        RaycastHit2D hit = Physics2D.Raycast(
-            new Vector2(transform.position.x + wallCastDistance, transform.position.y - transform.localScale.y/2),
+        //RaycastHit2D hit = Physics2D.Raycast(
+        //    new Vector2(transform.position.x + wallCastDistance, transform.position.y - transform.localScale.y/2),
+        //    transform.right,
+        //    frontCheck.x,
+        //    actionLayer
+        //);
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(
+            transform.position.x, transform.position.y + groundCastDistance),
             transform.right,
-            frontCheck.x,
+            frontCheck.x + wallCastDistance,
             actionLayer
         );
-
+        //transform.position, groundCheck, 0, transform.up, groundCastDistance
         if (hit.collider != null)
         {
             selectedObject = hit.collider.gameObject;
             float targetY =
                 selectedObject.transform.position.y
-                + selectedObject.transform.localScale.y / 2
-                + transform.localScale.y; // On ajoute juste la moitié de la hauteur du personnage
+                + selectedObject.transform.localScale.y;
             targetPos = new Vector2(transform.position.x, targetY);
             return targetPos;
         }
