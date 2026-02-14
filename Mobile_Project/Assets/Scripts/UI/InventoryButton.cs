@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class InventoryButton : MonoBehaviour
@@ -16,7 +17,26 @@ public class InventoryButton : MonoBehaviour
     {
         if (_item != null)
         {
+            Vector3 position = new Vector3();
+            GameObject gameObject = Instantiate(_item.Prefab, position, Quaternion.identity);
             Debug.Log(_item.Label);
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Camera cam = Camera.main;
+            if (cam == null)
+                return; // Caméra non trouvée, on quitte
+
+            Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+            Collider2D collider = GetComponent<Collider2D>();
+            if (collider != null && collider.OverlapPoint(mousePos))
+            {
+                LogItemLabel();
+            }
         }
     }
 }

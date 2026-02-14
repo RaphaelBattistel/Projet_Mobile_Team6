@@ -1,14 +1,17 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using Unity.VisualScripting;
+using UnityEngine.EventSystems; // Ajouté
 
 public class InventoryContainer : MonoBehaviour
 {
-    [SerializeField] private GameObject _buttonPrefab;
+    [SerializeField] private GameObject _uiItemPrefab;
     [SerializeField] private Transform _container;
+    [SerializeField] private LayerMask itemLayerUI;
+    [SerializeField] private Camera camera;
+    [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajouté
 
-    private readonly List<GameObject> _buttons = new ();
+    private readonly List<GameObject> _images = new ();
 
     void Awake()
     {
@@ -21,7 +24,7 @@ public class InventoryContainer : MonoBehaviour
 
         foreach (var item in items)
         {
-            GameObject gameObject = Instantiate(_buttonPrefab, _container);
+            GameObject gameObject = Instantiate(_uiItemPrefab, _container);
             InventoryButton button = gameObject.GetComponent<InventoryButton>();
 
             button.Init(item);
@@ -33,26 +36,56 @@ public class InventoryContainer : MonoBehaviour
                 image.sprite = button.Item.Sprite;
             }
 
-            // Ajoute l'événement de log sur le clic
+            // Ajoute l'évènement de log sur le clic
             Button uiButton = gameObject.GetComponent<Button>();
             if (uiButton != null)
             {
                 uiButton.onClick.AddListener(button.LogItemLabel);
             }
 
-            _buttons.Add(gameObject);
+            _images.Add(gameObject);
         }
     }
 
     public void Clear()
     {
-        foreach (var button in _buttons)
+        foreach (var button in _images)
         {
             Destroy(button.gameObject);
         }
 
-        _buttons.Clear();
+        _images.Clear();
     }
 
+    //private void Update()
+    //{
+    //    HandleInputUI();
+    //}
 
+    //private void HandleInputUI()
+    //{
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        Vector2 inputPos = Input.mousePosition;
+
+    //        // Préparer les données pour le raycast UI
+    //        PointerEventData pointerData = new PointerEventData(EventSystem.current)
+    //        {
+    //            position = inputPos
+    //        };
+
+    //        List<RaycastResult> results = new List<RaycastResult>();
+    //        graphicRaycaster.Raycast(pointerData, results);
+
+    //        foreach (var result in results)
+    //        {
+    //            InventoryButton button = result.gameObject.GetComponent<InventoryButton>();
+    //            if (button != null)
+    //            {
+    //                button.LogItemLabel();
+    //                break; // On ne prend que le premier bouton touché
+    //            }
+    //        }
+    //    }
+    //}
 }

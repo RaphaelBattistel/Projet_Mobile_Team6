@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6683648250124281543}
   - component: {fileID: 2204472306397005630}
   - component: {fileID: 6330589499260155449}
-  - component: {fileID: 8273305306491409668}
+  - component: {fileID: 838993252132971639}
   - component: {fileID: 6468562936348917955}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: InventoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8273305306491409668
+--- !u!114 &838993252132971639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
