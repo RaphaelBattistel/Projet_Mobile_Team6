@@ -6,4 +6,5 @@ public class LevelData : ScriptableObject
 {
     public int LevelId;
     public List<ItemData> AvailableItems;
+    public GameObject Level;
 }
