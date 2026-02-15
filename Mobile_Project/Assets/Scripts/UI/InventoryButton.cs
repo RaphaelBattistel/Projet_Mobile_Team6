@@ -17,9 +17,22 @@ public class InventoryButton : MonoBehaviour
     {
         if (_item != null)
         {
-            Vector3 position = new Vector3();
-            GameObject gameObject = Instantiate(_item.Prefab, position, Quaternion.identity);
+            Camera cam = Camera.main;
+            if (cam == null)
+                return;
+
+            // Position écran -> monde (z géré par la caméra)
+            Vector3 worldPos = cam.ScreenToWorldPoint(Input.mousePosition);
+            worldPos.z = 0f;
+
+            GameObject spawned = Instantiate(_item.Prefab, worldPos, Quaternion.identity);
             Debug.Log(_item.Label);
+
+            // Demander au GridManager de commencer le grab immédiatement, si présent
+            if (GridManager.Instance != null)
+            {
+                GridManager.Instance.StartGrabAtScreenPosition(spawned, Input.mousePosition);
+            }
         }
     }
 

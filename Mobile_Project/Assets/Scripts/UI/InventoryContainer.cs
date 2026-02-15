@@ -37,11 +37,11 @@ public class InventoryContainer : MonoBehaviour
             }
 
             // Ajoute l'évènement de log sur le clic
-            Button uiButton = gameObject.GetComponent<Button>();
-            if (uiButton != null)
-            {
-                uiButton.onClick.AddListener(button.LogItemLabel);
-            }
+            //Button uiButton = gameObject.GetComponent<Button>();
+            //if (uiButton != null)
+            //{
+            //    uiButton.onClick.AddListener(button.LogItemLabel);
+            //}
 
             _images.Add(gameObject);
         }
@@ -57,35 +57,37 @@ public class InventoryContainer : MonoBehaviour
         _images.Clear();
     }
 
-    //private void Update()
-    //{
-    //    HandleInputUI();
-    //}
+    private void Update()
+    {
+        HandleInputUI();
+    }
 
-    //private void HandleInputUI()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        Vector2 inputPos = Input.mousePosition;
+    private void HandleInputUI()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 inputPos = Input.mousePosition;
 
-    //        // Préparer les données pour le raycast UI
-    //        PointerEventData pointerData = new PointerEventData(EventSystem.current)
-    //        {
-    //            position = inputPos
-    //        };
+            // Préparer les données pour le raycast UI
+            PointerEventData pointerData = new PointerEventData(EventSystem.current)
+            {
+                position = inputPos
+            };
 
-    //        List<RaycastResult> results = new List<RaycastResult>();
-    //        graphicRaycaster.Raycast(pointerData, results);
+            List<RaycastResult> results = new List<RaycastResult>();
+            graphicRaycaster.Raycast(pointerData, results);
 
-    //        foreach (var result in results)
-    //        {
-    //            InventoryButton button = result.gameObject.GetComponent<InventoryButton>();
-    //            if (button != null)
-    //            {
-    //                button.LogItemLabel();
-    //                break; // On ne prend que le premier bouton touché
-    //            }
-    //        }
-    //    }
-    //}
+            foreach (var result in results)
+            {
+                InventoryButton button = result.gameObject.GetComponent<InventoryButton>();
+                if (button != null)
+                {
+                    button.LogItemLabel();
+                    Debug.Log("oui");
+                    break; // On ne prend que le premier bouton touché
+                }
+                Debug.Log("pas touche");
+            }
+        }
+    }
 }
