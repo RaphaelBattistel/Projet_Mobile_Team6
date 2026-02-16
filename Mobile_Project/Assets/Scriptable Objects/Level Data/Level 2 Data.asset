@@ -14,15 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   LevelId: 2
   AvailableItems:
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
-  - {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
+  - {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+  - {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+  - {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+  - {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+  Level: {fileID: 496630368956360519, guid: 4aec05a8deda3c04ca5a42c1c5b11ea3, type: 3}

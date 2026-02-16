@@ -15,13 +15,13 @@ public class InventoryContainer : MonoBehaviour
 
     void Awake()
     {
-        Build(LevelManager.Instance.CurrentLevel.AvailableItems);
+        Build(LevelManager.Instance.CurrentLevel.AvailableItems, LevelManager.Instance.CurrentLevel.Level);
     }
 
-    public void Build(List<ItemData> items)
+    public void Build(List<ItemData> items, GameObject level)
     {
         Clear();
-
+        level = Instantiate(level);
         foreach (var item in items)
         {
             GameObject gameObject = Instantiate(_uiItemPrefab, _container);
@@ -53,7 +53,6 @@ public class InventoryContainer : MonoBehaviour
         {
             Destroy(button.gameObject);
         }
-
         _images.Clear();
     }
 

@@ -47,4 +47,7 @@ MonoBehaviour:
   grid: {fileID: 0}
   draggableLayer:
     serializedVersion: 2
-    m_Bits: 1920
+    m_Bits: 6016
+  ground:
+    serializedVersion: 2
+    m_Bits: 64

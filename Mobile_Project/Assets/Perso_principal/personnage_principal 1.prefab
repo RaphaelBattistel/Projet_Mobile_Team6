@@ -331,9 +331,15 @@ MonoBehaviour:
   - {fileID: 6024492323379747042}
   runSpeed: 11.14
   climbSpeed: 7.77
+  onWalk:
+    m_PersistentCalls:
+      m_Calls: []
+  onClimb:
+    m_PersistentCalls:
+      m_Calls: []
   groundLayer:
     serializedVersion: 2
-    m_Bits: 832
+    m_Bits: 4928
   groundCheck: {x: 5.3, y: 2.33}
   groundCastDistance: -6.92
   wallLayer:

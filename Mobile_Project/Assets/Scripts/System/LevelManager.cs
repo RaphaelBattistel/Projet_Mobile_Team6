@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
     public void LoadLevel(int levelId, string sceneName)
     {
         CurrentLevel = _levelDatabase.GetLevel(levelId);
-
+        
         if (CurrentLevel == null)
         {
             Debug.LogError($"Level {levelId} not found");

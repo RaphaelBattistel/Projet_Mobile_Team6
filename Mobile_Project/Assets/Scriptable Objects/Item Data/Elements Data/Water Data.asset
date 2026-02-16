@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   Label: Water
   Weight: 1
-  Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Prefab: {fileID: 4483584455049017810, guid: 4b209568dadaf1e4395aa164d91ec01c, type: 3}
