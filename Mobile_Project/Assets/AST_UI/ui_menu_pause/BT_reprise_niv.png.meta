@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 935b2df95a05a3c4aa47dd7380d927de
+guid: e9067328988297b4fb17d3421d87bcea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8547765199902467256
-    second: AST_fleche_ceinture_0
-  - first:
-      213: -7774781984011554111
-    second: AST_fleche_ceinture_1
+      213: -2746366788136758112
+    second: BT_reprise_niv_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 264, y: 0, z: 586, w: 909}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -129,45 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AST_fleche_ceinture_0
+      name: BT_reprise_niv_0
       rect:
         serializedVersion: 2
-        x: 273
-        y: 60
-        width: 42
-        height: 85
+        x: 857
+        y: 421
+        width: 281
+        height: 233
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b4e1ab4923cf9670800000000000000
-      internalID: 8547765199902467256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AST_fleche_ceinture_1
-      rect:
-        serializedVersion: 2
-        x: 1267
-        y: 62
-        width: 42
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c272e46afc6a1490800000000000000
-      internalID: -7774781984011554111
+      spriteID: 0a49d2205f1f2e9d0800000000000000
+      internalID: -2746366788136758112
       vertices: []
       indices: 
       edges: []
@@ -176,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AST_fleche_ceinture_0: 8547765199902467256
-      AST_fleche_ceinture_1: -7774781984011554111
+      BT_reprise_niv_0: -2746366788136758112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
