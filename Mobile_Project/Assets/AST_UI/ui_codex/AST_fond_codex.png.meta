@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 9f663e5376753e04f9dd394759e7ea0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8117019383593112233
+    second: AST_fond_codex_0
+  - first:
+      213: 7075905372512222383
+    second: AST_fond_codex_1
+  - first:
+      213: -2097694678977096649
+    second: AST_fond_codex_2
+  - first:
+      213: 5540424794948246788
+    second: AST_fond_codex_3
+  - first:
+      213: 175379916797583111
+    second: AST_fond_codex_4
+  - first:
+      213: 3007782869584637581
+    second: AST_fond_codex_5
+  - first:
+      213: 3261465510990463409
+    second: AST_fond_codex_6
+  - first:
+      213: 366952702197299941
+    second: AST_fond_codex_7
+  - first:
+      213: -7658630906987374967
+    second: AST_fond_codex_8
+  - first:
+      213: 1935593723431264845
+    second: AST_fond_codex_9
+  - first:
+      213: -8334105413008094154
+    second: AST_fond_codex_10
+  - first:
+      213: -1093608820670356287
+    second: AST_fond_codex_11
+  - first:
+      213: 7870503926133568502
+    second: AST_fond_codex_12
+  - first:
+      213: 8037985570606935953
+    second: AST_fond_codex_13
+  - first:
+      213: 9173069719613898331
+    second: AST_fond_codex_14
+  - first:
+      213: -2731815242585318333
+    second: AST_fond_codex_15
+  - first:
+      213: 3993659619066688047
+    second: AST_fond_codex_16
+  - first:
+      213: 7455146888035448428
+    second: AST_fond_codex_17
+  - first:
+      213: -2630855422928810084
+    second: AST_fond_codex_18
+  - first:
+      213: -1724615872650543760
+    second: AST_fond_codex_19
+  - first:
+      213: -7039663972134982592
+    second: AST_fond_codex_20
+  - first:
+      213: -735799320224679499
+    second: AST_fond_codex_21
+  - first:
+      213: -5847660556955573668
+    second: AST_fond_codex_22
+  - first:
+      213: -7382662490799442744
+    second: AST_fond_codex_23
+  - first:
+      213: 3385975948714639856
+    second: AST_fond_codex_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AST_fond_codex_0
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 136
+        width: 34
+        height: 793
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a21702af1275a070800000000000000
+      internalID: 8117019383593112233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 894
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac7ed0527aa23260800000000000000
+      internalID: 7075905372512222383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_2
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 102
+        width: 1477
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734d754bdcd73e2e0800000000000000
+      internalID: -2097694678977096649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 872
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d18af1ffa83ec40800000000000000
+      internalID: 5540424794948246788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_4
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 838
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f1579ea131f6200800000000000000
+      internalID: 175379916797583111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 801
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ee81f759acdb920800000000000000
+      internalID: 3007782869584637581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 764
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b146cd2a9d034d20800000000000000
+      internalID: 3261465510990463409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 727
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eaf6d7d98da71500800000000000000
+      internalID: 366952702197299941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 693
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986903b64c317b590800000000000000
+      internalID: -7658630906987374967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 656
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42a89a7c3c9cda10800000000000000
+      internalID: 1935593723431264845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 622
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c0ef8684f475c80800000000000000
+      internalID: -8334105413008094154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_11
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 585
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4a5b06298b2d0f0800000000000000
+      internalID: -1093608820670356287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_12
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 548
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f332800f95a93d60800000000000000
+      internalID: 7870503926133568502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_13
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 511
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fedb51a49ac8f60800000000000000
+      internalID: 8037985570606935953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_14
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 477
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e7a791f4a4d4f70800000000000000
+      internalID: 9173069719613898331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_15
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 440
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c54b9b284a61ad0800000000000000
+      internalID: -2731815242585318333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 406
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22ba44a3445c6730800000000000000
+      internalID: 3993659619066688047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 369
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6636b97890067760800000000000000
+      internalID: 7455146888035448428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 335
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f0be48ee25d7bd0800000000000000
+      internalID: -2630855422928810084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 298
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07df9a0500fe018e0800000000000000
+      internalID: -1724615872650543760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 264
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c67c24ae61e4e90800000000000000
+      internalID: -7039663972134982592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_21
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 227
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9b80caa6ae9c5f0800000000000000
+      internalID: -735799320224679499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_22
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 193
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52a997a4bfe8dea0800000000000000
+      internalID: -5847660556955573668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_23
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 156
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c47c4364938b8990800000000000000
+      internalID: -7382662490799442744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_codex_24
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 100
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f107298f276dfe20800000000000000
+      internalID: 3385975948714639856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AST_fond_codex_0: 8117019383593112233
+      AST_fond_codex_1: 7075905372512222383
+      AST_fond_codex_10: -8334105413008094154
+      AST_fond_codex_11: -1093608820670356287
+      AST_fond_codex_12: 7870503926133568502
+      AST_fond_codex_13: 8037985570606935953
+      AST_fond_codex_14: 9173069719613898331
+      AST_fond_codex_15: -2731815242585318333
+      AST_fond_codex_16: 3993659619066688047
+      AST_fond_codex_17: 7455146888035448428
+      AST_fond_codex_18: -2630855422928810084
+      AST_fond_codex_19: -1724615872650543760
+      AST_fond_codex_2: -2097694678977096649
+      AST_fond_codex_20: -7039663972134982592
+      AST_fond_codex_21: -735799320224679499
+      AST_fond_codex_22: -5847660556955573668
+      AST_fond_codex_23: -7382662490799442744
+      AST_fond_codex_24: 3385975948714639856
+      AST_fond_codex_3: 5540424794948246788
+      AST_fond_codex_4: 175379916797583111
+      AST_fond_codex_5: 3007782869584637581
+      AST_fond_codex_6: 3261465510990463409
+      AST_fond_codex_7: 366952702197299941
+      AST_fond_codex_8: -7658630906987374967
+      AST_fond_codex_9: 1935593723431264845
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
