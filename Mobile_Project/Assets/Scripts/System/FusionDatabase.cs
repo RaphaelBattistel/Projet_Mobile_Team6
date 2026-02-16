@@ -46,7 +46,7 @@ public class FusionDatabase : ScriptableObject
         {
             // ... pour voir si nos deux ingrédients matchent avec une recette.
             // Que ce soit Eau+Terre ou Terre+Eau, on s'en fout, ça marche !
-            if ((recipe.Resultat == item)
+            if ((recipe.Resultat == item))
             {
                 return recipe; // Bingo !
             }
