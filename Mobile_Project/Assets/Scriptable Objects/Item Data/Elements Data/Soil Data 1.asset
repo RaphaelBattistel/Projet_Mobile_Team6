@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   Label: Soil
   Weight: 1
-  Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 21300000, guid: 04112125a7465f949816a4c0b03bd152, type: 3}
   Prefab: {fileID: 9000722027222524036, guid: 499aa2e1aed61154690f4d25ef469949, type: 3}

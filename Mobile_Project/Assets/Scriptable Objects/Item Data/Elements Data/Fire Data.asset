@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   Label: Fire
   Weight: 0
-  Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 21300000, guid: 8d839e1eca8b6ba4b98f3a47c5030333, type: 3}
   Prefab: {fileID: 4838938908532948005, guid: 70d222ccae51298428107bdf6789d600, type: 3}
