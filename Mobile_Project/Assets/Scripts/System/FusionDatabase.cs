@@ -12,7 +12,9 @@ public class FusionDatabase : ScriptableObject
         public ItemData ElementA;
         public ItemData ElementB;
         public ItemData Resultat;
+        public bool HasFusedOnce;
     }
+    
 
     // La liste où on va ranger toutes nos recettes
     public List<FusionRecipe> Recipes = new List<FusionRecipe>();
