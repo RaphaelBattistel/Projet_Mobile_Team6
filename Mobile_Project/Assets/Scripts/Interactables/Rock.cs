@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class Rock : MonoBehaviour
@@ -8,6 +10,9 @@ public class Rock : MonoBehaviour
     [SerializeField] private float speedLimit;
     [SerializeField] private float radius;
     [SerializeField] private LayerMask boxLayer;
+    [SerializeField] private UnityEvent onDestroyBox;
+
+    [SerializeField] private GameObject effectForDestroy;
 
     void Start()
     {
@@ -30,7 +35,9 @@ public class Rock : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log(hit.collider.name);
-            hit.collider.gameObject.SetActive(false);
+            onDestroyBox?.Invoke();
+            Instantiate(effectForDestroy);
+            Destroy(hit.collider.gameObject);
         }
     }
 
