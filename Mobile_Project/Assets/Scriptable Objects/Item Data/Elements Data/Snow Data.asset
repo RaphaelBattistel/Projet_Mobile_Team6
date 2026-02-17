@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   Label: Snow
   Weight: 0
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 898f82f988f2f5c4f90d9c9ff0875244, type: 3}
   Prefab: {fileID: 9000722027222524036, guid: 499aa2e1aed61154690f4d25ef469949, type: 3}

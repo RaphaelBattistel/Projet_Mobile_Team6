@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   Label: Box
   Weight: 2
-  Sprite: {fileID: 4183245413391494307, guid: e1bcef78ddf68324282c33e251bba906, type: 3}
+  Sprite: {fileID: 21300000, guid: 906e1df4039638d43b6eab2bd4e9adfa, type: 3}
   Prefab: {fileID: 5606687049830344958, guid: 35a03ab88f63c6c4eaf312fc6599a935, type: 3}

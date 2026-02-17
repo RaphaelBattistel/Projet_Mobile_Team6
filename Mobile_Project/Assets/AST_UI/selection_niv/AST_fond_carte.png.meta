@@ -1,0 +1,3003 @@
+fileFormatVersion: 2
+guid: 5f5204760c671d649b90cc7bbacaa969
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -338122868120872558
+    second: AST_fond_carte_0
+  - first:
+      213: 2377405013870735758
+    second: AST_fond_carte_1
+  - first:
+      213: -4076811022315303497
+    second: AST_fond_carte_2
+  - first:
+      213: -5508891357352672324
+    second: AST_fond_carte_3
+  - first:
+      213: -2450116642230151766
+    second: AST_fond_carte_4
+  - first:
+      213: 2854600499699779319
+    second: AST_fond_carte_5
+  - first:
+      213: 2246754460900000551
+    second: AST_fond_carte_6
+  - first:
+      213: -7746030275511152411
+    second: AST_fond_carte_7
+  - first:
+      213: -6105692042406747595
+    second: AST_fond_carte_8
+  - first:
+      213: -1026184458182986915
+    second: AST_fond_carte_9
+  - first:
+      213: -8063884320556066661
+    second: AST_fond_carte_10
+  - first:
+      213: 8882604320895619608
+    second: AST_fond_carte_11
+  - first:
+      213: -1206823510580425781
+    second: AST_fond_carte_12
+  - first:
+      213: 4573107740990603355
+    second: AST_fond_carte_13
+  - first:
+      213: -1936280492808834956
+    second: AST_fond_carte_14
+  - first:
+      213: -2051290997458638451
+    second: AST_fond_carte_15
+  - first:
+      213: -608841651322535114
+    second: AST_fond_carte_16
+  - first:
+      213: 8590308166573174373
+    second: AST_fond_carte_17
+  - first:
+      213: 7864504450378441136
+    second: AST_fond_carte_18
+  - first:
+      213: -2047856139774148667
+    second: AST_fond_carte_19
+  - first:
+      213: 4549588813579960008
+    second: AST_fond_carte_20
+  - first:
+      213: -2920631412057167647
+    second: AST_fond_carte_21
+  - first:
+      213: 828092965718803784
+    second: AST_fond_carte_22
+  - first:
+      213: 7143536407435572317
+    second: AST_fond_carte_23
+  - first:
+      213: -3007388341019729117
+    second: AST_fond_carte_24
+  - first:
+      213: -763239192752619069
+    second: AST_fond_carte_25
+  - first:
+      213: -6609951037429246838
+    second: AST_fond_carte_26
+  - first:
+      213: 312645517237447988
+    second: AST_fond_carte_27
+  - first:
+      213: 6373085526797339011
+    second: AST_fond_carte_28
+  - first:
+      213: 2189473567669174561
+    second: AST_fond_carte_29
+  - first:
+      213: -5770729588684886204
+    second: AST_fond_carte_30
+  - first:
+      213: 5715835181227620215
+    second: AST_fond_carte_31
+  - first:
+      213: 7066261362468959338
+    second: AST_fond_carte_32
+  - first:
+      213: -3892483641349894028
+    second: AST_fond_carte_33
+  - first:
+      213: -1943404782099203492
+    second: AST_fond_carte_34
+  - first:
+      213: 2836149473382928374
+    second: AST_fond_carte_35
+  - first:
+      213: 4021399523110034936
+    second: AST_fond_carte_36
+  - first:
+      213: -6091986494633671012
+    second: AST_fond_carte_37
+  - first:
+      213: 5478450301868745444
+    second: AST_fond_carte_38
+  - first:
+      213: 974137171692433193
+    second: AST_fond_carte_39
+  - first:
+      213: 5693120077740154535
+    second: AST_fond_carte_40
+  - first:
+      213: -838585053314917292
+    second: AST_fond_carte_41
+  - first:
+      213: 7192018082295548924
+    second: AST_fond_carte_42
+  - first:
+      213: 5680267265111966518
+    second: AST_fond_carte_43
+  - first:
+      213: 8360531132090902869
+    second: AST_fond_carte_44
+  - first:
+      213: -3382613766203714272
+    second: AST_fond_carte_45
+  - first:
+      213: -7005039023150496608
+    second: AST_fond_carte_46
+  - first:
+      213: -6956866095421763427
+    second: AST_fond_carte_47
+  - first:
+      213: 7067780681897645981
+    second: AST_fond_carte_48
+  - first:
+      213: -4462714144387603153
+    second: AST_fond_carte_49
+  - first:
+      213: -2655706446833912093
+    second: AST_fond_carte_50
+  - first:
+      213: -6349698944477258460
+    second: AST_fond_carte_51
+  - first:
+      213: -5351791288321001404
+    second: AST_fond_carte_52
+  - first:
+      213: 2948001086486766187
+    second: AST_fond_carte_53
+  - first:
+      213: 8224346635797037214
+    second: AST_fond_carte_54
+  - first:
+      213: -9029771015743388875
+    second: AST_fond_carte_55
+  - first:
+      213: 3490056384756165692
+    second: AST_fond_carte_56
+  - first:
+      213: 8035378843264374439
+    second: AST_fond_carte_57
+  - first:
+      213: 6462696103785640912
+    second: AST_fond_carte_58
+  - first:
+      213: 4995776483674278341
+    second: AST_fond_carte_59
+  - first:
+      213: 3759921246706967809
+    second: AST_fond_carte_60
+  - first:
+      213: -9218329484467773141
+    second: AST_fond_carte_61
+  - first:
+      213: -7886565055479280375
+    second: AST_fond_carte_62
+  - first:
+      213: 4971281574715150953
+    second: AST_fond_carte_63
+  - first:
+      213: -7900758077316214356
+    second: AST_fond_carte_64
+  - first:
+      213: -238820503630453133
+    second: AST_fond_carte_65
+  - first:
+      213: -8517228752375863605
+    second: AST_fond_carte_66
+  - first:
+      213: -7734046406601887942
+    second: AST_fond_carte_67
+  - first:
+      213: 4187636590591698129
+    second: AST_fond_carte_68
+  - first:
+      213: 8504500328313637750
+    second: AST_fond_carte_69
+  - first:
+      213: 7213278993507344426
+    second: AST_fond_carte_70
+  - first:
+      213: -3998998565261739601
+    second: AST_fond_carte_71
+  - first:
+      213: -1957748193069533445
+    second: AST_fond_carte_72
+  - first:
+      213: -7652467620342658399
+    second: AST_fond_carte_73
+  - first:
+      213: 6252406621431333746
+    second: AST_fond_carte_74
+  - first:
+      213: 8607068785281034749
+    second: AST_fond_carte_75
+  - first:
+      213: 2980347852781733741
+    second: AST_fond_carte_76
+  - first:
+      213: 889631575164690441
+    second: AST_fond_carte_77
+  - first:
+      213: 7405543898937008413
+    second: AST_fond_carte_78
+  - first:
+      213: -3474806784792195565
+    second: AST_fond_carte_79
+  - first:
+      213: 9025126690451017026
+    second: AST_fond_carte_80
+  - first:
+      213: 4823653427291378553
+    second: AST_fond_carte_81
+  - first:
+      213: -177174155386358280
+    second: AST_fond_carte_82
+  - first:
+      213: -703305831883737120
+    second: AST_fond_carte_83
+  - first:
+      213: -5723191838798333582
+    second: AST_fond_carte_84
+  - first:
+      213: -7610043720183280217
+    second: AST_fond_carte_85
+  - first:
+      213: 4788086660153993661
+    second: AST_fond_carte_86
+  - first:
+      213: -582907489731482212
+    second: AST_fond_carte_87
+  - first:
+      213: -8298160237995628184
+    second: AST_fond_carte_88
+  - first:
+      213: 6464333992557651957
+    second: AST_fond_carte_89
+  - first:
+      213: -8071995240656506075
+    second: AST_fond_carte_90
+  - first:
+      213: -3164765335203253827
+    second: AST_fond_carte_91
+  - first:
+      213: -3804963536732941618
+    second: AST_fond_carte_92
+  - first:
+      213: -160218929750846619
+    second: AST_fond_carte_93
+  - first:
+      213: -9192329989860387296
+    second: AST_fond_carte_94
+  - first:
+      213: -6523420618472090801
+    second: AST_fond_carte_95
+  - first:
+      213: -1886495409981394313
+    second: AST_fond_carte_96
+  - first:
+      213: 4397602570356578361
+    second: AST_fond_carte_97
+  - first:
+      213: 365548315020301527
+    second: AST_fond_carte_98
+  - first:
+      213: 3096244076051699929
+    second: AST_fond_carte_99
+  - first:
+      213: 6327102248878661537
+    second: AST_fond_carte_100
+  - first:
+      213: -4501746868387885332
+    second: AST_fond_carte_101
+  - first:
+      213: -1739233958203650245
+    second: AST_fond_carte_102
+  - first:
+      213: 9149461863161599486
+    second: AST_fond_carte_103
+  - first:
+      213: 4618789076118920299
+    second: AST_fond_carte_104
+  - first:
+      213: 1771519198330038297
+    second: AST_fond_carte_105
+  - first:
+      213: -5817584898873993203
+    second: AST_fond_carte_106
+  - first:
+      213: -5923245429293475007
+    second: AST_fond_carte_107
+  - first:
+      213: 8734376916254637510
+    second: AST_fond_carte_108
+  - first:
+      213: 23057722103442592
+    second: AST_fond_carte_109
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AST_fond_carte_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 105
+        width: 1713
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299183bfa0fbe4bf0800000000000000
+      internalID: -338122868120872558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 705
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e817ffa934d3ef020800000000000000
+      internalID: 2377405013870735758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 656
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdcf7e99f14c67c0800000000000000
+      internalID: -4076811022315303497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 616
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb346c27f7c7c83b0800000000000000
+      internalID: -5508891357352672324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 601
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5599925ef6ffdd0800000000000000
+      internalID: -2450116642230151766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 594
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f60248b7049d9720800000000000000
+      internalID: 2854600499699779319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 587
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723087347431e2f10800000000000000
+      internalID: 2246754460900000551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 549
+        width: 9
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e09cb03182908490800000000000000
+      internalID: -7746030275511152411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 542
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532aa60df69344ba0800000000000000
+      internalID: -6105692042406747595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 535
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53f9f71ca242c1f0800000000000000
+      internalID: -1026184458182986915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 504
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98d96b4fe3571090800000000000000
+      internalID: -8063884320556066661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 497
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812555b5199554b70800000000000000
+      internalID: 8882604320895619608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_12
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 490
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb83414960804fe0800000000000000
+      internalID: -1206823510580425781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 445
+        width: 8
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b508555d241f67f30800000000000000
+      internalID: 4573107740990603355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 438
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4707c909623f025e0800000000000000
+      internalID: -1936280492808834956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_15
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 400
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89658db4b95883e0800000000000000
+      internalID: -2051290997458638451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_16
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 393
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63345707eb5fc87f0800000000000000
+      internalID: -608841651322535114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 386
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e2bbb93c7e63770800000000000000
+      internalID: 8590308166573174373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 348
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b129433125542d60800000000000000
+      internalID: 7864504450378441136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_19
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 341
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfb8add0bd8493e0800000000000000
+      internalID: -2047856139774148667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 334
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce3683dbe2632f30800000000000000
+      internalID: 4549588813579960008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 296
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e82c747435d777d0800000000000000
+      internalID: -2920631412057167647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_22
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 289
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8454ba63a2afd7b00800000000000000
+      internalID: 828092965718803784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_23
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 282
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d547445b380f22360800000000000000
+      internalID: 7143536407435572317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_24
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 244
+        width: 7
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3232ed7dc3c9346d0800000000000000
+      internalID: -3007388341019729117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 237
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1035d7ffd6865f0800000000000000
+      internalID: -763239192752619069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 230
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a841e4f6d8cb444a0800000000000000
+      internalID: -6609951037429246838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 195
+        width: 10
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d6e83017db65400800000000000000
+      internalID: 312645517237447988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_28
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 151
+        width: 13
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38940f3458fb17850800000000000000
+      internalID: 6373085526797339011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_29
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 110
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12147060c92926e10800000000000000
+      internalID: 2189473567669174561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_30
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 110
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fe99383004aefa0800000000000000
+      internalID: -5770729588684886204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_31
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 110
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777b0c340d9b25f40800000000000000
+      internalID: 5715835181227620215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_32
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64b7004547601260800000000000000
+      internalID: 7066261362468959338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_33
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 110
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470125f50ce1bf9c0800000000000000
+      internalID: -3892483641349894028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_34
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 110
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a7e24b5a3a705e0800000000000000
+      internalID: -1943404782099203492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_35
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 110
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff86e26be60c5720800000000000000
+      internalID: 2836149473382928374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_36
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd16ea5f81eec730800000000000000
+      internalID: 4021399523110034936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_37
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9602e25f8ae47ba0800000000000000
+      internalID: -6091986494633671012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_38
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 110
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2a482068d570c40800000000000000
+      internalID: 5478450301868745444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_39
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 110
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f2b31b894d48d00800000000000000
+      internalID: 974137171692433193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_40
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 110
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae98591c86020f40800000000000000
+      internalID: 5693120077740154535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_41
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 110
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c5637465fbc54f0800000000000000
+      internalID: -838585053314917292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_42
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb8965475e2fc360800000000000000
+      internalID: 7192018082295548924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_43
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63347467bfc54de40800000000000000
+      internalID: 5680267265111966518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_44
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 110
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5596fd5c4c2960470800000000000000
+      internalID: 8360531132090902869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_45
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025d41593ba8e01d0800000000000000
+      internalID: -3382613766203714272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_46
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 110
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a48d5b6f1a19ce90800000000000000
+      internalID: -7005039023150496608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_47
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 110
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d905d60352f347f90800000000000000
+      internalID: -6956866095421763427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_48
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 110
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9790ee551dc51260800000000000000
+      internalID: 7067780681897645981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_49
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f256aa151214112c0800000000000000
+      internalID: -4462714144387603153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_50
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6ffb0ae09052bd0800000000000000
+      internalID: -2655706446833912093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_51
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d92cfb37651e7a0800000000000000
+      internalID: -6349698944477258460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_52
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448b893ad2e9ab5b0800000000000000
+      internalID: -5351791288321001404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_53
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 110
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6262857e5769e820800000000000000
+      internalID: 2948001086486766187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_54
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 110
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e908c58d0bfb22270800000000000000
+      internalID: 8224346635797037214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_55
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 110
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5334f7b5a1fcfa280800000000000000
+      internalID: -9029771015743388875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_56
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 110
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ca9737acb2f6030800000000000000
+      internalID: 3490056384756165692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_57
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 114
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a656741c76638f60800000000000000
+      internalID: 8035378843264374439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_58
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 114
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3b1759ddb10b950800000000000000
+      internalID: 6462696103785640912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_59
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 110
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9c7ae3e30945540800000000000000
+      internalID: 4995776483674278341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_60
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 113
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105a965f37ced2430800000000000000
+      internalID: 3759921246706967809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_61
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 113
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21e9c7bc2ae11080800000000000000
+      internalID: -9218329484467773141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_62
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 113
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d062aedda4d8290800000000000000
+      internalID: -7886565055479280375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_63
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 113
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9625753d04a8df440800000000000000
+      internalID: 4971281574715150953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_64
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 113
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1d441836eda5290800000000000000
+      internalID: -7900758077316214356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_65
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 110
+        width: 40
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376e60c640a8facf0800000000000000
+      internalID: -238820503630453133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_66
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 113
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6a4ef6399bcc980800000000000000
+      internalID: -8517228752375863605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_67
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 113
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fab1a15c52ba490800000000000000
+      internalID: -7734046406601887942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_68
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 109
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d465a6ca497d1a30800000000000000
+      internalID: 4187636590591698129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_69
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 109
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bc3556dfd060670800000000000000
+      internalID: 8504500328313637750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_70
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 109
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20eac9e607ba1460800000000000000
+      internalID: 7213278993507344426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_71
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 112
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9f6441ef3b088c0800000000000000
+      internalID: -3998998565261739601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_72
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 108
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf67d68146ea4d4e0800000000000000
+      internalID: -1957748193069533445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_73
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 105
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa0c4a6e39fcc590800000000000000
+      internalID: -7652467620342658399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_74
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 104
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27307bd02b205c650800000000000000
+      internalID: 6252406621431333746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_75
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 104
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df967004573727770800000000000000
+      internalID: 8607068785281034749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_76
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 105
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d674720e4925c5920800000000000000
+      internalID: 2980347852781733741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_77
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 104
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900a9a2443b985c00800000000000000
+      internalID: 889631575164690441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_78
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 104
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11a3b890f6c5c660800000000000000
+      internalID: 7405543898937008413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_79
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 104
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e0859b3a107cfc0800000000000000
+      internalID: -3474806784792195565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_80
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 105
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24dca3568e0bf3d70800000000000000
+      internalID: 9025126690451017026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_81
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 105
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9735c4d3c3f01f240800000000000000
+      internalID: 4823653427291378553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_82
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 104
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5f0dc5b0d8a8df0800000000000000
+      internalID: -177174155386358280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_83
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 102
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7fb1a721b5d36f0800000000000000
+      internalID: -703305831883737120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_84
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 103
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279b20b68532390b0800000000000000
+      internalID: -5723191838798333582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_85
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 103
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad88456e81b36690800000000000000
+      internalID: -7610043720183280217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_86
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 104
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9e344f273b27240800000000000000
+      internalID: 4788086660153993661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_87
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 105
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9de3a9f9b819e7f0800000000000000
+      internalID: -582907489731482212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_88
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 102
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869eff4aa3307dc80800000000000000
+      internalID: -8298160237995628184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_89
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 101
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7a1e7448de5b950800000000000000
+      internalID: 6464333992557651957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_90
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 101
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523760c88138aff80800000000000000
+      internalID: -8071995240656506075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_91
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 101
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db17dbdf1be7414d0800000000000000
+      internalID: -3164765335203253827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_92
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 102
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec218b9a2dd023bc0800000000000000
+      internalID: -3804963536732941618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_93
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 104
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56358e57bb9c6cdf0800000000000000
+      internalID: -160218929750846619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_94
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 105
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0269338c3984e6080800000000000000
+      internalID: -9192329989860387296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_95
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 105
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43138392872875a0800000000000000
+      internalID: -6523420618472090801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_96
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 101
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77277a17b62d1d5e0800000000000000
+      internalID: -1886495409981394313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_97
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 100
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938d27dfc3c670d30800000000000000
+      internalID: 4397602570356578361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_98
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 99
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d417097140b21500800000000000000
+      internalID: 365548315020301527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_99
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 99
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d818f2259118fa20800000000000000
+      internalID: 3096244076051699929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_100
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 99
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afdcf119f16ec750800000000000000
+      internalID: 6327102248878661537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_101
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 102
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee430113159681c0800000000000000
+      internalID: -4501746868387885332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_102
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 102
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f89fb0eeffcd7e0800000000000000
+      internalID: -1739233958203650245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_103
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 98
+        width: 35
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef51bbfa61b69fe70800000000000000
+      internalID: 9149461863161599486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_104
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 98
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6cd58e713c391040800000000000000
+      internalID: 4618789076118920299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_105
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 98
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9182f313353b59810800000000000000
+      internalID: 1771519198330038297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_106
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 101
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0850fb7b59c34fa0800000000000000
+      internalID: -5817584898873993203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_107
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 97
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b918d2aa76ccda0800000000000000
+      internalID: -5923245429293475007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_108
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 96
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdbab3578db63970800000000000000
+      internalID: 8734376916254637510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AST_fond_carte_109
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 96
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac2e4740eae15000800000000000000
+      internalID: 23057722103442592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AST_fond_carte_0: -338122868120872558
+      AST_fond_carte_1: 2377405013870735758
+      AST_fond_carte_10: -8063884320556066661
+      AST_fond_carte_100: 6327102248878661537
+      AST_fond_carte_101: -4501746868387885332
+      AST_fond_carte_102: -1739233958203650245
+      AST_fond_carte_103: 9149461863161599486
+      AST_fond_carte_104: 4618789076118920299
+      AST_fond_carte_105: 1771519198330038297
+      AST_fond_carte_106: -5817584898873993203
+      AST_fond_carte_107: -5923245429293475007
+      AST_fond_carte_108: 8734376916254637510
+      AST_fond_carte_109: 23057722103442592
+      AST_fond_carte_11: 8882604320895619608
+      AST_fond_carte_12: -1206823510580425781
+      AST_fond_carte_13: 4573107740990603355
+      AST_fond_carte_14: -1936280492808834956
+      AST_fond_carte_15: -2051290997458638451
+      AST_fond_carte_16: -608841651322535114
+      AST_fond_carte_17: 8590308166573174373
+      AST_fond_carte_18: 7864504450378441136
+      AST_fond_carte_19: -2047856139774148667
+      AST_fond_carte_2: -4076811022315303497
+      AST_fond_carte_20: 4549588813579960008
+      AST_fond_carte_21: -2920631412057167647
+      AST_fond_carte_22: 828092965718803784
+      AST_fond_carte_23: 7143536407435572317
+      AST_fond_carte_24: -3007388341019729117
+      AST_fond_carte_25: -763239192752619069
+      AST_fond_carte_26: -6609951037429246838
+      AST_fond_carte_27: 312645517237447988
+      AST_fond_carte_28: 6373085526797339011
+      AST_fond_carte_29: 2189473567669174561
+      AST_fond_carte_3: -5508891357352672324
+      AST_fond_carte_30: -5770729588684886204
+      AST_fond_carte_31: 5715835181227620215
+      AST_fond_carte_32: 7066261362468959338
+      AST_fond_carte_33: -3892483641349894028
+      AST_fond_carte_34: -1943404782099203492
+      AST_fond_carte_35: 2836149473382928374
+      AST_fond_carte_36: 4021399523110034936
+      AST_fond_carte_37: -6091986494633671012
+      AST_fond_carte_38: 5478450301868745444
+      AST_fond_carte_39: 974137171692433193
+      AST_fond_carte_4: -2450116642230151766
+      AST_fond_carte_40: 5693120077740154535
+      AST_fond_carte_41: -838585053314917292
+      AST_fond_carte_42: 7192018082295548924
+      AST_fond_carte_43: 5680267265111966518
+      AST_fond_carte_44: 8360531132090902869
+      AST_fond_carte_45: -3382613766203714272
+      AST_fond_carte_46: -7005039023150496608
+      AST_fond_carte_47: -6956866095421763427
+      AST_fond_carte_48: 7067780681897645981
+      AST_fond_carte_49: -4462714144387603153
+      AST_fond_carte_5: 2854600499699779319
+      AST_fond_carte_50: -2655706446833912093
+      AST_fond_carte_51: -6349698944477258460
+      AST_fond_carte_52: -5351791288321001404
+      AST_fond_carte_53: 2948001086486766187
+      AST_fond_carte_54: 8224346635797037214
+      AST_fond_carte_55: -9029771015743388875
+      AST_fond_carte_56: 3490056384756165692
+      AST_fond_carte_57: 8035378843264374439
+      AST_fond_carte_58: 6462696103785640912
+      AST_fond_carte_59: 4995776483674278341
+      AST_fond_carte_6: 2246754460900000551
+      AST_fond_carte_60: 3759921246706967809
+      AST_fond_carte_61: -9218329484467773141
+      AST_fond_carte_62: -7886565055479280375
+      AST_fond_carte_63: 4971281574715150953
+      AST_fond_carte_64: -7900758077316214356
+      AST_fond_carte_65: -238820503630453133
+      AST_fond_carte_66: -8517228752375863605
+      AST_fond_carte_67: -7734046406601887942
+      AST_fond_carte_68: 4187636590591698129
+      AST_fond_carte_69: 8504500328313637750
+      AST_fond_carte_7: -7746030275511152411
+      AST_fond_carte_70: 7213278993507344426
+      AST_fond_carte_71: -3998998565261739601
+      AST_fond_carte_72: -1957748193069533445
+      AST_fond_carte_73: -7652467620342658399
+      AST_fond_carte_74: 6252406621431333746
+      AST_fond_carte_75: 8607068785281034749
+      AST_fond_carte_76: 2980347852781733741
+      AST_fond_carte_77: 889631575164690441
+      AST_fond_carte_78: 7405543898937008413
+      AST_fond_carte_79: -3474806784792195565
+      AST_fond_carte_8: -6105692042406747595
+      AST_fond_carte_80: 9025126690451017026
+      AST_fond_carte_81: 4823653427291378553
+      AST_fond_carte_82: -177174155386358280
+      AST_fond_carte_83: -703305831883737120
+      AST_fond_carte_84: -5723191838798333582
+      AST_fond_carte_85: -7610043720183280217
+      AST_fond_carte_86: 4788086660153993661
+      AST_fond_carte_87: -582907489731482212
+      AST_fond_carte_88: -8298160237995628184
+      AST_fond_carte_89: 6464333992557651957
+      AST_fond_carte_9: -1026184458182986915
+      AST_fond_carte_90: -8071995240656506075
+      AST_fond_carte_91: -3164765335203253827
+      AST_fond_carte_92: -3804963536732941618
+      AST_fond_carte_93: -160218929750846619
+      AST_fond_carte_94: -9192329989860387296
+      AST_fond_carte_95: -6523420618472090801
+      AST_fond_carte_96: -1886495409981394313
+      AST_fond_carte_97: 4397602570356578361
+      AST_fond_carte_98: 365548315020301527
+      AST_fond_carte_99: 3096244076051699929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
