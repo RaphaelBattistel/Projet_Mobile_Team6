@@ -32,17 +32,25 @@ public class Rock : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, radius, Vector2.up, 0, boxLayer);
 
-        if (hit.collider != null)
+        if (hit.collider != null && !hit.collider.isTrigger)
         {
             Debug.Log(hit.collider.name);
             onDestroyBox?.Invoke();
-            Instantiate(effectForDestroy).transform.position = hit.collider.transform.position; ;
-            Destroy(hit.collider.gameObject);
+            hit.collider.isTrigger = true;
+            Instantiate(effectForDestroy).transform.position = hit.collider.transform.position;
+            StartCoroutine(DestroyBox(hit.collider.gameObject));
         }
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(transform.position, radius);
+    }
+
+    //Désolé tu avait raison
+    IEnumerator DestroyBox(GameObject box)
+    {
+        yield return new WaitForSeconds(.25f);
+        Destroy(box);
     }
 }
