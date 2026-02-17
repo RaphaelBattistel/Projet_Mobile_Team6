@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class LoadingScreen : MonoBehaviour
+public class AnimationEvents : MonoBehaviour
 {
     public void AllowLoading()
     {
@@ -15,5 +15,10 @@ public class LoadingScreen : MonoBehaviour
     public void Disable()
     {
         gameObject.SetActive(false);
+    }
+    
+    public void ReloadLevel()
+    {
+        GameManager.Instance.ReloadLevel();
     }
 }

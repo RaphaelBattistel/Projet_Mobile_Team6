@@ -15,9 +15,9 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private Animator _loadingScreenAnimator;
 
-    private static readonly int LoadingStart = Animator.StringToHash("LoadingStart");
-    private static readonly int LoadingDone = Animator.StringToHash("LoadingDone");
-    private static readonly int ResetLoadingScreen = Animator.StringToHash("ResetLoadingScreen");
+    private readonly int _loadingStart = Animator.StringToHash("LoadingStart");
+    private readonly int _loadingDone = Animator.StringToHash("LoadingDone");
+    private readonly int _resetLoadingScreen = Animator.StringToHash("ResetLoadingScreen");
     
     private bool _canLoadLevel;
 
@@ -64,14 +64,14 @@ public class LevelManager : MonoBehaviour
             _loadingScreenAnimator.gameObject.SetActive(true);
         }
 
-        _loadingScreenAnimator.SetTrigger(LoadingStart);
+        _loadingScreenAnimator.SetTrigger(_loadingStart);
 
         while (_loadingOperation.progress < .89f || !_canLoadLevel)
         {
             yield return new WaitForEndOfFrame();
         }
 
-        _loadingScreenAnimator.SetTrigger(LoadingDone);
+        _loadingScreenAnimator.SetTrigger(_loadingDone);
     }
 
     // Pour laisser l'animation boucler au moins une fois
@@ -81,7 +81,7 @@ public class LevelManager : MonoBehaviour
     {
         // On appelle ça dans une fonction grâce à une notify dans l'animation de fin déclenchée plus haut
         _loadingOperation.allowSceneActivation = true;
-        _loadingScreenAnimator.SetTrigger(ResetLoadingScreen);
+        _loadingScreenAnimator.SetTrigger(_resetLoadingScreen);
         _canLoadLevel = false;
     }
 
