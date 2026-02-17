@@ -82,6 +82,7 @@ public class LevelManager : MonoBehaviour
         // On appelle ça dans une fonction grâce à une notify dans l'animation de fin déclenchée plus haut
         _loadingOperation.allowSceneActivation = true;
         _loadingScreenAnimator.SetTrigger(ResetLoadingScreen);
+        _canLoadLevel = false;
     }
 
     public async void UnloadCurrentLevel()
