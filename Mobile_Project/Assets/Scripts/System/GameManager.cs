@@ -5,8 +5,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     
-    public CharacterController Player => _player;
     private CharacterController _player;
+    private GameObject _level;
+    private Canvas _sceneUI;
     
     //Instancier le script
     void Awake()
@@ -20,10 +21,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         
-        GameObject level = LevelManager.Instance.CurrentLevel.Level;
-        Instantiate(level);
+        _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
         
-        _player = level.GetComponentInChildren<CharacterController>();
+        _player = _level.GetComponentInChildren<CharacterController>();
     }
 
     public void StartLevelAttempt()
@@ -33,10 +33,12 @@ public class GameManager : MonoBehaviour
 
     public void ResetLevel()
     {
-        
+        Destroy(_level);
+        _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
+        _player = _level.GetComponentInChildren<CharacterController>();
     }
 
-    private void HandlePlayerLoss()
+    public void HandlePlayerLoss()
     {
         
     }
