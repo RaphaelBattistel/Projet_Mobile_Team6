@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: abc39760539e58f4fbda7ae1961ba14c
+guid: d89b276341cc57c48b36c4e95422d961
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6256169032895364947
-    second: BT_mp_0
+      213: 3136305480463502417
+    second: AST_casse_vide_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BT_mp_0
+      name: AST_casse_vide_0
       rect:
         serializedVersion: 2
-        x: 943
-        y: 437
-        width: 309
-        height: 133
+        x: 16
+        y: 10
+        width: 488
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da00973496f9d29a0800000000000000
-      internalID: -6256169032895364947
+      spriteID: 15c4326b735668b20800000000000000
+      internalID: 3136305480463502417
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BT_mp_0: -6256169032895364947
+      AST_casse_vide_0: 3136305480463502417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
