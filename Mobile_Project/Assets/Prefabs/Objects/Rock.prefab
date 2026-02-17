@@ -174,3 +174,7 @@ MonoBehaviour:
   boxLayer:
     serializedVersion: 2
     m_Bits: 256
+  onDestroyBox:
+    m_PersistentCalls:
+      m_Calls: []
+  effectForDestroy: {fileID: 1407035569730042342, guid: 576bae32ca8527444adb2749b75966a8, type: 3}

@@ -36,7 +36,7 @@ public class Rock : MonoBehaviour
         {
             Debug.Log(hit.collider.name);
             onDestroyBox?.Invoke();
-            Instantiate(effectForDestroy);
+            Instantiate(effectForDestroy).transform.position = hit.collider.transform.position; ;
             Destroy(hit.collider.gameObject);
         }
     }

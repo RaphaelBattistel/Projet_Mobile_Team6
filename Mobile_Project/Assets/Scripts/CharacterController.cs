@@ -40,10 +40,28 @@ public class CharacterController : MonoBehaviour
         TryGetComponent(out rb2d);
     }
 
+    Vector3 _lastPosition;
+    float _distance = .1f;
+    float _timer = 5f;
+
     void FixedUpdate()
     {
         if (StartMoving)
         {
+            if(Vector3.Distance(_lastPosition, transform.position) < _distance)
+            {
+                _timer -= Time.deltaTime;
+                if(_timer <= 0)
+                {
+                    GameManager.Instance.HandlePlayerLose();
+                }
+            }
+            else
+            {
+                _timer = 5f;
+            }
+
+
             //Si le perso peut monter alors il monte
             if (isClimbing)
             {
@@ -66,13 +84,10 @@ public class CharacterController : MonoBehaviour
                 isClimbing = true;
                 rb2d.simulated = false;
             }
+            _lastPosition = transform.position;
         }
         
     }
-
-
-
-
 
 
     //Mouvement horizontal du personnage
@@ -149,11 +164,6 @@ public class CharacterController : MonoBehaviour
         }
         return targetPos;
     }
-
-
-
-
-
 
     //Check si le personnage touche un certain layer avec des BoxCasts
     private bool IsGrounded()//Check en latéral
