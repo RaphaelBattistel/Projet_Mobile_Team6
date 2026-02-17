@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -7,9 +8,24 @@ public class InventoryButton : MonoBehaviour
     private ItemData _item;
     public ItemData Item => _item;
 
+    private int _quantity = 0;
+    public void IncreaseQuantity()
+    {
+        _quantity++;
+        GetComponentInChildren<TMP_Text>().text = _quantity.ToString();
+    }
+
     public void Init(ItemData item)
     {
         _item = item;
+        IncreaseQuantity();
+
+        // Affecte le sprite du bouton à partir de l'item lié
+        Image image = gameObject.GetComponent<Image>();
+        if (image != null)
+        {
+            image.sprite = Item.Sprite;
+        }
         // ... autres initialisations
     }
 
@@ -32,8 +48,20 @@ public class InventoryButton : MonoBehaviour
             if (GridManager.Instance != null)
             {
                 GridManager.Instance.StartGrabAtScreenPosition(spawned, Input.mousePosition);
+                GridManager.Instance.Spawn.AddListener(ResultSpawn);
             }
         }
+    }
+
+    private void ResultSpawn(bool result)
+    {
+        if (result)
+        {
+            _quantity--;
+            GetComponentInChildren<TMP_Text>().text = _quantity.ToString();
+            if (_quantity == 0) Destroy(gameObject);
+        }
+        GridManager.Instance.Spawn.RemoveListener(ResultSpawn);
     }
 
     void Update()

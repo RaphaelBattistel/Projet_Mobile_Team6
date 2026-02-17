@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GridManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GridManager : MonoBehaviour
     private GameObject _selectedObject; // L'objet qu'on a entre les doigts
     private bool _isDragging; // Savoir si on est en train de glisser un truc
     private Vector3 _offset;
+
+    public UnityEvent<bool> Spawn;
 
     // Singleton simple pour permettre à d'autres scripts de demander un grab
     public static GridManager Instance { get; private set; }
@@ -60,25 +63,25 @@ public class GridManager : MonoBehaviour
         // On transforme les pixels de l'écran en vraies coordonnées 2D
         Vector3 worldPos = GetWorldPosition(inputPos);
 
-        // --- QUAND ON APPUIE --- (utilisé si on clique directement sur un objet existant)
-        if (isDown)
-        {
-            // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
-
-            if (hit.collider != null)
-            {
-                // On l'a attrapé !
-                _selectedObject = hit.collider.gameObject;
-                _isDragging = true;
-
-                // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
-                SetObjectPhysics(_selectedObject, false);
-
-                // Calcul simple d'offset pour éviter un saut
-                _offset = _selectedObject.transform.position - new Vector3(worldPos.x, worldPos.y, 0);
-            }
-        }
+        //// --- QUAND ON APPUIE --- (utilisé si on clique directement sur un objet existant)
+        //if (isDown)
+        //{
+        //    // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
+        //    RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
+//
+        //    if (hit.collider != null)
+        //    {
+        //        // On l'a attrapé !
+        //        _selectedObject = hit.collider.gameObject;
+        //        _isDragging = true;
+//
+        //        // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
+        //        SetObjectPhysics(_selectedObject, false);
+//
+        //        // Calcul simple d'offset pour éviter un saut
+        //        _offset = _selectedObject.transform.position - new Vector3(worldPos.x, worldPos.y, 0);
+        //    }
+        //}
 
         // --- PENDANT QU'ON GLISSE ---
         if (_isDragging && _selectedObject != null)
@@ -110,6 +113,7 @@ public class GridManager : MonoBehaviour
         Collider2D[] groundHits = Physics2D.OverlapCircleAll(finalPos, 0.2f, ground);
         if (groundHits != null && groundHits.Length > 0)
         {
+            Spawn?.Invoke(false);
             Destroy(_selectedObject);
             return;
         }
@@ -141,6 +145,7 @@ public class GridManager : MonoBehaviour
             // On lance l'achievement pour avoir placé un objet
             Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
+        Spawn?.Invoke(true);
     }
 
     // Méthode publique : démarre un "grab" depuis un GameObject déjà instancié

@@ -12,6 +12,7 @@ public class CharacterController : MonoBehaviour
 
 
     [Header("MOVE")]
+    private bool startMoving = false;
     [SerializeField] private float runSpeed;
     [SerializeField] private float climbSpeed;
     [SerializeField] private UnityEvent onWalk;
@@ -32,6 +33,8 @@ public class CharacterController : MonoBehaviour
     private GameObject selectedObject;
     private bool isClimbing;
 
+    public bool StartMoving { get => startMoving; set => startMoving = value; }
+
     void Start()
     {
         TryGetComponent(out rb2d);
@@ -39,28 +42,32 @@ public class CharacterController : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Si le perso peut monter alors il monte
-        if (isClimbing)
+        if (StartMoving)
         {
-            onClimb?.Invoke();
-            ClimbMove();
-        }
+            //Si le perso peut monter alors il monte
+            if (isClimbing)
+            {
+                onClimb?.Invoke();
+                ClimbMove();
+            }
 
-        //Si le perso est au sol et qu'il n'y a pas de lierre devant alors le perso bouge
-        if (IsGrounded() && !IsIvyInFront())
-        {
-            onWalk?.Invoke();
-            Move();
-        }
+            //Si le perso est au sol et qu'il n'y a pas de lierre devant alors le perso bouge
+            if (IsGrounded() && !IsIvyInFront())
+            {
+                onWalk?.Invoke();
+                Move();
+            }
 
-        //Si on est au sol et qu'il il y a une lierre :
-        //- Il peut monter
-        //- On enlève la simulation du RigidBody
-        else if (IsGrounded() && IsIvyInFront())
-        {
-            isClimbing = true;
-            rb2d.simulated = false;
+            //Si on est au sol et qu'il il y a une lierre :
+            //- Il peut monter
+            //- On enlève la simulation du RigidBody
+            else if (IsGrounded() && IsIvyInFront())
+            {
+                isClimbing = true;
+                rb2d.simulated = false;
+            }
         }
+        
     }
 
 
