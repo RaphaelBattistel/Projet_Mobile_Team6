@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.EventSystems; // Ajouté
+using UnityEngine.EventSystems; // Ajoutï¿½
 
 public class InventoryContainer : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class InventoryContainer : MonoBehaviour
     [SerializeField] private Transform _container;
     [SerializeField] private LayerMask itemLayerUI;
     [SerializeField] private Camera camera;
-    [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajouté
+    [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajoutï¿½
 
     private readonly List<GameObject> _images = new ();
 
@@ -21,7 +21,6 @@ public class InventoryContainer : MonoBehaviour
     public void Build(List<ItemData> items, GameObject level)
     {
         Clear();
-        level = Instantiate(level);
         foreach (var item in items)
         {
             GameObject gameObject = Instantiate(_uiItemPrefab, _container);
@@ -29,14 +28,14 @@ public class InventoryContainer : MonoBehaviour
 
             button.Init(item);
 
-            // Affecte le sprite du bouton à partir de l'item lié
+            // Affecte le sprite du bouton ï¿½ partir de l'item liï¿½
             Image image = gameObject.GetComponent<Image>();
             if (image != null && button.Item != null)
             {
                 image.sprite = button.Item.Sprite;
             }
 
-            // Ajoute l'évènement de log sur le clic
+            // Ajoute l'ï¿½vï¿½nement de log sur le clic
             //Button uiButton = gameObject.GetComponent<Button>();
             //if (uiButton != null)
             //{
@@ -67,7 +66,7 @@ public class InventoryContainer : MonoBehaviour
         {
             Vector2 inputPos = Input.mousePosition;
 
-            // Préparer les données pour le raycast UI
+            // Prï¿½parer les donnï¿½es pour le raycast UI
             PointerEventData pointerData = new PointerEventData(EventSystem.current)
             {
                 position = inputPos
@@ -83,7 +82,7 @@ public class InventoryContainer : MonoBehaviour
                 {
                     button.LogItemLabel();
                     Debug.Log("oui");
-                    break; // On ne prend que le premier bouton touché
+                    break; // On ne prend que le premier bouton touchï¿½
                 }
                 Debug.Log("pas touche");
             }

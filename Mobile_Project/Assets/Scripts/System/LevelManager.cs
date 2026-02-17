@@ -12,11 +12,14 @@ public class LevelManager : MonoBehaviour
     public LevelData CurrentLevel { get; private set; }
 
     private AsyncOperation _loadingOperation;
-    
-    private Animator _loadingScreenAnimator;
+
+    [SerializeField] private Animator _loadingScreenAnimator;
 
     private static readonly int LoadingStart = Animator.StringToHash("LoadingStart");
     private static readonly int LoadingDone = Animator.StringToHash("LoadingDone");
+    private static readonly int ResetLoadingScreen = Animator.StringToHash("ResetLoadingScreen");
+    
+    private bool _canLoadLevel;
 
     private void Awake()
     {
@@ -28,6 +31,8 @@ public class LevelManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        
+        _loadingScreenAnimator.gameObject.SetActive(false);
     }
 
     public void LoadLevel(int levelId)
@@ -50,13 +55,18 @@ public class LevelManager : MonoBehaviour
         _loadingOperation.allowSceneActivation = false;
         StartCoroutine(AnimateLevelLoading());
     }
-    
+
     private IEnumerator AnimateLevelLoading()
     {
         // On laisse tourner l'anim tant que la scène charge, puis on lui indique de s'achever
+        if (!_loadingScreenAnimator.gameObject.activeInHierarchy)
+        {
+            _loadingScreenAnimator.gameObject.SetActive(true);
+        }
+
         _loadingScreenAnimator.SetTrigger(LoadingStart);
-        
-        while (!_loadingOperation.isDone)
+
+        while (_loadingOperation.progress < .89f || !_canLoadLevel)
         {
             yield return new WaitForEndOfFrame();
         }
@@ -64,10 +74,14 @@ public class LevelManager : MonoBehaviour
         _loadingScreenAnimator.SetTrigger(LoadingDone);
     }
 
+    // Pour laisser l'animation boucler au moins une fois
+    public void SetCanLoadLevel(bool canLoad) => _canLoadLevel = canLoad;
+    
     public void EndLevelLoading()
     {
         // On appelle ça dans une fonction grâce à une notify dans l'animation de fin déclenchée plus haut
         _loadingOperation.allowSceneActivation = true;
+        _loadingScreenAnimator.SetTrigger(ResetLoadingScreen);
     }
 
     public async void UnloadCurrentLevel()
@@ -86,7 +100,7 @@ public class LevelManager : MonoBehaviour
 
             // On attend que le chargement soit achevé pour faire le ménage
             await _loadingOperation;
-            
+
             CurrentLevel = null;
         }
         catch
