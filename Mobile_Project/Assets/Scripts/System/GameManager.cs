@@ -1,12 +1,19 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     
-    public CharacterController Player => _player;
     private CharacterController _player;
+    private GameObject _level;
+    private InventoryContainer _inventoryContainer;
+    [SerializeField] private Canvas _sceneUI;
+    [SerializeField] private Image _transitionScreen;
+    private Animator _transitionAnimator;
+    
+    private readonly int _transitionStart = Animator.StringToHash("TransitionStart"); 
+    private bool _canShowLevel;
     
     //Instancier le script
     void Awake()
@@ -20,10 +27,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         
-        GameObject level = LevelManager.Instance.CurrentLevel.Level;
-        Instantiate(level);
+        _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
         
-        _player = level.GetComponentInChildren<CharacterController>();
+        _player = _level.GetComponentInChildren<CharacterController>();
+        
+        _inventoryContainer = FindFirstObjectByType<InventoryContainer>();
+        
+        _transitionAnimator = _transitionScreen.GetComponent<Animator>();
+        _transitionScreen.gameObject.SetActive(false);
     }
 
     public void StartLevelAttempt()
@@ -33,10 +44,23 @@ public class GameManager : MonoBehaviour
 
     public void ResetLevel()
     {
+        if (!_transitionAnimator.gameObject.activeInHierarchy)
+        {
+            _transitionAnimator.gameObject.SetActive(true);
+        }
         
+        _transitionAnimator.SetTrigger(_transitionStart);
     }
 
-    private void HandlePlayerLoss()
+    public void ReloadLevel()
+    {
+        Destroy(_level);
+        _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
+        _player = _level.GetComponentInChildren<CharacterController>();
+        _inventoryContainer.Build(LevelManager.Instance.CurrentLevel.AvailableItems);
+    }
+
+    public void HandlePlayerLoss()
     {
         
     }

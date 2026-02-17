@@ -2,23 +2,23 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using TMPro; // Ajouté
+using TMPro; // Ajoutï¿½
 
 public class InventoryContainer : MonoBehaviour
 {
     [SerializeField] private GameObject _uiItemPrefab;
     [SerializeField] private Transform _container;
     [SerializeField] private LayerMask itemLayerUI;
-    [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajouté
+    [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajoutï¿½
 
     private Dictionary<ItemData, InventoryButton> _images = new Dictionary<ItemData, InventoryButton>();
 
     void Awake()
     {
-        Build(LevelManager.Instance.CurrentLevel.AvailableItems, LevelManager.Instance.CurrentLevel.Level);
+        Build(LevelManager.Instance.CurrentLevel.AvailableItems);
     }
 
-    public void Build(List<ItemData> items, GameObject level)
+    public void Build(List<ItemData> items)
     {
         Clear();
         foreach (var item in items)
@@ -34,7 +34,7 @@ public class InventoryContainer : MonoBehaviour
 
                 button.Init(item);
 
-                // Ajoute l'évènement de log sur le clic
+                // Ajoute l'ï¿½vï¿½nement de log sur le clic
                 //Button uiButton = gameObject.GetComponent<Button>();
                 //if (uiButton != null)
                 //{
@@ -65,7 +65,7 @@ public class InventoryContainer : MonoBehaviour
         {
             Vector2 inputPos = Input.mousePosition;
 
-            // Préparer les données pour le raycast UI
+            // Prï¿½parer les donnï¿½es pour le raycast UI
             PointerEventData pointerData = new PointerEventData(EventSystem.current)
             {
                 position = inputPos
@@ -81,7 +81,7 @@ public class InventoryContainer : MonoBehaviour
                 {
                     button.LogItemLabel();
                     Debug.Log("oui");
-                    break; // On ne prend que le premier bouton touché
+                    break; // On ne prend que le premier bouton touchï¿½
                 }
                 Debug.Log("pas touche");
             }

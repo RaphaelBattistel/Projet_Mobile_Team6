@@ -18,6 +18,7 @@ public class GridManager : MonoBehaviour
 
     // Singleton simple pour permettre à d'autres scripts de demander un grab
     public static GridManager Instance { get; private set; }
+    public Grid Grid { get => grid;}
 
     void Awake()
     {
@@ -149,6 +150,7 @@ public class GridManager : MonoBehaviour
             // On lance l'achievement pour avoir placé un objet
             Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
+        _selectedObject.transform.SetParent(Grid.transform);
         Instantiate(_spawnSuccess).transform.position = _selectedObject.transform.position;
         Spawn?.Invoke(true);
     }
@@ -202,7 +204,7 @@ public class GridManager : MonoBehaviour
     // Un petit bout de code pour trouver le milieu exact d'une case de la grille
     private Vector3 FindCellCenter(Vector3 targetPos)
     {
-        Vector3Int cellPos = grid.WorldToCell(targetPos);
-        return grid.GetCellCenterWorld(cellPos);
+        Vector3Int cellPos = Grid.WorldToCell(targetPos);
+        return Grid.GetCellCenterWorld(cellPos);
     }
 }
