@@ -40,10 +40,28 @@ public class CharacterController : MonoBehaviour
         TryGetComponent(out rb2d);
     }
 
+    Vector3 _lastPosition;
+    [SerializeField] private float _distance = .1f;
+    float _timer = 5f;
+
     void FixedUpdate()
     {
         if (StartMoving)
         {
+            if(Vector3.Distance(_lastPosition, transform.position) < _distance)
+            {
+                _timer -= Time.fixedDeltaTime;
+                if(_timer <= 0)
+                {
+                    GameManager.Instance.HandlePlayerLoss();
+                }
+            }
+            else
+            {
+                _timer = 5f;
+            }
+
+
             //Si le perso peut monter alors il monte
             if (isClimbing)
             {
@@ -66,32 +84,29 @@ public class CharacterController : MonoBehaviour
                 isClimbing = true;
                 rb2d.simulated = false;
             }
+            _lastPosition = transform.position;
         }
         
     }
-
-
-
-
 
 
     //Mouvement horizontal du personnage
     private void Move()
     {
         //Si un mur ou obstacle est devant, alors le perso va de l'autre côté et les casts se sont du côté opposé
-        if (IsWallInFront())
-        {
-            //Tentative pour retourner le personnage 
-
-            //foreach (Transform sprite in spriteList)
-            //{
-            //    sprite.position *= new Vector3(1, 1, -1); 
-            //    sprite.eulerAngles += new Vector3(0, 180, 0);
-            //}
-            
-            wallCastDistance *= -1;
-            horizontal *= -1;
-        }
+        //if (IsWallInFront())
+        //{
+        //    //Tentative pour retourner le personnage 
+        //
+        //    //foreach (Transform sprite in spriteList)
+        //    //{
+        //    //    sprite.position *= new Vector3(1, 1, -1); 
+        //    //    sprite.eulerAngles += new Vector3(0, 180, 0);
+        //    //}
+        //    
+        //    wallCastDistance *= -1;
+        //    horizontal *= -1;
+        //}
 
         Vector3 direction = horizontal * Vector2.right;
 
@@ -150,15 +165,10 @@ public class CharacterController : MonoBehaviour
         return targetPos;
     }
 
-
-
-
-
-
     //Check si le personnage touche un certain layer avec des BoxCasts
     private bool IsGrounded()//Check en latéral
     {
-        if (Physics2D.BoxCast(transform.position, groundCheck, 0, transform.up, groundCastDistance, groundLayer))
+        if (Physics2D.BoxCast(transform.position + transform.up * groundCastDistance, groundCheck, 0, transform.up, 0, groundLayer))
         {
             return true;
         }
@@ -169,7 +179,7 @@ public class CharacterController : MonoBehaviour
     }
     private bool IsWallInFront()//Check en horizontal
     {
-        if (Physics2D.BoxCast(transform.position, frontCheck, 0, transform.right, wallCastDistance, wallLayer))
+        if (Physics2D.BoxCast(transform.position + transform.right * wallCastDistance, frontCheck, 0, transform.right, 0, wallLayer))
         {
             return true;
         }
@@ -180,7 +190,7 @@ public class CharacterController : MonoBehaviour
     }
     private bool IsIvyInFront()//Check en horizontal (même information que pour le check du mur)
     {
-        if (Physics2D.BoxCast(transform.position, frontCheck, 0, transform.right, wallCastDistance, actionLayer))
+        if (Physics2D.BoxCast(transform.position + transform.right * wallCastDistance, frontCheck, 0, transform.right, 0, actionLayer))
         {
             return true;
         }

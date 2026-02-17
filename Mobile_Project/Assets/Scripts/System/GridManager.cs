@@ -149,6 +149,7 @@ public class GridManager : MonoBehaviour
             // On lance l'achievement pour avoir placé un objet
             Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
+        _selectedObject.transform.SetParent(grid.transform);
         Instantiate(_spawnSuccess).transform.position = _selectedObject.transform.position;
         Spawn?.Invoke(true);
     }
