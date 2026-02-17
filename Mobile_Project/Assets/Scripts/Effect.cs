@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Effect : MonoBehaviour
 {
-    [SerializeField] Animation _animation;
+    [SerializeField] AnimationClip _animation;
 
 
     private void Start()
     {
-        StartCoroutine(CountDown(_animation.clip.averageDuration));
+        StartCoroutine(CountDown(_animation.averageDuration));
     }
 
     IEnumerator CountDown(float timer)

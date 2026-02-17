@@ -6,7 +6,7 @@ public class WaterDrop : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(_effectForSplash);
+        Instantiate(_effectForSplash).transform.position = transform.position;
         Destroy(gameObject);
     }
 }

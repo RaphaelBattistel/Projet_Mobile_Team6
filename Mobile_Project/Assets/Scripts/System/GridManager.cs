@@ -11,6 +11,9 @@ public class GridManager : MonoBehaviour
     private bool _isDragging; // Savoir si on est en train de glisser un truc
     private Vector3 _offset;
 
+    [SerializeField] private GameObject _spawnSuccess;
+    [SerializeField] private GameObject _spawnFail;
+
     public UnityEvent<bool> Spawn;
 
     // Singleton simple pour permettre à d'autres scripts de demander un grab
@@ -114,6 +117,7 @@ public class GridManager : MonoBehaviour
         if (groundHits != null && groundHits.Length > 0)
         {
             Spawn?.Invoke(false);
+            Instantiate(_spawnFail).transform.position = _selectedObject.transform.position;
             Destroy(_selectedObject);
             return;
         }
@@ -145,6 +149,7 @@ public class GridManager : MonoBehaviour
             // On lance l'achievement pour avoir placé un objet
             Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
+        Instantiate(_spawnSuccess).transform.position = _selectedObject.transform.position;
         Spawn?.Invoke(true);
     }
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1890042219536688678}
   - component: {fileID: 2630533876891931616}
   - component: {fileID: 8722227750348243580}
+  - component: {fileID: 8578077034540194274}
   m_Layer: 0
   m_Name: fx_casse
   m_TagString: Untagged
@@ -102,7 +103,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 674a5b9a508c86a49be1410594718f5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -114,3 +115,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8578077034540194274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407035569730042342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0081d6956953b46439d16511333dfd98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Effect
+  _animation: {fileID: 7400000, guid: b246e246deb21714da6dccd2e33fa0b0, type: 2}
