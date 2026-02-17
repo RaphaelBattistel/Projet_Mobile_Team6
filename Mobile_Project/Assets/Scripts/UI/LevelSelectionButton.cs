@@ -15,6 +15,6 @@ public class LevelSelectionButton : MonoBehaviour
     public void LoadLevelScene()
     {
         //LevelManager.Instance.LoadLevel(_levelId, "Level");
-        LevelManager.Instance.LoadLevel(_levelId, "ScenePrincipale");
+        LevelManager.Instance.LoadLevel(_levelId);
     }
 }
