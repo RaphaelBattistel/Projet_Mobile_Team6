@@ -62,7 +62,8 @@ public class FusionManager : MonoBehaviour
         // On fait apparaître le résultat tout neuf
         if (resultData.Prefab is not null)
         {
-            GameObject newObj = Instantiate(resultData.Prefab, spawnPosition, Quaternion.identity);
+            GameObject newObj = Instantiate(resultData.Prefab, GridManager.Instance.Grid.transform);
+            newObj.transform.position = spawnPosition;
 
             // On lance l'achievement pour avoir fusionné un objet
             Social.ReportProgress("CggI4pyy0DgQAhAB", 100f, (bool success) => { });

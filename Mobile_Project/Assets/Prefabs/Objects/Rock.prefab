@@ -156,7 +156,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3999877
+  m_Radius: 0.65
 --- !u!114 &6499566203332186521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672f16cff73ce8449b9cd9d1f2b7bf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rock
-  speedLimit: 1
-  radius: 0.63
+  speedLimit: 2
+  radius: 0.8
   boxLayer:
     serializedVersion: 2
     m_Bits: 256
