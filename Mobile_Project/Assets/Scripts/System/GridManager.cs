@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private Grid grid; // La grille Unity pour caler les objets proprement
+    [Header("Settings")] [SerializeField] private Grid grid; // La grille Unity pour caler les objets proprement
     [SerializeField] private LayerMask draggableLayer; // Le layer des objets qu'on a le droit de bouger (ex: "Items")
     [SerializeField] private LayerMask ground;
-    [Header("Debug")]
-    private Camera _mainCamera;
+    [Header("Debug")] private Camera _mainCamera;
     private GameObject _selectedObject; // L'objet qu'on a entre les doigts
     private bool _isDragging; // Savoir si on est en train de glisser un truc
     private Vector3 _offset;
@@ -43,9 +41,10 @@ public class GridManager : MonoBehaviour
     {
         // On gère à la fois le tactile (mobile) ET la souris (pour tester sur PC peinard)
         bool isPressing = Input.GetMouseButton(0) || (Input.touchCount > 0);
-        bool isDown = Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+        bool isDown = Input.GetMouseButtonDown(0) ||
+                      (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
         bool isUp = Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended);
-        
+
         Vector3 inputPos = Vector3.zero;
 
         // On prend la position du doigt ou de la souris selon ce qui est dispo
@@ -66,13 +65,13 @@ public class GridManager : MonoBehaviour
         {
             // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
-            
+
             if (hit.collider != null)
             {
                 // On l'a attrapé !
                 _selectedObject = hit.collider.gameObject;
                 _isDragging = true;
-                
+
                 // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
                 SetObjectPhysics(_selectedObject, false);
 
@@ -100,7 +99,7 @@ public class GridManager : MonoBehaviour
 
     private void DropObject()
     {
-        if (_selectedObject == null)
+        if (_selectedObject is null)
             return;
 
         // 1. On cale l'objet bien propre au centre de la case la plus proche
@@ -117,7 +116,7 @@ public class GridManager : MonoBehaviour
 
         // 2. On regarde s'il y a du monde sous notre objet
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(finalPos, 0.2f, draggableLayer);
-        
+
         bool fusionHappened = false;
 
         foreach (var hit in hitColliders)
@@ -133,11 +132,14 @@ public class GridManager : MonoBehaviour
                 }
             }
         }
-        
+
         // 3. Si ça n'a pas fusionné, on lui remet sa physique pour qu'il soit solide
         if (!fusionHappened)
         {
             SetObjectPhysics(_selectedObject, true);
+
+            // On lance l'achievement pour avoir placé un objet
+            Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
     }
 
@@ -179,11 +181,11 @@ public class GridManager : MonoBehaviour
         {
             rb.simulated = isActive;
         }
-        
+
         // S'il est inactif, on le passe en Trigger (fantôme) pour qu'il passe à travers les trucs
         if (obj.TryGetComponent(out Collider2D col))
         {
-            col.isTrigger = !isActive; 
+            col.isTrigger = !isActive;
         }
     }
 
