@@ -1,17 +1,17 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.EventSystems; // Ajouté
+using UnityEngine.EventSystems;
+using TMPro; // Ajouté
 
 public class InventoryContainer : MonoBehaviour
 {
     [SerializeField] private GameObject _uiItemPrefab;
     [SerializeField] private Transform _container;
     [SerializeField] private LayerMask itemLayerUI;
-    [SerializeField] private Camera camera;
     [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajouté
 
-    private readonly List<GameObject> _images = new ();
+    private Dictionary<ItemData, InventoryButton> _images = new Dictionary<ItemData, InventoryButton>();
 
     void Awake()
     {
@@ -24,26 +24,25 @@ public class InventoryContainer : MonoBehaviour
         level = Instantiate(level);
         foreach (var item in items)
         {
-            GameObject gameObject = Instantiate(_uiItemPrefab, _container);
-            InventoryButton button = gameObject.GetComponent<InventoryButton>();
-
-            button.Init(item);
-
-            // Affecte le sprite du bouton à partir de l'item lié
-            Image image = gameObject.GetComponent<Image>();
-            if (image != null && button.Item != null)
+            if (_images.ContainsKey(item))
             {
-                image.sprite = button.Item.Sprite;
+                _images[item].IncreaseQuantity();
             }
+            else
+            {
+                GameObject gameObject = Instantiate(_uiItemPrefab, _container);
+                InventoryButton button = gameObject.GetComponent<InventoryButton>();
 
-            // Ajoute l'évènement de log sur le clic
-            //Button uiButton = gameObject.GetComponent<Button>();
-            //if (uiButton != null)
-            //{
-            //    uiButton.onClick.AddListener(button.LogItemLabel);
-            //}
+                button.Init(item);
 
-            _images.Add(gameObject);
+                // Ajoute l'évènement de log sur le clic
+                //Button uiButton = gameObject.GetComponent<Button>();
+                //if (uiButton != null)
+                //{
+                //    uiButton.onClick.AddListener(button.LogItemLabel);
+                //}
+                _images[item] = button;
+            }
         }
     }
 
@@ -51,7 +50,7 @@ public class InventoryContainer : MonoBehaviour
     {
         foreach (var button in _images)
         {
-            Destroy(button.gameObject);
+            Destroy(button.Value.gameObject);
         }
         _images.Clear();
     }

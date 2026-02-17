@@ -60,25 +60,25 @@ public class GridManager : MonoBehaviour
         // On transforme les pixels de l'écran en vraies coordonnées 2D
         Vector3 worldPos = GetWorldPosition(inputPos);
 
-        // --- QUAND ON APPUIE --- (utilisé si on clique directement sur un objet existant)
-        if (isDown)
-        {
-            // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
-
-            if (hit.collider != null)
-            {
-                // On l'a attrapé !
-                _selectedObject = hit.collider.gameObject;
-                _isDragging = true;
-
-                // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
-                SetObjectPhysics(_selectedObject, false);
-
-                // Calcul simple d'offset pour éviter un saut
-                _offset = _selectedObject.transform.position - new Vector3(worldPos.x, worldPos.y, 0);
-            }
-        }
+        //// --- QUAND ON APPUIE --- (utilisé si on clique directement sur un objet existant)
+        //if (isDown)
+        //{
+        //    // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
+        //    RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
+//
+        //    if (hit.collider != null)
+        //    {
+        //        // On l'a attrapé !
+        //        _selectedObject = hit.collider.gameObject;
+        //        _isDragging = true;
+//
+        //        // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
+        //        SetObjectPhysics(_selectedObject, false);
+//
+        //        // Calcul simple d'offset pour éviter un saut
+        //        _offset = _selectedObject.transform.position - new Vector3(worldPos.x, worldPos.y, 0);
+        //    }
+        //}
 
         // --- PENDANT QU'ON GLISSE ---
         if (_isDragging && _selectedObject != null)
