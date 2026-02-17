@@ -120,11 +120,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1413669591126207895}
   - {fileID: 2333217876657327677}
   - {fileID: 44859019478661922}
   - {fileID: 6617410847532504498}
-  - {fileID: 1413669591126207895}
-  - {fileID: 5593889758413161198}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052012233080623562
@@ -235,53 +234,8 @@ MonoBehaviour:
     m_Bits: 1920
   ground:
     serializedVersion: 2
-    m_Bits: 0
---- !u!1 &4359336431432130003
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5593889758413161198}
-  - component: {fileID: 8750694683900179029}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5593889758413161198
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4359336431432130003}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.16655, y: -0.95164, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8164491318725131254}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8750694683900179029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4359336431432130003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c32bb88014cae5b4598d7d77c00124a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FusionManager
-  _database: {fileID: 11400000, guid: eca4b21b0aceb4f4ba2ec3dc6e287154, type: 2}
-  onFuse:
+    m_Bits: 64
+  Spawn:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &4405380608255672301
