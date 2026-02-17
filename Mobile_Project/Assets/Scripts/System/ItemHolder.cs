@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 // Ça, c'est la petite sécu : on force Unity à coller un SpriteRenderer sur l'objet. 
@@ -40,6 +41,20 @@ public class ItemHolder : MonoBehaviour
             if (Data.Sprite != null)
             {
                 _renderer.sprite = Data.Sprite;
+            }
+        }
+    }
+
+    private bool _fuze = false;
+    public void HasFuse() => _fuze = true;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (_fuze) return;
+        if(collision.collider.TryGetComponent(out ItemHolder itemHolder)){
+            if(FusionManager.Instance.TryToFuse(gameObject, collision.gameObject))
+            {
+                itemHolder.HasFuse();
             }
         }
     }

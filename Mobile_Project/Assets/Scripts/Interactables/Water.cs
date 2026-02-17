@@ -9,8 +9,6 @@ public class Water : MonoBehaviour
     [SerializeField] private Vector2 waterDropCheck;
 
     [SerializeField] private float animDuration = 1f;
-
-    [SerializeField] private UnityEvent onSplash;
     [SerializeField] private UnityEvent onProgress;
 
     float startValue;
@@ -40,7 +38,6 @@ public class Water : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Destroy(hit.collider.gameObject);
             return true;
         }
 
@@ -88,10 +85,5 @@ public class Water : MonoBehaviour
         }
 
         isAnimating = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        onSplash?.Invoke();
     }
 }
