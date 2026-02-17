@@ -5,9 +5,10 @@ public class FusionManager : MonoBehaviour
 {
     // Le classique Singleton pour pouvoir l'appeler de n'importe quel autre script sans galérer
     public static FusionManager Instance;
-    
-    [Header("Configuration")]
-    [SerializeField] private FusionDatabase _database; // N'oublie pas de glisser ton livre de recettes ici !
+
+    [Header("Configuration")] [SerializeField]
+    private FusionDatabase _database; // N'oublie pas de glisser ton livre de recettes ici !
+
     [SerializeField] private UnityEvent onFuse;
 
     void Awake()
@@ -27,13 +28,13 @@ public class FusionManager : MonoBehaviour
         var dataB = targetObject.GetComponent<ItemHolder>()?.Data;
 
         // Si l'un des mecs n'a pas de carte d'identité, on laisse tomber direct
-        if (dataA == null || dataB == null) return false;
+        if (dataA is null || dataB is null) return false;
 
         // 2. On demande au livre de recettes s'il y a un résultat
         ItemData resultData = _database.GetResult(dataA, dataB);
 
         // Si on a trouvé un truc !
-        if (resultData != null)
+        if (resultData is not null)
         {
             Debug.Log($"FUSION ! {dataA.Label} + {dataB.Label} = {resultData.Label}");
             onFuse?.Invoke();
@@ -55,9 +56,12 @@ public class FusionManager : MonoBehaviour
         Destroy(objB);
 
         // On fait apparaître le résultat tout neuf
-        if (resultData.Prefab != null)
+        if (resultData.Prefab is not null)
         {
-           GameObject newObj = Instantiate(resultData.Prefab, spawnPosition, Quaternion.identity);
+            GameObject newObj = Instantiate(resultData.Prefab, spawnPosition, Quaternion.identity);
+
+            // On lance l'achievement pour avoir fusionné un objet
+            Social.ReportProgress("CggI4pyy0DgQAhAB", 100f, (bool success) => { });
         }
         else
         {
