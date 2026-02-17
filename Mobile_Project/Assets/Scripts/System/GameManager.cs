@@ -11,9 +11,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Canvas _sceneUI;
     [SerializeField] private Image _transitionScreen;
     private Animator _transitionAnimator;
+    [SerializeField] private Animator _controlPanelAnimator;
     
     private readonly int _transitionStart = Animator.StringToHash("TransitionStart"); 
     private bool _canShowLevel;
+    
+    private readonly int _moveDown = Animator.StringToHash("MoveDown");
     
     //Instancier le script
     void Awake()
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void StartLevelAttempt()
     {
+        _controlPanelAnimator.SetTrigger(_moveDown);
         _player.StartMoving = true;
     }
 
