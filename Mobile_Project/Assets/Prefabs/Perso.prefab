@@ -123,8 +123,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  runSpeed: 11.14
-  climbSpeed: 7.77
+  runSpeed: 1
+  climbSpeed: 0.5
   onWalk:
     m_PersistentCalls:
       m_Calls: []
