@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &754355836140553945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7252959093518114242}
+  - component: {fileID: 7579951798069913009}
+  m_Layer: 0
+  m_Name: GridManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7252959093518114242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754355836140553945}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.49486, y: 0.32615, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6735477929050278048}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7579951798069913009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754355836140553945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bc194e4ba6cd74b9a1d8682c50e656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::testGrid
+  grid: {fileID: 96123156865718815}
+  draggableLayer:
+    serializedVersion: 2
+    m_Bits: 1920
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  Spawn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1056250885058943290
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,6 +83,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7252959093518114242}
   - {fileID: 3511098918186758370}
   - {fileID: 241002238173588571}
   - {fileID: 6035105562482900249}
@@ -46,7 +101,7 @@ GameObject:
   - component: {fileID: 7118503536536208817}
   - component: {fileID: 6198697761029530405}
   - component: {fileID: 3953723834241654342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3824,7 +3879,7 @@ Transform:
   m_GameObject: {fileID: 4832471404897082098}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.49486, y: 0.12615, z: 0}
+  m_LocalPosition: {x: -1.49486, y: 0.12615, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
