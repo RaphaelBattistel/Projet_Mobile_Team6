@@ -12,7 +12,6 @@ public class FusionDatabase : ScriptableObject
         public ItemData ElementA;
         public ItemData ElementB;
         public ItemData Resultat;
-        public bool HasFusedOnce;
     }
     
 
