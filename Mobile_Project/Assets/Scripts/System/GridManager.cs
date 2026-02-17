@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GridManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GridManager : MonoBehaviour
     private GameObject _selectedObject; // L'objet qu'on a entre les doigts
     private bool _isDragging; // Savoir si on est en train de glisser un truc
     private Vector3 _offset;
+
+    public UnityEvent<bool> Spawn;
 
     // Singleton simple pour permettre à d'autres scripts de demander un grab
     public static GridManager Instance { get; private set; }
@@ -110,6 +113,7 @@ public class GridManager : MonoBehaviour
         Collider2D[] groundHits = Physics2D.OverlapCircleAll(finalPos, 0.2f, ground);
         if (groundHits != null && groundHits.Length > 0)
         {
+            Spawn?.Invoke(false);
             Destroy(_selectedObject);
             return;
         }
@@ -141,6 +145,7 @@ public class GridManager : MonoBehaviour
             // On lance l'achievement pour avoir placé un objet
             Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
+        Spawn?.Invoke(true);
     }
 
     // Méthode publique : démarre un "grab" depuis un GameObject déjà instancié
