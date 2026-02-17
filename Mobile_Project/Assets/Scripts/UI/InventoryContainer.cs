@@ -21,7 +21,6 @@ public class InventoryContainer : MonoBehaviour
     public void Build(List<ItemData> items, GameObject level)
     {
         Clear();
-        level = Instantiate(level);
         foreach (var item in items)
         {
             if (_images.ContainsKey(item))
