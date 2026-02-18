@@ -24,7 +24,6 @@ public class Rock : MonoBehaviour
         if(rb2d.linearVelocityX >= speedLimit || rb2d.linearVelocityX <= -speedLimit)
         {
             DestroyBox();
-            Debug.Log("vitesse");
         }
     }
 
@@ -34,7 +33,6 @@ public class Rock : MonoBehaviour
 
         if (hit.collider != null && !hit.collider.isTrigger)
         {
-            Debug.Log(hit.collider.name);
             onDestroyBox?.Invoke();
             hit.collider.isTrigger = true;
             Instantiate(effectForDestroy).transform.position = hit.collider.transform.position;

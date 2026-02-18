@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25cc9d17af58444fac748aee9ef7615, type: 3}
   m_Name: Steam Data 2
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  Label: Ivy
+  Label: Steam
   Weight: 0
   Sprite: {fileID: -5249700988863797070, guid: f67a4ce1be4b1be42b03869d0509877f, type: 3}
   Prefab: {fileID: 2008755920850790286, guid: 5653621ea24c89c4d85798f2f046c9f7, type: 3}
