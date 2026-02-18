@@ -50,7 +50,7 @@ MonoBehaviour:
     m_Bits: 30592
   ground:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4416
   _spawnSuccess: {fileID: 4381971315782564805, guid: 6c1926be562da8546b2e6747cbaacfc6, type: 3}
   _spawnFail: {fileID: 2995733501196099097, guid: af11cc2742cd06d43ada87517a6a9199, type: 3}
   Spawn:

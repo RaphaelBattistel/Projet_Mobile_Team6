@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7947393804344774575}
   - component: {fileID: 7528680209769576113}
   - component: {fileID: 1117564806443430217}
-  - component: {fileID: 6253281716945466359}
   - component: {fileID: -8761669679197772948}
+  - component: {fileID: 8922019028955134998}
   m_Layer: 14
   m_Name: Snow
   m_TagString: Untagged
@@ -182,19 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
   Data: {fileID: 11400000, guid: ff77ab04e2a60b74dbd5099d6a64b7a2, type: 2}
---- !u!114 &6253281716945466359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4012011878241832362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f92b669ffaa63141995826b719cf733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Drop
-  _effectForSplash: {fileID: 7969909480088185589, guid: dfa48c985b4055c4fb73f34ec449ca1f, type: 3}
 --- !u!61 &-8761669679197772948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -241,3 +228,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &8922019028955134998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012011878241832362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3159aa7d92477ec4a9c184a760f0d677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnowDrop
+  _effectForSplash: {fileID: 7969909480088185589, guid: dfa48c985b4055c4fb73f34ec449ca1f, type: 3}

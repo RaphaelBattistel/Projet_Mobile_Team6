@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 881557135969418179}
   - component: {fileID: 7146875862273708638}
   - component: {fileID: 339278627624424324}
-  - component: {fileID: -7101404620714781191}
   - component: {fileID: -7262833879256632562}
+  - component: {fileID: 5923893908921982468}
   m_Layer: 7
   m_Name: Water
   m_TagString: Untagged
@@ -182,19 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
   Data: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
---- !u!114 &-7101404620714781191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4483584455049017810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f92b669ffaa63141995826b719cf733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WaterDrop
-  _effectForSplash: {fileID: 8619283880336564866, guid: b3b0b3a0cb829184284b0b8e395d129d, type: 3}
 --- !u!61 &-7262833879256632562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -241,3 +228,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &5923893908921982468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4483584455049017810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab87f3abe9c50d4ba97906a287ba7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaterDrop
+  _effectForSplash: {fileID: 8619283880336564866, guid: b3b0b3a0cb829184284b0b8e395d129d, type: 3}
