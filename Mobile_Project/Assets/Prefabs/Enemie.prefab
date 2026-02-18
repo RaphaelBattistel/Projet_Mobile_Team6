@@ -69,6 +69,7 @@ MonoBehaviour:
     m_Bits: 0
   frontCheck: {x: 0, y: 0}
   wallCastDistance: 0
+  _distance: 0.1
 --- !u!50 &3705653148227647274
 Rigidbody2D:
   serializedVersion: 5
@@ -151,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779911551958592949, guid: 05642eefed19fe04b9b5cda95cdb47b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6779911551958592949, guid: 05642eefed19fe04b9b5cda95cdb47b1, type: 3}
       propertyPath: m_LocalPosition.z
