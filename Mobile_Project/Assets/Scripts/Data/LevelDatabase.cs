@@ -15,8 +15,20 @@ public class LevelDatabase : ScriptableObject
 
     public List<WorldLevels> worldLevelsList;
 
-    public LevelData GetLevel(int id)
+    public LevelData GetLevel(int idWorld, int idLevel)
     {
-        return Levels.Find(l => l.LevelId == id);
+        return worldLevelsList[idWorld].LevelsFromWorld.Find(l => l.LevelId == idLevel);
+        //return Levels.Find(l => l.LevelId == idLevel);
+    }
+
+    public LevelData GetNextLevel(int idLevel)
+    {
+        foreach (var world in worldLevelsList)
+        {
+            LevelData level =  world.LevelsFromWorld.Find(l => l.LevelId == idLevel + 1);
+            if(level != null) return level;
+        }
+        return null;
+        //return Levels.Find(l => l.LevelId == idLevel);
     }
 }
