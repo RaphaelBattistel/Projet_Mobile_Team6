@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     
-    private CharacterController _player;
+    private CharacterController[] _players;
     private GameObject _level;
     private InventoryContainer _inventoryContainer;
     [SerializeField] private Canvas _sceneUI;
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         
         _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
         
-        _player = _level.GetComponentInChildren<CharacterController>();
+        _players = FindObjectsByType<CharacterController>(FindObjectsSortMode.None);
         
         _inventoryContainer = FindFirstObjectByType<InventoryContainer>();
         
@@ -46,7 +46,10 @@ public class GameManager : MonoBehaviour
     public void StartLevelAttempt()
     {
         _controlPanelAnimator.SetTrigger(_moveDown);
-        _player.StartMoving = true;
+        foreach (var player in _players)
+        {
+            player.StartMoving = true;
+        }
     }
 
     public void ResetLevel()
@@ -63,7 +66,7 @@ public class GameManager : MonoBehaviour
     {
         Destroy(_level);
         _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
-        _player = _level.GetComponentInChildren<CharacterController>();
+        _players = FindObjectsByType<CharacterController>(FindObjectsSortMode.None);
         _inventoryContainer.Build(LevelManager.Instance.CurrentLevel.AvailableItems);
         _controlPanelAnimator.SetTrigger(_reset);
     }
