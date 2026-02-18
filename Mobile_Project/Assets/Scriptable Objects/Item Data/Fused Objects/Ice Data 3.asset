@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25cc9d17af58444fac748aee9ef7615, type: 3}
   m_Name: Ice Data 3
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  Label: Ivy
-  Weight: 0
-  Sprite: {fileID: -5249700988863797070, guid: f67a4ce1be4b1be42b03869d0509877f, type: 3}
+  Label: Ice
+  Weight: 2
+  Sprite: {fileID: 21300000, guid: 6367d1443587de540bcbe1e4380eda16, type: 3}
   Prefab: {fileID: 0}

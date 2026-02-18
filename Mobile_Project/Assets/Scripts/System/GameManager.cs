@@ -1,19 +1,26 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
-    [Header("Score of player")]
-    [SerializeField] private int playerScore = 0;
-    [SerializeField] private TextMeshProUGUI scoreDisplay;
-
-    [Header("Game Over")]
-    [SerializeField] private UnityEngine.GameObject gameOver;
-
-
-
+    
+    private CharacterController _player;
+    private GameObject _level;
+    private InventoryContainer _inventoryContainer;
+    [SerializeField] private Canvas _sceneUI;
+    [SerializeField] private Image _transitionScreen;
+    private Animator _transitionAnimator;
+    [SerializeField] private Animator _controlPanelAnimator;
+    
+    private readonly int _transitionStart = Animator.StringToHash("TransitionStart"); 
+    private bool _canShowLevel;
+    
+    private readonly int _moveDown = Animator.StringToHash("MoveDown");
+    private readonly int _reset = Animator.StringToHash("Reset");
+    
+    [SerializeField] private LossPanel _lossPanel;
+    
     //Instancier le script
     void Awake()
     {
@@ -25,40 +32,44 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    void Start()
-    {
-        gameOver.SetActive(false);
-    }
-
-
-    public void UpdateScore(int score)
-    {
-        scoreDisplay.text = "" + score + "$";
-    }
-
-    
-    private void Win()
-    {
-        Debug.Log("WIN");
-    }
-
-    private void Lose()
-    {
-        Debug.Log("LOSE");
-    }
-
-    public void Replay()
-    {
-        Debug.Log("REPLAY");
-    }
-
-
-    private void CheckGameOver()
-    {
         
+        _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
+        
+        _player = _level.GetComponentInChildren<CharacterController>();
+        
+        _inventoryContainer = FindFirstObjectByType<InventoryContainer>();
+        
+        _transitionAnimator = _transitionScreen.GetComponent<Animator>();
+        _transitionScreen.gameObject.SetActive(false);
+    }
+
+    public void StartLevelAttempt()
+    {
+        _controlPanelAnimator.SetTrigger(_moveDown);
+        _player.StartMoving = true;
+    }
+
+    public void ResetLevel()
+    {
+        if (!_transitionAnimator.gameObject.activeInHierarchy)
+        {
+            _transitionAnimator.gameObject.SetActive(true);
+        }
+        
+        _transitionAnimator.SetTrigger(_transitionStart);
+    }
+
+    public void ReloadLevel()
+    {
+        Destroy(_level);
+        _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
+        _player = _level.GetComponentInChildren<CharacterController>();
+        _inventoryContainer.Build(LevelManager.Instance.CurrentLevel.AvailableItems);
+        _controlPanelAnimator.SetTrigger(_reset);
+    }
+
+    public void HandlePlayerLoss()
+    {
+        Instantiate(_lossPanel);
     }
 }
-
-

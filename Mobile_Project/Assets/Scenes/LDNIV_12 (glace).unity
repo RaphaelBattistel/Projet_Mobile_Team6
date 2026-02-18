@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level 12 (glace)
       objectReference: {fileID: 0}
+    - target: {fileID: 3511098918186758370, guid: b083c3aa44c847646b0d04cb3663e99b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.99
+      objectReference: {fileID: 0}
     - target: {fileID: 6735477929050278048, guid: b083c3aa44c847646b0d04cb3663e99b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.49486
