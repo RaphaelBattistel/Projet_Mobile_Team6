@@ -49,8 +49,12 @@ public class InventoryContainer : MonoBehaviour
     {
         foreach (var button in _images)
         {
-            Destroy(button.Value.gameObject);
+            if (button.Value != null)
+            {
+                Destroy(button.Value.gameObject);
+            }
         }
+        
         _images.Clear();
     }
 
@@ -77,13 +81,11 @@ public class InventoryContainer : MonoBehaviour
             foreach (var result in results)
             {
                 InventoryButton button = result.gameObject.GetComponent<InventoryButton>();
-                if (button != null)
+                if (button is not null)
                 {
                     button.LogItemLabel();
-                    Debug.Log("oui");
                     break; // On ne prend que le premier bouton touch�
                 }
-                Debug.Log("pas touche");
             }
         }
     }
