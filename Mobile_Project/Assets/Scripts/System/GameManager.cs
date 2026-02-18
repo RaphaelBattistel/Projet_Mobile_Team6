@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
     public void ReloadLevel()
     {
         Destroy(_level);
+
         _level = Instantiate(LevelManager.Instance.CurrentLevel.Level);
         _players = FindObjectsByType<CharacterController>(FindObjectsSortMode.None);
         _inventoryContainer.Build(LevelManager.Instance.CurrentLevel.AvailableItems);

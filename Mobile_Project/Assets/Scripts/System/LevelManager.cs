@@ -36,9 +36,9 @@ public class LevelManager : MonoBehaviour
         _loadingScreenAnimator.gameObject.SetActive(false);
     }
 
-    public void LoadLevel(int levelId)
+    public void LoadLevel(int worldId, int levelId)
     {
-        CurrentLevel = _levelDatabase.GetLevel(levelId);
+        CurrentLevel = _levelDatabase.GetLevel(worldId, levelId);
 
         if (CurrentLevel == null)
         {
@@ -122,8 +122,15 @@ public class LevelManager : MonoBehaviour
     public void LoadNextLevel()
     {
         _isLoadingNextLevel = true;
-        CurrentLevel = _levelDatabase.GetLevel(CurrentLevel.LevelId + 1);
-        StartCoroutine(AnimateNextLevelLoading());
+        CurrentLevel = _levelDatabase.GetNextLevel(CurrentLevel.LevelId);
+        if(CurrentLevel == null)
+        {
+            SceneManager.LoadSceneAsync(0);
+        }
+        else
+        {
+            StartCoroutine(AnimateNextLevelLoading());
+        }
     }
 
     private IEnumerator AnimateNextLevelLoading()
