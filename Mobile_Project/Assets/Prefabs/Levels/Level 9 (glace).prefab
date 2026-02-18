@@ -2071,7 +2071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7262350540326008252, guid: 2695594282dd81f48ac43751cc106241, type: 3}
       propertyPath: m_Offset.y
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7262350540326008252, guid: 2695594282dd81f48ac43751cc106241, type: 3}
       propertyPath: m_IsTrigger

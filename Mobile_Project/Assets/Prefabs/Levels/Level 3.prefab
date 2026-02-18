@@ -2529,9 +2529,6 @@ MonoBehaviour:
   onWalk:
     m_PersistentCalls:
       m_Calls: []
-  onClimb:
-    m_PersistentCalls:
-      m_Calls: []
   groundLayer:
     serializedVersion: 2
     m_Bits: 4928
@@ -2540,15 +2537,15 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 320
-  actionLayer:
-    serializedVersion: 2
-    m_Bits: 512
   frontCheck: {x: 0.5, y: 1}
-  wallCastDistance: 0.5
+  wallCastoffset: {x: 0, y: 0, z: 0}
+  slopeCheck: {x: 0, y: 0}
+  slopeCastoffset: {x: 0, y: 0, z: 0}
   waterLayer:
     serializedVersion: 2
     m_Bits: 0
   waterCheck: {x: 0, y: 0}
+  animator: {fileID: 0}
   _distance: 0.1
   _isEnnemie: 0
 --- !u!1 &5649245604222668814
