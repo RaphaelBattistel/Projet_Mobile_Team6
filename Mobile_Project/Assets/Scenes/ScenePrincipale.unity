@@ -1238,6 +1238,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 919108719}
     - target: {fileID: 7547075333421649248, guid: 45ceec4896e366746b4a32db18078c9b, type: 3}
+      propertyPath: _lossPanel
+      value: 
+      objectReference: {fileID: 3603646551585761374, guid: 83403485ec58eb4489d83ef7b4d99743, type: 3}
+    - target: {fileID: 7547075333421649248, guid: 45ceec4896e366746b4a32db18078c9b, type: 3}
       propertyPath: _transitionScreen
       value: 
       objectReference: {fileID: 1622020137}

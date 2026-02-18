@@ -174,3 +174,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6a24b5f11d48c4a07aedc86c5f9c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelEnd
+  _panel: {fileID: 4927579083851808869, guid: c406ff90826857c4dba7aaa472218a4e, type: 3}

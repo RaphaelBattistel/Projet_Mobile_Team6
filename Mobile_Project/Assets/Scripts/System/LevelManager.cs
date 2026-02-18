@@ -18,8 +18,9 @@ public class LevelManager : MonoBehaviour
     private readonly int _loadingStart = Animator.StringToHash("LoadingStart");
     private readonly int _loadingDone = Animator.StringToHash("LoadingDone");
     private readonly int _resetLoadingScreen = Animator.StringToHash("ResetLoadingScreen");
-    
+
     private bool _canLoadLevel;
+    private bool _isLoadingNextLevel;
 
     private void Awake()
     {
@@ -31,7 +32,7 @@ public class LevelManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
+
         _loadingScreenAnimator.gameObject.SetActive(false);
     }
 
@@ -76,11 +77,19 @@ public class LevelManager : MonoBehaviour
 
     // Pour laisser l'animation boucler au moins une fois
     public void SetCanLoadLevel(bool canLoad) => _canLoadLevel = canLoad;
-    
+
     public void EndLevelLoading()
     {
         // On appelle ça dans une fonction grâce à une notify dans l'animation de fin déclenchée plus haut
-        _loadingOperation.allowSceneActivation = true;
+        if (!_isLoadingNextLevel)
+        {
+            _loadingOperation.allowSceneActivation = true;
+        }
+        else
+        {
+            GameManager.Instance.ReloadLevel();
+        }
+
         _loadingScreenAnimator.SetTrigger(_resetLoadingScreen);
         _canLoadLevel = false;
     }
@@ -108,5 +117,29 @@ public class LevelManager : MonoBehaviour
         {
             throw new Exception("Either something went wrong or the playmode was ended while loading");
         }
+    }
+
+    public void LoadNextLevel()
+    {
+        _isLoadingNextLevel = true;
+        CurrentLevel = _levelDatabase.GetLevel(CurrentLevel.LevelId + 1);
+        StartCoroutine(AnimateNextLevelLoading());
+    }
+
+    private IEnumerator AnimateNextLevelLoading()
+    {
+        if (!_loadingScreenAnimator.gameObject.activeInHierarchy)
+        {
+            _loadingScreenAnimator.gameObject.SetActive(true);
+        }
+
+        _loadingScreenAnimator.SetTrigger(_loadingStart);
+
+        while (!_canLoadLevel)
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        _loadingScreenAnimator.SetTrigger(_loadingDone);
     }
 }
