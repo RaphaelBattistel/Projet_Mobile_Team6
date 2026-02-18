@@ -20,25 +20,19 @@ public class GridManager : MonoBehaviour
     public static GridManager Instance { get; private set; }
     public Grid Grid { get => grid;}
 
-    void Awake()
+    private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         Instance = this;
     }
 
-    void Start()
+    private void Start()
     {
         // On chope la caméra. Le FindFirstObjectByType c'est au cas où MainCamera foire.
         _mainCamera = Camera.main;
         if (_mainCamera == null) _mainCamera = FindFirstObjectByType<Camera>();
     }
 
-    void Update()
+    private void Update()
     {
         // On gère les inputs à chaque frame
         HandleInput();
@@ -88,14 +82,14 @@ public class GridManager : MonoBehaviour
         //}
 
         // --- PENDANT QU'ON GLISSE ---
-        if (_isDragging && _selectedObject != null)
+        if (_isDragging && _selectedObject is not null)
         {
             // L'objet suit notre doigt sagement en tenant compte de l'offset
             _selectedObject.transform.position = new Vector3(worldPos.x + _offset.x, worldPos.y + _offset.y, 0);
         }
 
         // --- QUAND ON LÂCHE L'ÉCRAN ---
-        if (isUp && _isDragging && _selectedObject != null)
+        if (isUp && _isDragging && _selectedObject is not null)
         {
             DropObject();
             _isDragging = false;
@@ -159,14 +153,7 @@ public class GridManager : MonoBehaviour
     // screenPos : position écran (Input.mousePosition ou touch.position)
     public void StartGrabAtScreenPosition(GameObject obj, Vector2 screenPos)
     {
-        if (obj == null) return;
-
-        // Assure que la caméra est prête
-        if (_mainCamera == null)
-        {
-            _mainCamera = Camera.main;
-            if (_mainCamera == null) _mainCamera = FindFirstObjectByType<Camera>();
-        }
+        if (obj is null) return;
 
         Vector3 worldPos = GetWorldPosition(new Vector3(screenPos.x, screenPos.y, 0));
         _selectedObject = obj;

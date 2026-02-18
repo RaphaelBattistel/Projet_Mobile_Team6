@@ -21,14 +21,15 @@ public class FusionManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// Tente de fusionner l'objet qu'on tient (heldObject) avec celui qu'on touche (targetObject)
     /// </summary>
     public bool TryToFuse(GameObject heldObject, GameObject targetObject)
     {
         // 1. On regarde les étiquettes pour savoir à qui on a affaire
-        var dataA = heldObject.GetComponent<ItemHolder>()?.Data;
-        var dataB = targetObject.GetComponent<ItemHolder>()?.Data;
+        var dataA = heldObject.GetComponent<IItemHolder>().GetComponent()?.Data;
+        var dataB = targetObject.GetComponent<IItemHolder>().GetComponent()?.Data;
 
         // Si l'un des mecs n'a pas de carte d'identité, on laisse tomber direct
         if (dataA is null || dataB is null) return false;
