@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   Label: Ivy
   Weight: 0
-  Sprite: {fileID: -5249700988863797070, guid: f67a4ce1be4b1be42b03869d0509877f, type: 3}
+  Sprite: {fileID: 8157340215211296013, guid: 9645f7a3127438d4c96825eaf754c598, type: 3}
   Prefab: {fileID: 302822997163711981, guid: 8df0f4a12a32f64478a68f2f4dff4b13, type: 3}

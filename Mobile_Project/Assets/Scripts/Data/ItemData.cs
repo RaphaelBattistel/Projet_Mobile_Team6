@@ -1,6 +1,11 @@
 using UnityEngine;
 
-public enum Weight { Volatile, Light, Heavy };
+public enum Weight
+{
+    Volatile,
+    Light,
+    Heavy
+};
 
 [CreateAssetMenu(menuName = "Scriptable Object/Item Data", order = 2)]
 public class ItemData : ScriptableObject

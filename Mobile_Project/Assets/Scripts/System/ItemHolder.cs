@@ -1,19 +1,22 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 // Ça, c'est la petite sécu : on force Unity à coller un SpriteRenderer sur l'objet. 
 // Comme ça, impossible d'avoir un objet invisible par erreur !
 [RequireComponent(typeof(SpriteRenderer))]
-public class ItemHolder : MonoBehaviour
+public class ItemHolder : MonoBehaviour, IItemHolder
 {
     // C'est ici que tu glisses la "carte d'identité" de l'objet (le ScriptableObject)
     public ItemData Data;
 
     private SpriteRenderer _renderer;
+    private Collider2D _collider;
 
     void Awake()
     {
         // On chope le composant qui dessine l'image au réveil
         _renderer = GetComponent<SpriteRenderer>();
+        _collider = GetComponent<Collider2D>();
     }
 
     void Start()
@@ -30,6 +33,16 @@ public class ItemHolder : MonoBehaviour
         UpdateVisual();
     }
 
+    public ItemHolder GetComponent()
+    {
+        return this;
+    }
+
+    public Collider2D GetCollider()
+    {
+        return _collider;
+    }
+
     // La fonction qui fait le taf pour rafraîchir l'image
     public void UpdateVisual()
     {
@@ -40,6 +53,20 @@ public class ItemHolder : MonoBehaviour
             if (Data.Sprite != null)
             {
                 _renderer.sprite = Data.Sprite;
+            }
+        }
+    }
+
+    private bool _fuze = false;
+    public void HasFuse() => _fuze = true;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (_fuze) return;
+        if(collision.collider.TryGetComponent(out ItemHolder itemHolder)){
+            if(FusionManager.Instance.TryToFuse(gameObject, collision.gameObject))
+            {
+                itemHolder.HasFuse();
             }
         }
     }

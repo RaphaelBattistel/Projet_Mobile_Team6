@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25cc9d17af58444fac748aee9ef7615, type: 3}
   m_Name: Rock Data 1
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  Label: Ivy
+  Label: Rock
   Weight: 0
   Sprite: {fileID: 21300000, guid: 2b0fd189c2e438946995f1d29aa9462a, type: 3}
   Prefab: {fileID: 4934171702593592990, guid: f5e82f0cfb6ad5941a7c5e8713168924, type: 3}

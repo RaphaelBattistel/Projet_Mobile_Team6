@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GridManager : MonoBehaviour
 {
@@ -10,28 +11,28 @@ public class GridManager : MonoBehaviour
     private bool _isDragging; // Savoir si on est en train de glisser un truc
     private Vector3 _offset;
 
+    [SerializeField] private GameObject _spawnSuccess;
+    [SerializeField] private GameObject _spawnFail;
+
+    public UnityEvent<bool> Spawn;
+
     // Singleton simple pour permettre à d'autres scripts de demander un grab
     public static GridManager Instance { get; private set; }
+    public Grid Grid { get => grid;}
 
-    void Awake()
+    private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         Instance = this;
     }
 
-    void Start()
+    private void Start()
     {
         // On chope la caméra. Le FindFirstObjectByType c'est au cas où MainCamera foire.
         _mainCamera = Camera.main;
         if (_mainCamera == null) _mainCamera = FindFirstObjectByType<Camera>();
     }
 
-    void Update()
+    private void Update()
     {
         // On gère les inputs à chaque frame
         HandleInput();
@@ -60,35 +61,35 @@ public class GridManager : MonoBehaviour
         // On transforme les pixels de l'écran en vraies coordonnées 2D
         Vector3 worldPos = GetWorldPosition(inputPos);
 
-        // --- QUAND ON APPUIE --- (utilisé si on clique directement sur un objet existant)
-        if (isDown)
-        {
-            // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
-
-            if (hit.collider != null)
-            {
-                // On l'a attrapé !
-                _selectedObject = hit.collider.gameObject;
-                _isDragging = true;
-
-                // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
-                SetObjectPhysics(_selectedObject, false);
-
-                // Calcul simple d'offset pour éviter un saut
-                _offset = _selectedObject.transform.position - new Vector3(worldPos.x, worldPos.y, 0);
-            }
-        }
+        //// --- QUAND ON APPUIE --- (utilisé si on clique directement sur un objet existant)
+        //if (isDown)
+        //{
+        //    // On lance un petit laser invisible pour voir si on touche un objet de notre Layer
+        //    RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100f, draggableLayer);
+//
+        //    if (hit.collider != null)
+        //    {
+        //        // On l'a attrapé !
+        //        _selectedObject = hit.collider.gameObject;
+        //        _isDragging = true;
+//
+        //        // On coupe sa physique pour qu'il devienne un "fantôme" le temps du voyage
+        //        SetObjectPhysics(_selectedObject, false);
+//
+        //        // Calcul simple d'offset pour éviter un saut
+        //        _offset = _selectedObject.transform.position - new Vector3(worldPos.x, worldPos.y, 0);
+        //    }
+        //}
 
         // --- PENDANT QU'ON GLISSE ---
-        if (_isDragging && _selectedObject != null)
+        if (_isDragging && _selectedObject is not null)
         {
             // L'objet suit notre doigt sagement en tenant compte de l'offset
             _selectedObject.transform.position = new Vector3(worldPos.x + _offset.x, worldPos.y + _offset.y, 0);
         }
 
         // --- QUAND ON LÂCHE L'ÉCRAN ---
-        if (isUp && _isDragging && _selectedObject != null)
+        if (isUp && _isDragging && _selectedObject is not null)
         {
             DropObject();
             _isDragging = false;
@@ -110,6 +111,8 @@ public class GridManager : MonoBehaviour
         Collider2D[] groundHits = Physics2D.OverlapCircleAll(finalPos, 0.2f, ground);
         if (groundHits != null && groundHits.Length > 0)
         {
+            Spawn?.Invoke(false);
+            Instantiate(_spawnFail).transform.position = _selectedObject.transform.position;
             Destroy(_selectedObject);
             return;
         }
@@ -141,20 +144,16 @@ public class GridManager : MonoBehaviour
             // On lance l'achievement pour avoir placé un objet
             Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
         }
+        _selectedObject.transform.SetParent(Grid.transform);
+        Instantiate(_spawnSuccess).transform.position = _selectedObject.transform.position;
+        Spawn?.Invoke(true);
     }
 
     // Méthode publique : démarre un "grab" depuis un GameObject déjà instancié
     // screenPos : position écran (Input.mousePosition ou touch.position)
     public void StartGrabAtScreenPosition(GameObject obj, Vector2 screenPos)
     {
-        if (obj == null) return;
-
-        // Assure que la caméra est prête
-        if (_mainCamera == null)
-        {
-            _mainCamera = Camera.main;
-            if (_mainCamera == null) _mainCamera = FindFirstObjectByType<Camera>();
-        }
+        if (obj is null) return;
 
         Vector3 worldPos = GetWorldPosition(new Vector3(screenPos.x, screenPos.y, 0));
         _selectedObject = obj;
@@ -192,7 +191,7 @@ public class GridManager : MonoBehaviour
     // Un petit bout de code pour trouver le milieu exact d'une case de la grille
     private Vector3 FindCellCenter(Vector3 targetPos)
     {
-        Vector3Int cellPos = grid.WorldToCell(targetPos);
-        return grid.GetCellCenterWorld(cellPos);
+        Vector3Int cellPos = Grid.WorldToCell(targetPos);
+        return Grid.GetCellCenterWorld(cellPos);
     }
 }
