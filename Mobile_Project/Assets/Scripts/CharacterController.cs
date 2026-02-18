@@ -30,6 +30,10 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Vector2 frontCheck;
     [SerializeField] private float wallCastDistance;
 
+    [Header("WATER CHECK")]
+    [SerializeField] private LayerMask waterLayer;
+    [SerializeField] private Vector2 waterCheck;
+
     private GameObject selectedObject;
     private bool isClimbing;
 
@@ -42,13 +46,15 @@ public class CharacterController : MonoBehaviour
 
     Vector3 _lastPosition;
     [SerializeField] private float _distance = .1f;
+    [SerializeField] private bool _isEnnemie;
+
     float _timer = 5f;
 
     void FixedUpdate()
     {
         if (StartMoving)
         {
-            if(Vector3.Distance(_lastPosition, transform.position) < _distance)
+            if(((Vector3.Distance(_lastPosition, transform.position) < _distance) || IsUnderWater()) && !_isEnnemie)
             {
                 _timer -= Time.fixedDeltaTime;
                 if(_timer <= 0)
@@ -199,6 +205,17 @@ public class CharacterController : MonoBehaviour
             return false;
         }
     }
+    private bool IsUnderWater()
+    {
+        if (Physics2D.BoxCast(transform.position, waterCheck, 0, transform.up, 0, waterLayer))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
 
     //Permet de visualiser les BoxCasts et les Raycasts utilisés
@@ -206,6 +223,7 @@ public class CharacterController : MonoBehaviour
     {
         Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, groundCheck);
         Gizmos.DrawWireCube(transform.position + transform.right * wallCastDistance, frontCheck);
+        Gizmos.DrawWireCube(transform.position, waterCheck);
 
         Vector3 rayOrigin = new Vector3(
             transform.position.x, 
