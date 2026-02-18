@@ -92,7 +92,8 @@ public class Ivy : MonoBehaviour, IWater
 
     private void Start()
     {
-        scaleLimit = Mathf.Abs(transform.position.y - Physics2D.Raycast(transform.position + transform.up / 2, transform.up, 10, GridManager.Instance.Ground).point.y);
+        RaycastHit2D highterPoint = Physics2D.Raycast(transform.position + transform.up, transform.up, 10, GridManager.Instance.Ground);
+        scaleLimit = Mathf.Abs(transform.position.y - ((highterPoint.collider != null) ? highterPoint.point.y : 10));
         StartCoroutine(ScaleIvy(Mathf.Clamp(_sprite.size.y + 1, 0, scaleLimit)));
     }
 }

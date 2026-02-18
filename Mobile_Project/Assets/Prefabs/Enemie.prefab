@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
   runSpeed: -1
   slowingSpeed: 5
-  mudRunSpeed: 0
+  mudScaleSpeed: 0.3
   onWalk:
     m_PersistentCalls:
       m_Calls:
@@ -71,6 +71,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 4416
+  _mudlayer:
+    serializedVersion: 2
+    m_Bits: 32768
   groundCheck: {x: 0.52, y: 0.37}
   groundCastDistance: 0.27
   wallLayer:
