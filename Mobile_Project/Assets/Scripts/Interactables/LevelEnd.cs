@@ -1,14 +1,14 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LevelEnd : MonoBehaviour
 {
-    public static event Action OnLevelEnd;
+    [SerializeField] private LevelClearedPanel _panel;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.Instance.HandlePlayerWin();
+            Instantiate(_panel);
         }
     }
 }
