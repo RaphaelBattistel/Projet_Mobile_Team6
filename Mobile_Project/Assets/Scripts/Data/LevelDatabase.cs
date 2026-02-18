@@ -6,6 +6,7 @@ public struct WorldLevels
 {
     public List<LevelData> LevelsFromWorld;
     public Sprite WorldSprite;
+    public string WorldName;
 }
 
 [CreateAssetMenu(menuName = "Scriptable Object/Level Database", order = 0)]
