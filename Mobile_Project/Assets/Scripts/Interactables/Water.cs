@@ -34,7 +34,7 @@ public class Water : MonoBehaviour
             _waterCollider.size = new Vector2(scaleLimit.x, scaleLimit.y);
             _waterCollider.offset = new Vector2(0, (scaleLimit.y / 2));
             _iceCollider.size = new Vector2(scaleLimit.x, .5f);
-            _iceCollider.offset = new Vector2(0, (scaleLimit.y / 2) - .5f);
+            _iceCollider.offset = new Vector2(0, (scaleLimit.y / 2) - .25f);
             _iceCollider.isTrigger = false;
             _sprite.sprite = _snowSprite;
         }
@@ -137,7 +137,7 @@ public class Water : MonoBehaviour
             newScale = Mathf.Lerp(0, scaleLimit.y, ratio);
             _sprite.size = new Vector2(scaleLimit.x, newScale);
             _waterCollider.offset = new Vector2(0, newScale / 2);
-            _iceCollider.offset = new Vector2(0, (-scaleLimit.y / 2) + newScale - .5f);
+            _iceCollider.offset = new Vector2(0, (-scaleLimit.y / 2) + newScale - .25f);
             _waterCollider.size = new Vector2(scaleLimit.x, newScale);
 
             elapsed += Time.deltaTime;
