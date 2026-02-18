@@ -59,7 +59,7 @@ public class CharacterController : MonoBehaviour
     {
         if (StartMoving && LevelClearedPanel.Instance is null)
         {
-            if(((Vector3.Distance(_lastPosition, transform.position) < _distance) || IsUnderWater()) && !_isEnnemie)
+            if(((Vector3.Distance(_lastPosition, transform.position) < _distance * Time.fixedDeltaTime) || IsUnderWater()) && !_isEnnemie)
             {
                 _timer -= Time.fixedDeltaTime;
                 if (_timer <= 0 && LossPanel.Instance is null)
