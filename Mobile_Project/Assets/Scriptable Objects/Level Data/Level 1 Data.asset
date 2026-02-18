@@ -15,5 +15,7 @@ MonoBehaviour:
   LevelId: 1
   AvailableItems:
   - {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
-  - {fileID: 11400000, guid: 5d6f4a3c14c2c4d45aab26fe2724a58c, type: 2}
-  Level: {fileID: 312839822809041003, guid: 9548837c7504efd42a909af4ad907802, type: 3}
+  - {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+  - {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+  - {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+  Level: {fileID: 3897228227887731806, guid: b5754d10d58a0f740ac2be5166ef0e13, type: 3}

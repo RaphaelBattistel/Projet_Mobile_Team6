@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1561675269426485787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.74368, y: 6.16194, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47,7 +47,12 @@ MonoBehaviour:
   grid: {fileID: 0}
   draggableLayer:
     serializedVersion: 2
-    m_Bits: 6016
+    m_Bits: 30592
   ground:
     serializedVersion: 2
     m_Bits: 64
+  _spawnSuccess: {fileID: 4381971315782564805, guid: 6c1926be562da8546b2e6747cbaacfc6, type: 3}
+  _spawnFail: {fileID: 2995733501196099097, guid: af11cc2742cd06d43ada87517a6a9199, type: 3}
+  Spawn:
+    m_PersistentCalls:
+      m_Calls: []

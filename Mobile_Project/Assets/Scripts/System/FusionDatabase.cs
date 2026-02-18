@@ -12,7 +12,6 @@ public class FusionDatabase : ScriptableObject
         public ItemData ElementA;
         public ItemData ElementB;
         public ItemData Resultat;
-        public bool HasFusedOnce;
     }
     
 
@@ -37,5 +36,20 @@ public class FusionDatabase : ScriptableObject
             }
         }
         return null; // Pas de bol, ces deux-là ne fusionnent pas.
+    }
+
+    public FusionRecipe GetRecipe(ItemData item)
+    {
+        // On fouille dans toute la liste...
+        foreach (var recipe in Recipes)
+        {
+            // ... pour voir si nos deux ingrédients matchent avec une recette.
+            // Que ce soit Eau+Terre ou Terre+Eau, on s'en fout, ça marche !
+            if ((recipe.Resultat == item))
+            {
+                return recipe; // Bingo !
+            }
+        }
+        return new FusionRecipe(); // Pas de bol, ces deux-là ne fusionnent pas.
     }
 }

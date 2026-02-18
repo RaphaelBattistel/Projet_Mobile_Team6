@@ -1,55 +1,83 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class InventoryButton : MonoBehaviour
 {
     private ItemData _item;
     public ItemData Item => _item;
+    private Camera _cam;
+    [SerializeField] private TMP_Text _text;
+    [SerializeField] private Image _image;
+    private Collider2D _collider;
+
+    private int _quantity;
+
+    public void IncreaseQuantity()
+    {
+        _quantity++;
+        _text.text = _quantity.ToString();
+    }
 
     public void Init(ItemData item)
     {
         _item = item;
-        // ... autres initialisations
+        IncreaseQuantity();
+        _image.sprite = Item.Sprite;
+        _image.rectTransform.sizeDelta = new Vector2(_image.sprite.rect.width, _image.sprite.rect.height);
     }
 
+    private void Start()
+    {
+        _cam = Camera.main;
+    }
+
+    // ReSharper disable Unity.PerformanceAnalysis
     public void LogItemLabel()
     {
-        if (_item != null)
+        if (_item is not null)
         {
-            Camera cam = Camera.main;
-            if (cam == null)
-                return;
-
-            // Position écran -> monde (z géré par la caméra)
-            Vector3 worldPos = cam.ScreenToWorldPoint(Input.mousePosition);
+            // Position ï¿½cran -> monde (z gï¿½rï¿½ par la camï¿½ra)
+            Vector3 worldPos = _cam.ScreenToWorldPoint(Input.mousePosition);
             worldPos.z = 0f;
 
             GameObject spawned = Instantiate(_item.Prefab, worldPos, Quaternion.identity);
-            Debug.Log(_item.Label);
+            _collider = spawned.GetComponent<IItemHolder>().GetCollider();
 
-            // Demander au GridManager de commencer le grab immédiatement, si présent
-            if (GridManager.Instance != null)
+            // Demander au GridManager de commencer le grab immï¿½diatement, si prï¿½sent
+            if (GridManager.Instance is not null)
             {
                 GridManager.Instance.StartGrabAtScreenPosition(spawned, Input.mousePosition);
+                GridManager.Instance.Spawn.AddListener(ResultSpawn);
             }
         }
     }
 
-    void Update()
+    private void ResultSpawn(bool result)
     {
-        if (Input.GetMouseButtonDown(0))
+        if (result)
         {
-            Camera cam = Camera.main;
-            if (cam == null)
-                return; // Caméra non trouvée, on quitte
-
-            Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-            Collider2D collider = GetComponent<Collider2D>();
-            if (collider != null && collider.OverlapPoint(mousePos))
-            {
-                LogItemLabel();
-            }
+            _quantity--;
+            _text.text = _quantity.ToString();
+            if (_quantity == 0) Destroy(gameObject);
         }
+
+        GridManager.Instance.Spawn.RemoveListener(ResultSpawn);
     }
+
+    // void Update()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         if (_cam is null)
+    //             return; // Camï¿½ra non trouvï¿½e, on quitte
+    //         
+    //         Vector2 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
+    //         if (_collider is not null && _collider.OverlapPoint(mousePos))
+    //         {
+    //             LogItemLabel();
+    //         }
+    //     }
+    // }
 }
