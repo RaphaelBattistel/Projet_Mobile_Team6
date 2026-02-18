@@ -167,10 +167,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2677946412427532344, guid: e035fccc3346fbc4d9de7acea4b6d191, type: 3}
-      propertyPath: grid
-      value: 
-      objectReference: {fileID: 5464261702606619910}
     - target: {fileID: 3032826338381005298, guid: e035fccc3346fbc4d9de7acea4b6d191, type: 3}
       propertyPath: m_Name
       value: Level 9 (glace)
@@ -180,11 +176,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e035fccc3346fbc4d9de7acea4b6d191, type: 3}
---- !u!156049354 &5464261702606619910 stripped
-Grid:
-  m_CorrespondingSourceObject: {fileID: 3752650175792949145, guid: e035fccc3346fbc4d9de7acea4b6d191, type: 3}
-  m_PrefabInstance: {fileID: 5464261702606619909}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
