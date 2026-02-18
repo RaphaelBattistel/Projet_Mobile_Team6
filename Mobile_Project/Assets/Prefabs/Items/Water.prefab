@@ -140,7 +140,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &7146875862273708638
 Rigidbody2D:
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f92b669ffaa63141995826b719cf733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterDrop
-  _effectForSplash: {fileID: 725271452468257460, guid: 916d94e1f736d2b4d9ad04fcdddeb14f, type: 3}
+  _effectForSplash: {fileID: 8619283880336564866, guid: b3b0b3a0cb829184284b0b8e395d129d, type: 3}
 --- !u!58 &476804319159269731
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -229,5 +229,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.6
+  m_Offset: {x: 0, y: -0.5}
+  m_Radius: 0.3
