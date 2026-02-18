@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f92b669ffaa63141995826b719cf733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drop
-  _effectForSplash: {fileID: 8619283880336564866, guid: b3b0b3a0cb829184284b0b8e395d129d, type: 3}
+  _effectForSplash: {fileID: 7969909480088185589, guid: dfa48c985b4055c4fb73f34ec449ca1f, type: 3}
 --- !u!61 &-8761669679197772948
 BoxCollider2D:
   m_ObjectHideFlags: 0
