@@ -167,9 +167,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2908639509364234267, guid: 945c7196389a0b5469f71e069de87c44, type: 3}
+      propertyPath: _isEnnemie
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5080983812290928144, guid: 945c7196389a0b5469f71e069de87c44, type: 3}
       propertyPath: m_Name
       value: Level 8 (glace)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418159024983703268, guid: 945c7196389a0b5469f71e069de87c44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

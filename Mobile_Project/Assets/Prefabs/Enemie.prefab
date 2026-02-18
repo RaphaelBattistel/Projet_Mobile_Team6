@@ -69,7 +69,12 @@ MonoBehaviour:
     m_Bits: 0
   frontCheck: {x: 0, y: 0}
   wallCastDistance: 0
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  waterCheck: {x: 0, y: 0}
   _distance: 0.1
+  _isEnnemie: 1
 --- !u!50 &3705653148227647274
 Rigidbody2D:
   serializedVersion: 5
