@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CharacterController : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
+    private Rigidbody2D rb2D;
 
     //Liste du transorm des �l�ment qui composent le personnage pour pouvoir le retourner
     [SerializeField] private List<Transform> spriteList;
@@ -15,7 +15,6 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float runSpeed;
     [SerializeField] private float climbSpeed;
     [SerializeField] private UnityEvent onWalk;
-    [SerializeField] private UnityEvent onClimb;
     private int horizontal = 1; //Permet de savoir si on va � gauche ou � droite pour l'instant
 
     [Header("GROUND CHECK")] [SerializeField]
@@ -27,16 +26,19 @@ public class CharacterController : MonoBehaviour
     [Header("FRONT CHECK")] [SerializeField]
     private LayerMask wallLayer;
 
-    [SerializeField] private LayerMask actionLayer;
     [SerializeField] private Vector2 frontCheck;
-    [SerializeField] private float wallCastDistance;
+    [SerializeField] private Vector3 wallCastoffset;
+
+    [Header("SLOPE CHECK")]
+
+    [SerializeField] private Vector2 slopeCheck;
+    [SerializeField] private Vector3 slopeCastoffset;
 
     [Header("WATER CHECK")]
     [SerializeField] private LayerMask waterLayer;
     [SerializeField] private Vector2 waterCheck;
 
-    private GameObject selectedObject;
-    private bool isClimbing;
+    [SerializeField] private Animator animator;
 
     public bool StartMoving
     {
@@ -46,7 +48,7 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        TryGetComponent(out rb2d);
+        TryGetComponent(out rb2D);
     }
 
     Vector3 _lastPosition;
@@ -59,7 +61,7 @@ public class CharacterController : MonoBehaviour
     {
         if (StartMoving && LevelClearedPanel.Instance is null)
         {
-            if(((Vector3.Distance(_lastPosition, transform.position) < _distance) || IsUnderWater()) && !_isEnnemie)
+            if((rb2D.linearVelocity.magnitude < .1f || IsUnderWater()) && !_isEnnemie)
             {
                 _timer -= Time.fixedDeltaTime;
                 if (_timer <= 0 && LossPanel.Instance is null)
@@ -72,31 +74,11 @@ public class CharacterController : MonoBehaviour
                 _timer = 5f;
             }
 
-
-            //Si le perso peut monter alors il monte
-            if (isClimbing)
-            {
-                onClimb?.Invoke();
-                ClimbMove();
-            }
-
-            //Si le perso est au sol et qu'il n'y a pas de lierre devant alors le perso bouge
-            if (IsGrounded() && !IsIvyInFront())
-            {
-                onWalk?.Invoke();
-                Move();
-            }
-
-            //Si on est au sol et qu'il il y a une lierre :
-            //- Il peut monter
-            //- On enl�ve la simulation du RigidBody
-            else if (IsGrounded() && IsIvyInFront())
-            {
-                isClimbing = true;
-                rb2d.simulated = false;
-            }
-
-            _lastPosition = transform.position;
+            Move();
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
         }
     }
 
@@ -118,62 +100,24 @@ public class CharacterController : MonoBehaviour
         //    wallCastDistance *= -1;
         //    horizontal *= -1;
         //}
-
-        Vector3 direction = horizontal * Vector2.right;
-
-
-        transform.position += direction * runSpeed * Time.deltaTime;
-    }
-
-
-    //MoveTowards le haut d'un objet Ivy � une vitesse modifiable
-    private void ClimbMove()
-    {
-        Vector2 target = TargetUp(); //La position vers laquelle on va
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            target,
-            climbSpeed * Time.fixedDeltaTime
-        );
-    }
-
-    //Permet de trouver le haut d'un objet de layer actionLayer � l'aide d'un Raycast
-    private Vector2 TargetUp()
-    {
-        Vector2 targetPos = transform.position;
-
-        //Origine de l'endroit d'o� le Raycast est lanc� (le centre du Boxcast pour le sol dans IsGrounded())
-        Vector2 raycastOrigin = new Vector2(transform.position.x, transform.position.y + groundCastDistance);
-
-        //- Lance un raycast depuis raycastOrigin
-        //- En direction de la droite
-        //- De longueur : addition de la longueur en x de la Boxcast frontCheck et de la distance du cast
-        //- Doit toucher un objet de layer dans actionLayer
-        RaycastHit2D hit = Physics2D.Raycast(
-            raycastOrigin,
-            transform.right,
-            frontCheck.x + wallCastDistance,
-            actionLayer
-        );
-
-        //Si le Raycast hit un objet du bon layer :
-        //- selectedObject devient le l'objet qui est hit
-        //- On cr�e le point que vers lequel le perso monte
-        //- On le retourne
-        if (hit.collider != null)
+        Vector2 direction = Vector2.right;
+        if (IsGrounded())
         {
-            selectedObject = hit.collider.gameObject;
-            float targetY = selectedObject.transform.position.y + selectedObject.transform.localScale.y;
-            targetPos = new Vector2(transform.position.x, targetY);
-            return targetPos;
+            onWalk?.Invoke();
         }
-        //Si le perso ne touche rien, alors il peut bouger
-        else
+        if (IsSlope())
         {
-            rb2d.simulated = true;
+            direction *= 1.5f;
+            direction += Vector2.up / 2;
+        }
+        if (IsWallInFront())
+        {
+            direction = Vector2.zero;
         }
 
-        return targetPos;
+        rb2D.position += direction * runSpeed * Time.fixedDeltaTime;
+        animator.SetFloat("Speed", 1);
+        _lastPosition = rb2D.position;
     }
 
     //Check si le personnage touche un certain layer avec des BoxCasts
@@ -192,7 +136,7 @@ public class CharacterController : MonoBehaviour
 
     private bool IsWallInFront() //Check en horizontal
     {
-        if (Physics2D.BoxCast(transform.position + transform.right * wallCastDistance, frontCheck, 0, transform.right,
+        if (Physics2D.BoxCast(transform.position + wallCastoffset, frontCheck, 0, transform.right,
                 0, wallLayer))
         {
             return true;
@@ -203,10 +147,9 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    private bool IsIvyInFront() //Check en horizontal (m�me information que pour le check du mur)
+    private bool IsUnderWater()
     {
-        if (Physics2D.BoxCast(transform.position + transform.right * wallCastDistance, frontCheck, 0, transform.right,
-                0, actionLayer))
+        if (Physics2D.BoxCast(transform.position, waterCheck, 0, transform.up, 0, waterLayer))
         {
             return true;
         }
@@ -215,9 +158,10 @@ public class CharacterController : MonoBehaviour
             return false;
         }
     }
-    private bool IsUnderWater()
+
+    private bool IsSlope()
     {
-        if (Physics2D.BoxCast(transform.position, waterCheck, 0, transform.up, 0, waterLayer))
+        if (Physics2D.BoxCast(transform.position + slopeCastoffset, slopeCheck, 0, transform.up, 0, wallLayer))
         {
             return true;
         }
@@ -232,16 +176,8 @@ public class CharacterController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position + transform.up * groundCastDistance, groundCheck);
-        Gizmos.DrawWireCube(transform.position + transform.right * wallCastDistance, frontCheck);
+        Gizmos.DrawWireCube(transform.position + slopeCastoffset, slopeCheck);
+        Gizmos.DrawWireCube(transform.position + wallCastoffset, frontCheck);
         Gizmos.DrawWireCube(transform.position, waterCheck);
-
-        Vector3 rayOrigin = new Vector3(
-            transform.position.x,
-            transform.position.y + groundCastDistance,
-            transform.position.z
-        );
-        Vector3 rayDirection = transform.right * (frontCheck.x + wallCastDistance);
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(rayOrigin, rayOrigin + rayDirection);
     }
 }
