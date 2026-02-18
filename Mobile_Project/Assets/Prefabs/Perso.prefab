@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 995131493321185609}
+  - component: {fileID: 5986251963381641381}
   - component: {fileID: 8537825762967142145}
   - component: {fileID: 2123864206680831453}
-  - component: {fileID: 5986251963381641381}
   m_Layer: 0
   m_Name: Perso
   m_TagString: Player
@@ -33,8 +33,69 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6187584927428103264}
+  - {fileID: 5786412870519096690}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5986251963381641381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989921270413319367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326794235924f2c4d840ac3c487de0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  spriteList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  runSpeed: 3
+  climbSpeed: 0.5
+  onWalk:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1031881648576433604}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 4928
+  groundCheck: {x: 0.5, y: 0.2}
+  groundCastDistance: -0.6
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 320
+  frontCheck: {x: 0.2, y: 0.8}
+  wallCastoffset: {x: 0.3, y: 0.2, z: 0}
+  slopeCheck: {x: 0.2, y: 0.3}
+  slopeCastoffset: {x: 0.3, y: -0.4, z: 0}
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  waterCheck: {x: 0.1, y: 0.1}
+  animator: {fileID: 6951527456157607305}
+  _distance: 1
+  _isEnnemie: 0
 --- !u!70 &8537825762967142145
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -99,57 +160,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5986251963381641381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989921270413319367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 326794235924f2c4d840ac3c487de0bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterController
-  spriteList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  runSpeed: 1
-  climbSpeed: 0.5
-  onWalk:
-    m_PersistentCalls:
-      m_Calls: []
-  onClimb:
-    m_PersistentCalls:
-      m_Calls: []
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 4928
-  groundCheck: {x: 0.5, y: 0.2}
-  groundCastDistance: -0.6
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 320
-  actionLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  frontCheck: {x: 0.2, y: 0.8}
-  wallCastDistance: 0.3
-  waterLayer:
-    serializedVersion: 2
-    m_Bits: 16
-  waterCheck: {x: 0.1, y: 0.1}
-  _distance: 1
-  _isEnnemie: 0
 --- !u!1001 &2828081878377482898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -223,4 +233,76 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278155740644968178, guid: 8b05f0243983aa848892836e547e2ded, type: 3}
   m_PrefabInstance: {fileID: 2828081878377482898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6951527456157607305 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5136236764977884955, guid: 8b05f0243983aa848892836e547e2ded, type: 3}
+  m_PrefabInstance: {fileID: 2828081878377482898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4430414379131125725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 995131493321185609}
+    m_Modifications:
+    - target: {fileID: 5196308408783092708, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_Name
+      value: walk_particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+--- !u!198 &1031881648576433604 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3686764209439257113, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+  m_PrefabInstance: {fileID: 4430414379131125725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5786412870519096690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7869628850646203055, guid: 59ab31fe8c249dd4f993fc309c66b994, type: 3}
+  m_PrefabInstance: {fileID: 4430414379131125725}
   m_PrefabAsset: {fileID: 0}
