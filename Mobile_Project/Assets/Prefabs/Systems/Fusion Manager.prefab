@@ -48,6 +48,7 @@ MonoBehaviour:
   onFuse:
     m_PersistentCalls:
       m_Calls: []
+  _fusionEffect: {fileID: 8205298481483366624, guid: a2bec6672fef34d4082d76ba20d26b45, type: 3}
   OnFusionItem:
     m_PersistentCalls:
       m_Calls:

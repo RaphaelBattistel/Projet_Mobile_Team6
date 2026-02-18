@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5561595681333048429}
   - component: {fileID: 3365671177459695508}
   - component: {fileID: 2907914149217428857}
+  - component: {fileID: 8432097718788439001}
   m_Layer: 0
   m_Name: fx_feu
   m_TagString: Untagged
@@ -114,3 +115,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8432097718788439001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4664186686067969839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0081d6956953b46439d16511333dfd98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Effect
+  _animation: {fileID: 7400000, guid: 524c69a252ff02f418cd99de491d6ada, type: 2}

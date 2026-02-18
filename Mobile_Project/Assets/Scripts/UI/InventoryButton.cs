@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,8 @@ public class InventoryButton : MonoBehaviour
     private ItemData _item;
     public ItemData Item => _item;
     private Camera _cam;
-    private TMP_Text _text;
+    [SerializeField] private TMP_Text _text;
+    [SerializeField] private Image _image;
     private Collider2D _collider;
 
     private int _quantity;
@@ -20,17 +22,10 @@ public class InventoryButton : MonoBehaviour
 
     public void Init(ItemData item)
     {
-        _text = GetComponentInChildren<TMP_Text>();
         _item = item;
         IncreaseQuantity();
-
-        // Affecte le sprite du bouton � partir de l'item li�
-        Image image = gameObject.GetComponent<Image>();
-        if (image != null)
-        {
-            image.sprite = Item.Sprite;
-        }
-        // ... autres initialisations
+        _image.sprite = Item.Sprite;
+        _image.rectTransform.sizeDelta = new Vector2(_image.sprite.rect.width, _image.sprite.rect.height);
     }
 
     private void Start()

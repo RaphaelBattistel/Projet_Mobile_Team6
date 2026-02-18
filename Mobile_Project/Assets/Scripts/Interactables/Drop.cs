@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WaterDrop : MonoBehaviour
+public class Drop : MonoBehaviour
 {
     [SerializeField] GameObject _effectForSplash;
 

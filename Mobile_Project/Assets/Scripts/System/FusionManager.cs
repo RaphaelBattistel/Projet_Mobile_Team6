@@ -12,6 +12,8 @@ public class FusionManager : MonoBehaviour
     public FusionDatabase Database { get { return _database; } }
     [SerializeField] private UnityEvent onFuse;
 
+    [SerializeField] private GameObject _fusionEffect;
+
     public UnityEvent<ItemData> OnFusionItem;
 
     void Awake()
@@ -64,6 +66,7 @@ public class FusionManager : MonoBehaviour
         if (resultData.Prefab is not null)
         {
             GameObject newObj = Instantiate(resultData.Prefab, GridManager.Instance.Grid.transform);
+            Instantiate(_fusionEffect).transform.position = spawnPosition;
             newObj.transform.position = spawnPosition;
 
             // On lance l'achievement pour avoir fusionné un objet
