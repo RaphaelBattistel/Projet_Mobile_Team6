@@ -115,7 +115,7 @@ public class CharacterController : MonoBehaviour
             direction = Vector2.zero;
         }
 
-        rb2D.position += direction * runSpeed * Time.fixedDeltaTime;
+        rb2D.linearVelocity = new Vector2(runSpeed,  rb2D.linearVelocity.y);
         animator.SetFloat("Speed", 1);
         _lastPosition = rb2D.position;
     }

@@ -60,7 +60,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  runSpeed: 3
+  runSpeed: 2
   climbSpeed: 0.5
   onWalk:
     m_PersistentCalls:
