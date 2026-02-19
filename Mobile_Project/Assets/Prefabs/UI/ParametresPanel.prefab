@@ -382,7 +382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.5, y: -0.49999237}
+  m_AnchoredPosition: {x: -7.5, y: -0.5}
   m_SizeDelta: {x: -35, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &703242285282961409
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
+  m_fontSize: 39.1
   m_fontSizeBase: 46.25
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 5.6275024, z: 0, w: 0}
+  m_margin: {x: 35.852448, y: 9.074844, z: 19.994781, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1474,7 +1474,7 @@ GameObject:
   - component: {fileID: 5426478852528371276}
   - component: {fileID: 4255968706953176895}
   - component: {fileID: 6278426079320724223}
-  - component: {fileID: 5519568483281783237}
+  - component: {fileID: 4238529703094137081}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9803922, g: 0.8588236, b: 0.34901962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5519568483281783237}
+      - m_Target: {fileID: 4238529703094137081}
         m_TargetAssemblyTypeName: ColorBlindnessSelector, Assembly-CSharp
         m_MethodName: SwitchSetting
         m_Mode: 0
@@ -1621,6 +1621,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_AlphaFadeSpeed: 0.15
+--- !u!114 &4238529703094137081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704907645002528431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4891b636ad74914800af5e575d5b21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorBlindnessSelector
+  _renderPipelineAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
 --- !u!1 &6765465210387960260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +2514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7399991033837385334
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2704,7 +2717,7 @@ MonoBehaviour:
   m_fontSize: 30
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

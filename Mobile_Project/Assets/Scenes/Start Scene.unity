@@ -2109,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 997138361180494129, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -376.86646
+      value: -372.77084
       objectReference: {fileID: 0}
     - target: {fileID: 1008028641975463571, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2118,22 +2118,6 @@ PrefabInstance:
     - target: {fileID: 1299500461865429421, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255968706953176895, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255968706953176895, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
-      propertyPath: m_Color.b
-      value: 0.34901962
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255968706953176895, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8588236
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255968706953176895, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9803922
       objectReference: {fileID: 0}
     - target: {fileID: 4563453320351223236, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_Name
@@ -2223,10 +2207,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5519568483281783237, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
-      propertyPath: _renderPipelineAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
     - target: {fileID: 5815663602554426995, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -2241,7 +2221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5815663602554426995, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -217.72003
+      value: -209.5288
       objectReference: {fileID: 0}
     - target: {fileID: 7180182024699819486, guid: 5c15f5e8fd75bcc4bb645ea69a651ffb, type: 3}
       propertyPath: m_AnchorMax.y
