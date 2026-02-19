@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4602b84a5b6b040b7fa87e0914d9dd, type: 3}
   m_Name: Level tuto fusion Data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  LevelId: -1
+  LevelId: 0
   AvailableItems:
   - {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
   - {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
