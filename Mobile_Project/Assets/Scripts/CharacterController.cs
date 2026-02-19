@@ -87,6 +87,7 @@ public class CharacterController : MonoBehaviour
             rb2D.linearVelocity = Vector2.Lerp(rb2D.linearVelocity, Vector2.zero, slowingSpeed * Time.fixedDeltaTime);
         }
         animator.SetFloat("Speed", Mathf.Abs(rb2D.linearVelocity.x));
+        animator.SetBool("IsGrounded", IsGrounded());
     }
 
 
