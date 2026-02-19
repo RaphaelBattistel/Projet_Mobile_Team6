@@ -6,6 +6,7 @@ public class BurnEffect : MonoBehaviour, IFire
     [SerializeField] private Material _fireMat;
     [SerializeField] private SpriteRenderer[] _renderers;
     [SerializeField] private float _time;
+    [SerializeField] private AudioClip _sound;
 
     private Material _material;
 
@@ -26,6 +27,7 @@ public class BurnEffect : MonoBehaviour, IFire
     private IEnumerator Burn()
     {
         float burnAmount = _time;
+        SoundManager.Instance.PlayEffect(_sound);
 
         while (burnAmount > 0f)
         {

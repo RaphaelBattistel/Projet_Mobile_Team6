@@ -197,3 +197,4 @@ MonoBehaviour:
   _renderers:
   - {fileID: 8621223751843206913}
   _time: 2
+  _sound: {fileID: 8300000, guid: a8b12bbd0aee05a40b347d6237880aa5, type: 3}

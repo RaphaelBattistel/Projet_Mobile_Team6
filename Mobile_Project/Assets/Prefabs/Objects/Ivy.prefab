@@ -115,6 +115,7 @@ MonoBehaviour:
   - {fileID: 4980437959170568998}
   - {fileID: 6881400441470573015}
   _time: 2
+  _sound: {fileID: 8300000, guid: a8b12bbd0aee05a40b347d6237880aa5, type: 3}
 --- !u!114 &8935146159344473241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e9813bb8d38374daac2bfd7a250a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ivy
+  _sound: {fileID: 8300000, guid: b281327d916fe18479cc4536541c5f74, type: 3}
   _plateformVisual: {fileID: 612654944878499747}
   scaleLimit: 0
   _sprite: {fileID: 1655916140588283315}

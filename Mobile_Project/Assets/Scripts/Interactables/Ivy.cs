@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ivy : MonoBehaviour, IWater
 {
+    [SerializeField] private AudioClip _sound;
+
     public void DoWaterInteraction()
     {
         if (isAnimating || _sprite.size.y == scaleLimit) return;
@@ -70,6 +72,7 @@ public class Ivy : MonoBehaviour, IWater
     private IEnumerator ScaleIvy(float goal)
     {
         isAnimating = true;
+        SoundManager.Instance.PlayEffect(_sound);
 
         float elapsed = 0f;
 

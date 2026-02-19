@@ -9,6 +9,7 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
     [SerializeField] private ItemData SnowItemData;
     [SerializeField] private ItemData WaterItemData;
     [SerializeField] private Sprite _snowSprite;
+    [SerializeField] private AudioClip _soundIce;
     [SerializeField] private Sprite _waterSprite;
 
     [SerializeField] private SpriteRenderer _sprite;
@@ -61,6 +62,7 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
         if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f) return;
         _iceCollider.isTrigger = false;
         _sprite.sprite = _snowSprite;
+        SoundManager.Instance.PlayEffect(_soundIce);
         FusionManager.Instance.OnFusionItem.Invoke(SnowItemData);
     }
 
