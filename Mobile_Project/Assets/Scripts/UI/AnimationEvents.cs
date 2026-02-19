@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class AnimationEvents : MonoBehaviour
 {
     public void AllowLoading()
     {
         LevelManager.Instance.SetCanLoadLevel(true);
-        
+
         if (LevelClearedPanel.Instance != null)
         {
             Destroy(LevelClearedPanel.Instance.gameObject);
@@ -16,7 +17,7 @@ public class AnimationEvents : MonoBehaviour
             Destroy(LossPanel.Instance.gameObject);
         }
     }
-    
+
     public void EndLoading()
     {
         LevelManager.Instance.EndLevelLoading();
@@ -26,11 +27,11 @@ public class AnimationEvents : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-    
+
     public void ReloadLevel()
     {
         GameManager.Instance.ReloadLevel();
-        
+
         if (LevelClearedPanel.Instance != null)
         {
             Destroy(LevelClearedPanel.Instance.gameObject);
@@ -40,5 +41,11 @@ public class AnimationEvents : MonoBehaviour
         {
             Destroy(LossPanel.Instance.gameObject);
         }
-     }
+    }
+
+    public event Action OnLoadLevelSelection;
+    public void LoadLevelSelectionScene()
+    {
+        OnLoadLevelSelection?.Invoke();
+    }
 }

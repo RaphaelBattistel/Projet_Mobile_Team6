@@ -48,10 +48,10 @@ public class LevelManager : MonoBehaviour
         }
 
         // Ca devrait charger sauf si un petit malin décide de faire n'importe quoi avec les build settings
-        _loadingOperation = SceneManager.LoadSceneAsync(1);
+        _loadingOperation = SceneManager.LoadSceneAsync(2);
         if (_loadingOperation is null)
         {
-            throw new UnassignedReferenceException("Scene 1 not found in build settings");
+            throw new UnassignedReferenceException("Scene 2 not found in build settings");
         }
 
         _loadingOperation.allowSceneActivation = false;
@@ -100,7 +100,7 @@ public class LevelManager : MonoBehaviour
         try
         {
             // Pareil, normalement la scène devrait se charger sauf dans le cas d'un sabotage
-            _loadingOperation = SceneManager.LoadSceneAsync(0);
+            _loadingOperation = SceneManager.LoadSceneAsync(1);
             if (_loadingOperation is null)
             {
                 throw new UnassignedReferenceException("Scene 0 not found in build settings");
@@ -127,6 +127,7 @@ public class LevelManager : MonoBehaviour
         if(CurrentLevel == null)
         {
             SceneManager.LoadSceneAsync(0);
+            Destroy(gameObject);
         }
         else
         {
