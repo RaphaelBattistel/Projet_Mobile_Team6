@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5754726351235698183}
   - component: {fileID: -4182110919265113173}
   - component: {fileID: -5272822006908612120}
-  - component: {fileID: 2588240920064489962}
-  - component: {fileID: 2656255490782586196}
   - component: {fileID: 376166462964453716}
+  - component: {fileID: 873319265238979861}
+  - component: {fileID: 2135671920809393089}
   m_Layer: 13
   m_Name: Fire
   m_TagString: Untagged
@@ -169,32 +169,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2588240920064489962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838938908532948005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 634457e8b14b76f41bf9789bab60e907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
-  Data: {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
---- !u!114 &2656255490782586196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838938908532948005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f92b669ffaa63141995826b719cf733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Drop
-  _effectForSplash: {fileID: 4664186686067969839, guid: f69abe6922bf1d341921a3edbfc3031f, type: 3}
 --- !u!61 &376166462964453716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,7 +185,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1032
+    m_Bits: 1040
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -241,3 +215,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &873319265238979861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838938908532948005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dca4dad9d44f62498901309e2794dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireBomb
+  _effectForSplash: {fileID: 4664186686067969839, guid: f69abe6922bf1d341921a3edbfc3031f, type: 3}
+--- !u!114 &2135671920809393089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838938908532948005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634457e8b14b76f41bf9789bab60e907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
+  Data: {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}

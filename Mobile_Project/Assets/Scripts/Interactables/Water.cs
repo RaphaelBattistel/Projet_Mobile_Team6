@@ -1,13 +1,10 @@
+using NaughtyAttributes;
 using System.Collections;
 using UnityEngine;
 
-public class Water : MonoBehaviour
+public class Water : MonoBehaviour, IWater, ISnow, IFire
 {
-    [SerializeField] private LayerMask waterLayer;
-    [SerializeField] private LayerMask snowLayer;
-    [SerializeField] private LayerMask fireLayer;
     [SerializeField] private Vector2 scaleLimit;
-    [SerializeField] private Vector2 waterDropCheck;
 
     [SerializeField] private ItemData SnowItemData;
     [SerializeField] private ItemData WaterItemData;
@@ -25,7 +22,8 @@ public class Water : MonoBehaviour
 
     bool isAnimating = false;
 
-    private void OnValidate()
+    [Button("Setup")]
+    private void Start()
     {
         if (_startAsIce)
         {
@@ -50,69 +48,28 @@ public class Water : MonoBehaviour
             _iceCollider.offset = new Vector2(0, (-scaleLimit.y / 2) - .5f);
         }
     }
-
-    void Update()
+    public void DoWaterInteraction()
     {
-        if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f && IsDropOfWater())
+        if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f)
         {
             UpdateScale();
         }
-        else if (IsDropOfSnow())
-        {
-            _iceCollider.isTrigger = false;
-            _sprite.sprite = _snowSprite;
-            FusionManager.Instance.OnFusionItem.Invoke(SnowItemData);
-        }
-        else if (IsDropOfFire())
-        {
-            _iceCollider.isTrigger = true;
-            _sprite.sprite = _waterSprite;
-            FusionManager.Instance.OnFusionItem.Invoke(WaterItemData);
-        }
     }
 
-
-    //Check si il y a interraction avec goutte d'eau
-    //Détruis la goutte d'eau si il y a collision
-    private bool IsDropOfWater()
+    public void DoSnowInteraction()
     {
-        RaycastHit2D hit = Physics2D.BoxCast(_sprite.transform.position + transform.up * _sprite.size.y, waterDropCheck, 0f, Vector2.up, 0f, waterLayer);
-
-        if (hit.collider != null)
-        {
-            return true;
-        }
-
-        return false;
+        if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f) return;
+        _iceCollider.isTrigger = false;
+        _sprite.sprite = _snowSprite;
+        FusionManager.Instance.OnFusionItem.Invoke(SnowItemData);
     }
 
-    private bool IsDropOfSnow()
+    public void DoFireInteraction()
     {
-        RaycastHit2D hit = Physics2D.BoxCast(_sprite.transform.position + transform.up * _sprite.size.y, waterDropCheck, 0f, Vector2.up, 0f, snowLayer);
-
-        if (hit.collider != null)
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    private bool IsDropOfFire()
-    {
-        RaycastHit2D hit = Physics2D.BoxCast(_sprite.transform.position + transform.up * _sprite.size.y, waterDropCheck, 0f, Vector2.up, 0f, fireLayer);
-
-        if (hit.collider != null)
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(_sprite.transform.position + (transform.up * _sprite.size.y), waterDropCheck);
+        if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f) return;
+        _iceCollider.isTrigger = true;
+        _sprite.sprite = _waterSprite;
+        FusionManager.Instance.OnFusionItem.Invoke(WaterItemData);
     }
 
     //Modifie la scale en Y en prenant la scaleLimite en Y
