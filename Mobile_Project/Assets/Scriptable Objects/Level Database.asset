@@ -12,20 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1f2d88cd0250c44ababc121c14f1de, type: 3}
   m_Name: Level Database
   m_EditorClassIdentifier: Assembly-CSharp::LevelDatabase
-  Levels:
-  - {fileID: 11400000, guid: 3ba558eb22207bf4d888831161e3f187, type: 2}
-  - {fileID: 11400000, guid: d37d283a64e742f49ae9515cd84ddc3b, type: 2}
-  - {fileID: 11400000, guid: b5bcf7b5e0528c148aa77ce8f2e973b6, type: 2}
-  - {fileID: 11400000, guid: 8be31e85bb29f2a43a52549757f2ce4b, type: 2}
-  - {fileID: 11400000, guid: 58fbf33a52c6bf94197930bd364dbae0, type: 2}
-  - {fileID: 11400000, guid: ff4f8889340ca234daa1377606f96fc1, type: 2}
-  - {fileID: 11400000, guid: c1510ceca430fc446bbca8e256c5c3a5, type: 2}
-  - {fileID: 11400000, guid: 2e07da6cadc54ee44bcb53bed17e27b1, type: 2}
-  - {fileID: 11400000, guid: 5d21ccdfc27db5449a01dac727dccb4b, type: 2}
-  - {fileID: 11400000, guid: ad56fa52019d3454c82d1cfca682f5a4, type: 2}
-  - {fileID: 11400000, guid: d6cc94d2af0dd7e40b1474bf0a190203, type: 2}
   worldLevelsList:
   - LevelsFromWorld:
+    - {fileID: 11400000, guid: 7bc58c19e49963047a39f38f8acb2f66, type: 2}
+    - {fileID: 11400000, guid: 7bc58c19e49963047a39f38f8acb2f66, type: 2}
     - {fileID: 11400000, guid: 3ba558eb22207bf4d888831161e3f187, type: 2}
     - {fileID: 11400000, guid: d37d283a64e742f49ae9515cd84ddc3b, type: 2}
     - {fileID: 11400000, guid: b5bcf7b5e0528c148aa77ce8f2e973b6, type: 2}
@@ -33,6 +23,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 58fbf33a52c6bf94197930bd364dbae0, type: 2}
     - {fileID: 11400000, guid: 7bc58c19e49963047a39f38f8acb2f66, type: 2}
     WorldSprite: {fileID: 21300000, guid: 69dfd43bd6fda7741be25a67f7867db9, type: 3}
+    WorldName: Monde 1
   - LevelsFromWorld:
     - {fileID: 11400000, guid: ff4f8889340ca234daa1377606f96fc1, type: 2}
     - {fileID: 11400000, guid: c1510ceca430fc446bbca8e256c5c3a5, type: 2}
@@ -41,3 +32,4 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ad56fa52019d3454c82d1cfca682f5a4, type: 2}
     - {fileID: 11400000, guid: d6cc94d2af0dd7e40b1474bf0a190203, type: 2}
     WorldSprite: {fileID: 21300000, guid: 2f45130d994a45b4982c09f98d114452, type: 3}
+    WorldName: Monde 2
