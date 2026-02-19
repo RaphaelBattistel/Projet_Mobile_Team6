@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using GooglePlayGames;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro; // Ajout�
@@ -12,6 +13,8 @@ public class InventoryContainer : MonoBehaviour
     [SerializeField] private GraphicRaycaster graphicRaycaster; // Ajout�
 
     private Dictionary<ItemData, InventoryButton> _images = new Dictionary<ItemData, InventoryButton>();
+
+    private float _achievementTimer;
 
     void Awake()
     {
@@ -84,9 +87,27 @@ public class InventoryContainer : MonoBehaviour
                 if (button is not null)
                 {
                     button.LogItemLabel();
+                    
                     break; // On ne prend que le premier bouton touch�
                 }
             }
         }
+    }
+
+    private void CountDownForIdleAchievement()
+    {
+        _achievementTimer -=  Time.deltaTime;
+        if (_achievementTimer <= 0)
+        {
+            if (GooglePlayManager.Instance.IsLoggedIn)
+            {
+                PlayGamesPlatform.Instance.ReportProgress("CggI4pyy0DgQAhAS", 100f, (bool success) => { });
+            }
+        }
+    }
+
+    private void ResetCountDown()
+    {
+        _achievementTimer = 300f;
     }
 }

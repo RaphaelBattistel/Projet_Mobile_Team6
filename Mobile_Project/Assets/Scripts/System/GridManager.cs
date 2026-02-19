@@ -1,3 +1,4 @@
+using GooglePlayGames;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -143,7 +144,10 @@ public class GridManager : MonoBehaviour
             SetObjectPhysics(_selectedObject, true);
 
             // On lance l'achievement pour avoir placé un objet
-            Social.ReportProgress("CggI4pyy0DgQAhAA", 100f, (bool success) => { });
+            if (GooglePlayManager.Instance.IsLoggedIn)
+            {
+                PlayGamesPlatform.Instance.ReportProgress("CggI4pyy0DgQAhAL", 100f, (bool success) => { });
+            }
         }
         _selectedObject.transform.SetParent(Grid.transform);
         Instantiate(_spawnSuccess).transform.position = _selectedObject.transform.position;

@@ -24,16 +24,16 @@
 
 public static class GPGIds
 {
-        public const string achievement_il_y_a_un_dbut__tout = "CggI4pyy0DgQAhAA"; // <GPGSID>
-        public const string achievement_toujours_l = "CggI4pyy0DgQAhAH"; // <GPGSID>
-        public const string achievement_laissezmoi_consulter_mon_grimoire = "CggI4pyy0DgQAhAG"; // <GPGSID>
-        public const string achievement_premiers_pas = "CggI4pyy0DgQAhAB"; // <GPGSID>
-        public const string achievement_toujours_plus_loin = "CggI4pyy0DgQAhAF"; // <GPGSID>
-        public const string achievement_la_onzime_fois_sera_la_bonne = "CggI4pyy0DgQAhAC"; // <GPGSID>
-        public const string achievement_le_dbut_dune_grande_aventure = "CggI4pyy0DgQAhAE"; // <GPGSID>
-        public const string achievement_une_page_se_tourne = "CggI4pyy0DgQAhAD"; // <GPGSID>
-        public const string achievement_un_grand_merci_de_lquipe = "CggI4pyy0DgQAhAI"; // <GPGSID>
-        public const string achievement_en_estu_bien_certain = "CggI4pyy0DgQAhAJ"; // <GPGSID>
+        public const string achievement_il_y_a_un_dbut__tout = "CggI4pyy0DgQAhAL"; // <GPGSID>
+        public const string achievement_un_grand_merci_de_lquipe = "CggI4pyy0DgQAhAT"; // <GPGSID>
+        public const string achievement_premiers_pas = "CggI4pyy0DgQAhAM"; // <GPGSID>
+        public const string achievement_toujours_plus_loin = "CggI4pyy0DgQAhAQ"; // <GPGSID>
+        public const string achievement_la_onzime_fois_sera_la_bonne = "CggI4pyy0DgQAhAN"; // <GPGSID>
+        public const string achievement_le_dbut_dune_grande_aventure = "CggI4pyy0DgQAhAP"; // <GPGSID>
+        public const string achievement_vous_tes_toujours_l = "CggI4pyy0DgQAhAS"; // <GPGSID>
+        public const string achievement_une_page_se_tourne = "CggI4pyy0DgQAhAO"; // <GPGSID>
+        public const string achievement_mieux_vaut_consulter_mes_tomes = "CggI4pyy0DgQAhAR"; // <GPGSID>
+        public const string achievement_vous_tes_sr_de_ce_que_vous_faites = "CggI4pyy0DgQAhAU"; // <GPGSID>
 
 }
 

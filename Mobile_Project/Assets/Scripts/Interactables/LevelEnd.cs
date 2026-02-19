@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GooglePlayGames;
+using UnityEngine;
 
 public class LevelEnd : MonoBehaviour
 {
@@ -9,6 +10,30 @@ public class LevelEnd : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Instantiate(_panel);
+        }
+
+        if (LevelManager.Instance.CurrentLevel.LevelId == 0)
+        {
+            if (GooglePlayManager.Instance.IsLoggedIn)
+            {
+                PlayGamesPlatform.Instance.ReportProgress("CggI4pyy0DgQAhAP", 100f, (bool success) => { });
+            }
+        }
+        
+        if (LevelManager.Instance.CurrentLevel.LevelId == 6)
+        {
+            if (GooglePlayManager.Instance.IsLoggedIn)
+            {
+                PlayGamesPlatform.Instance.ReportProgress("CggI4pyy0DgQAhAO", 100f, (bool success) => { });
+            }
+        }
+        
+        if (LevelManager.Instance.CurrentLevel.LevelId == 12)
+        {
+            if (GooglePlayManager.Instance.IsLoggedIn)
+            {
+                PlayGamesPlatform.Instance.ReportProgress("CggI4pyy0DgQAhAQ", 100f, (bool success) => { });
+            }
         }
     }
 }

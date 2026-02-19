@@ -1,4 +1,5 @@
 using System;
+using GooglePlayGames;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -71,7 +72,10 @@ public class FusionManager : MonoBehaviour
             newObj.transform.position = spawnPosition;
 
             // On lance l'achievement pour avoir fusionné un objet
-            Social.ReportProgress("CggI4pyy0DgQAhAB", 100f, (bool success) => { });
+            if (GooglePlayManager.Instance.IsLoggedIn)
+            {
+                PlayGamesPlatform.Instance.ReportProgress("CggI4pyy0DgQAhAM", 100f, (bool success) => { });
+            }
         }
         else
         {
