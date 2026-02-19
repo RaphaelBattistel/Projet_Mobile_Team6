@@ -111,7 +111,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 57023
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!114 &1117564806443430217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236a8f5f1bfb96b44a934e98fe19adaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurnEffect
-  _shader: {fileID: -6465566751694194690, guid: 7e5b6e9c516174448aff44e0b2e4e5fe, type: 3}
+  _fireMat: {fileID: 2100000, guid: b3efad7678b7839418b574c6488421b9, type: 2}
   _renderers:
   - {fileID: 4126688244964679295}
   _time: 2
