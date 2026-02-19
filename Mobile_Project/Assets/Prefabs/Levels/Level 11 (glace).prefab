@@ -1819,6 +1819,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemie
       objectReference: {fileID: 0}
+    - target: {fileID: 997163246878495869, guid: 1b6de33bc722d8946927e10fd41c552c, type: 3}
+      propertyPath: runSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124349966721765955, guid: 1b6de33bc722d8946927e10fd41c552c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.72
+      objectReference: {fileID: 0}
     - target: {fileID: 8978720981674111618, guid: 1b6de33bc722d8946927e10fd41c552c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.67
