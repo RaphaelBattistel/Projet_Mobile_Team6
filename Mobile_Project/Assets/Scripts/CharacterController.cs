@@ -8,21 +8,16 @@ public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
-    //Liste du transorm des �l�ment qui composent le personnage pour pouvoir le retourner
-    [SerializeField] private List<Transform> spriteList;
-
     [Header("MOVE")] private bool startMoving = false;
     [SerializeField] private float runSpeed;
-    [SerializeField] private float mudRunSpeed;
-    [SerializeField] private float climbSpeed;
+    [SerializeField] private float slowingSpeed;
+    [SerializeField] private float mudScaleSpeed;
     [SerializeField] private UnityEvent onWalk;
-    private int horizontal = 1; //Permet de savoir si on va � gauche ou � droite pour l'instant
-    private bool _isRunningInMud;
 
     [Header("GROUND CHECK")] [SerializeField]
     private LayerMask groundLayer;
 
-    private LayerMask _mudlayer;
+    [SerializeField] private LayerMask _mudlayer;
 
     [SerializeField] private Vector2 groundCheck;
     [SerializeField] private float groundCastDistance;
@@ -48,11 +43,7 @@ public class CharacterController : MonoBehaviour
     public bool StartMoving
     {
         get => startMoving;
-        set
-        {
-            startMoving = value;
-            rb2D.bodyType = startMoving ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic;
-        }
+        set => startMoving = value;
     }
 
     void Start()
@@ -60,8 +51,6 @@ public class CharacterController : MonoBehaviour
         TryGetComponent(out rb2D);
     }
 
-    Vector3 _lastPosition;
-    [SerializeField] private float _distance = .1f;
     [SerializeField] private bool _isEnnemie;
 
     float _timer = 5f;
@@ -83,12 +72,21 @@ public class CharacterController : MonoBehaviour
                 _timer = 5f;
             }
 
-            Move();
+            if (IsGrounded() && !IsWallInFront())
+            {
+                onWalk?.Invoke();
+                Move();
+            }
+            else
+            {
+                rb2D.linearVelocity = Vector2.Lerp(rb2D.linearVelocity, Vector2.zero, slowingSpeed * Time.fixedDeltaTime);
+            }
         }
         else
         {
-            animator.SetFloat("Speed", 0);
+            rb2D.linearVelocity = Vector2.Lerp(rb2D.linearVelocity, Vector2.zero, slowingSpeed * Time.fixedDeltaTime);
         }
+        animator.SetFloat("Speed", Mathf.Abs(rb2D.linearVelocity.x));
     }
 
 
@@ -110,26 +108,15 @@ public class CharacterController : MonoBehaviour
         //    horizontal *= -1;
         //}
         float speedBonus = 0f;
-        if (IsGrounded())
-        {
-            onWalk?.Invoke();
-        }
 
-        if (IsSlope())
+        if (IsSlope() && !IsMuded())
         {
             speedBonus = runSpeed / 2f;
         }
 
-        if (IsWallInFront() || _isRunningInMud)
-        {
-            speedBonus = 0f;
-        }
-
-        float speed = _isRunningInMud ? mudRunSpeed : runSpeed;
+        float speed = IsMuded() ? mudScaleSpeed * runSpeed : runSpeed;
 
         rb2D.linearVelocity = new Vector2(speed + speedBonus, rb2D.linearVelocity.y);
-        animator.SetFloat("Speed", 1);
-        _lastPosition = rb2D.position;
     }
 
     //Check si le personnage touche un certain layer avec des BoxCasts
@@ -137,6 +124,20 @@ public class CharacterController : MonoBehaviour
     {
         if (Physics2D.BoxCast(transform.position + transform.up * groundCastDistance, groundCheck, 0, transform.up, 0,
                 groundLayer))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    //Check si le personnage touche un certain layer avec des BoxCasts
+    private bool IsMuded() //Check en lat�ral
+    {
+        if (Physics2D.BoxCast(transform.position + transform.up * groundCastDistance, groundCheck, 0, transform.up, 0,
+                _mudlayer))
         {
             return true;
         }
@@ -180,22 +181,6 @@ public class CharacterController : MonoBehaviour
         else
         {
             return false;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.layer == _mudlayer)
-        {
-            _isRunningInMud = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.layer == _mudlayer)
-        {
-            _isRunningInMud = false;
         }
     }
 

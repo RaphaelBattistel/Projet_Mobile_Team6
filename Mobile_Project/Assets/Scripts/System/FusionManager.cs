@@ -10,6 +10,7 @@ public class FusionManager : MonoBehaviour
     [Header("Configuration")]
     [SerializeField] private FusionDatabase _database; // N'oublie pas de glisser ton livre de recettes ici !
     public FusionDatabase Database { get { return _database; } }
+
     [SerializeField] private UnityEvent onFuse;
 
     [SerializeField] private GameObject _fusionEffect;
@@ -56,7 +57,7 @@ public class FusionManager : MonoBehaviour
     private void PerformFusion(GameObject objA, GameObject objB, ItemData resultData)
     {
         // On garde en mémoire là où l'objet était posé sur le sol
-        Vector3 spawnPosition = objB.transform.position;
+        Vector3 spawnPosition = Physics2D.Raycast(objB.transform.position, -objB.transform.up, 10, GridManager.Instance.Ground).point;
 
         // Ciao les ingrédients !
         Destroy(objA);

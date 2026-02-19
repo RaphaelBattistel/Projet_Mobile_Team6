@@ -6,6 +6,7 @@ public class GridManager : MonoBehaviour
     [Header("Settings")] [SerializeField] private Grid grid; // La grille Unity pour caler les objets proprement
     [SerializeField] private LayerMask draggableLayer; // Le layer des objets qu'on a le droit de bouger (ex: "Items")
     [SerializeField] private LayerMask ground;
+    public LayerMask Ground => ground;
     [Header("Debug")] private Camera _mainCamera;
     private GameObject _selectedObject; // L'objet qu'on a entre les doigts
     private bool _isDragging; // Savoir si on est en train de glisser un truc
