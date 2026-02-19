@@ -1638,7 +1638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc0eddf0f7b85d4da2bd51624790032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CodexImage
-  itemFusion: {fileID: 11400000, guid: ce1e3aae54438bd418d3b3a172b13379, type: 2}
+  itemFusion: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
   fusionImage: {fileID: 1654948045056892359}
   Item1Image: {fileID: 7023672609572763723}
   Item2Image: {fileID: 6915855569737630811}

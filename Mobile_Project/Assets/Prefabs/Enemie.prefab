@@ -75,14 +75,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32768
   groundCheck: {x: 0.52, y: 0.37}
-  groundCastDistance: 0.27
+  groundCastDistance: 0.07
   wallLayer:
     serializedVersion: 2
     m_Bits: 4416
   frontCheck: {x: 0.3, y: 0.9}
-  wallCastoffset: {x: -0.3, y: 1.2, z: 0}
+  wallCastoffset: {x: -0.3, y: 1, z: 0}
   slopeCheck: {x: 0.3, y: 0.3}
-  slopeCastoffset: {x: -0.25, y: 0.55, z: 0}
+  slopeCastoffset: {x: -0.25, y: 0.35, z: 0}
   waterLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -150,7 +150,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.0245073}
+  m_Offset: {x: 0, y: 0.8}
   m_Size: {x: 0.55166745, y: 1.3126411}
   m_Direction: 0
 --- !u!61 &4527732445498939200
@@ -187,7 +187,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: 0, y: 0.8}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -308,7 +308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779911551958592949, guid: 05642eefed19fe04b9b5cda95cdb47b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6779911551958592949, guid: 05642eefed19fe04b9b5cda95cdb47b1, type: 3}
       propertyPath: m_LocalPosition.z
