@@ -11,7 +11,7 @@ public class CodexImage : MonoBehaviour
 
     private Sprite _original;
 
-    private void Awake()
+    private void Start()
     {
         FusionManager.Instance.OnFusionItem.AddListener(ChangeCodexImage);
         _original = fusionImage.sprite;

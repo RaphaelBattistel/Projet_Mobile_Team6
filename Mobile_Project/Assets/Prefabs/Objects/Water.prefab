@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6667136133023921294}
   - component: {fileID: 3584927334153484022}
-  - component: {fileID: 5001916296772217391}
   - component: {fileID: 4235702546867281338}
   m_Layer: 4
   m_Name: Collider
@@ -65,7 +64,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 1
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
@@ -80,26 +79,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!253 &5001916296772217391
-BuoyancyEffector2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5704871261464641097}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 264
-  m_SurfaceLevel: 0.3
-  m_Density: 2
-  m_LinearDamping: 5
-  m_AngularDamping: 5
-  m_FlowAngle: 0
-  m_FlowMagnitude: 0
-  m_FlowVariation: 0
 --- !u!212 &4235702546867281338
 SpriteRenderer:
   serializedVersion: 2
