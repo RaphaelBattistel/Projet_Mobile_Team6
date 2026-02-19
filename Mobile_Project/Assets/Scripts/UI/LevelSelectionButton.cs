@@ -1,0 +1,23 @@
+using TMPro;
+using UnityEngine;
+
+public class LevelSelectionButton : MonoBehaviour
+{
+    //[SerializeField, HideInInspector] private int _levelId;
+    [SerializeField] private int _worldlId;
+    [SerializeField] private int _levelId;
+    [SerializeField] private TextMeshProUGUI _nameText;
+
+    public void SetLevel(int worldId, int id, string label)
+    {
+        _worldlId = worldId;
+        _levelId = id;
+        _nameText.text = label;
+    }
+    
+    public void LoadLevelScene()
+    {
+        //LevelManager.Instance.LoadLevel(_levelId, "Level");
+        LevelManager.Instance.LoadLevel(_worldlId, _levelId);
+    }
+}

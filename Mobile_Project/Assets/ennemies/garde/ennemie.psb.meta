@@ -295,7 +295,7 @@ ScriptedImporter:
     spritePosition: {x: 1339, y: 174}
   - name: pieddevant
     originalName: 
-    pivot: {x: 0.91911817, y: 0.75159127}
+    pivot: {x: 0.9137177, y: 0.7390006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -361,7 +361,7 @@ ScriptedImporter:
     spritePosition: {x: 1181, y: 182}
   - name: piedderrier
     originalName: 
-    pivot: {x: 0.92431706, y: 0.69736874}
+    pivot: {x: 0.94791615, y: 0.719413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 

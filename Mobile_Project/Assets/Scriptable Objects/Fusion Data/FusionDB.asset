@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4a39e9c01a98449a074f8c3b239ec0, type: 3}
+  m_Name: FusionDB
+  m_EditorClassIdentifier: Assembly-CSharp::FusionDatabase
+  Recipes:
+  - ElementA: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+    ElementB: {fileID: 11400000, guid: 36b2fc53284b1044ab9d417e478ed690, type: 2}
+    Resultat: {fileID: 11400000, guid: e061e7cea3b238540b62225fc0658e76, type: 2}
+  - ElementA: {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+    ElementB: {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+    Resultat: {fileID: 11400000, guid: 951ada62413875749b7c36aed3e156a3, type: 2}
+  - ElementA: {fileID: 11400000, guid: 626d604a793c10343b279f7e57dfcbc3, type: 2}
+    ElementB: {fileID: 11400000, guid: ae385e6da81469346951710dcc9ef74f, type: 2}
+    Resultat: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+  - ElementA: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+    ElementB: {fileID: 11400000, guid: ff77ab04e2a60b74dbd5099d6a64b7a2, type: 2}
+    Resultat: {fileID: 11400000, guid: ae385e6da81469346951710dcc9ef74f, type: 2}
+  - ElementA: {fileID: 11400000, guid: 596b6ac271b597d4986b944ef756aefc, type: 2}
+    ElementB: {fileID: 11400000, guid: 4893e2fc73a51de4fa198e9eba38a241, type: 2}
+    Resultat: {fileID: 11400000, guid: df54ac3db296da042a0e20089bbf0697, type: 2}
