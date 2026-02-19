@@ -12,7 +12,7 @@ public struct WorldLevels
 [CreateAssetMenu(menuName = "Scriptable Object/Level Database", order = 0)]
 public class LevelDatabase : ScriptableObject
 {
-    public List<LevelData> Levels = new List<LevelData>();
+    //public List<LevelData> Levels = new List<LevelData>();
 
     public List<WorldLevels> worldLevelsList;
 
