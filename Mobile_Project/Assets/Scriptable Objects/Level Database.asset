@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelDatabase
   worldLevelsList:
   - LevelsFromWorld:
-    - {fileID: 11400000, guid: 7bc58c19e49963047a39f38f8acb2f66, type: 2}
-    - {fileID: 11400000, guid: 7bc58c19e49963047a39f38f8acb2f66, type: 2}
+    - {fileID: 11400000, guid: 64db302f02aeebf4a88a84a978a1b685, type: 2}
+    - {fileID: 11400000, guid: 363874b019a7d1c48a944eea9c30fbed, type: 2}
     - {fileID: 11400000, guid: 3ba558eb22207bf4d888831161e3f187, type: 2}
     - {fileID: 11400000, guid: d37d283a64e742f49ae9515cd84ddc3b, type: 2}
     - {fileID: 11400000, guid: b5bcf7b5e0528c148aa77ce8f2e973b6, type: 2}

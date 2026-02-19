@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4920626932580744296}
   - component: {fileID: 8935146159344473241}
   - component: {fileID: 7988779230638769132}
+  - component: {fileID: 2749159206867789912}
   m_Layer: 9
   m_Name: Ivy
   m_TagString: Untagged
@@ -181,6 +182,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &2749159206867789912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302822997163711981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634457e8b14b76f41bf9789bab60e907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
+  Data: {fileID: 11400000, guid: e061e7cea3b238540b62225fc0658e76, type: 2}
 --- !u!1 &4449883548252592724
 GameObject:
   m_ObjectHideFlags: 0

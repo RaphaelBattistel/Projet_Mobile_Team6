@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5208107751639298869}
   - component: {fileID: 200178287643557840}
   - component: {fileID: 6499566203332186521}
+  - component: {fileID: -6225847885061344119}
   m_Layer: 12
   m_Name: Rock
   m_TagString: Untagged
@@ -180,3 +181,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   effectForDestroy: {fileID: 1407035569730042342, guid: 576bae32ca8527444adb2749b75966a8, type: 3}
+--- !u!114 &-6225847885061344119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4934171702593592990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634457e8b14b76f41bf9789bab60e907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
+  Data: {fileID: 11400000, guid: 951ada62413875749b7c36aed3e156a3, type: 2}

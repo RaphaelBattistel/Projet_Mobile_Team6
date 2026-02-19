@@ -1498,7 +1498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983063080601759424}
   m_Layer: 0
-  m_Name: Level 8 (glace)
+  m_Name: Level 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
