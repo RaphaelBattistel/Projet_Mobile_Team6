@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7947393804344774575}
   - component: {fileID: 7528680209769576113}
   - component: {fileID: 1117564806443430217}
+  - component: {fileID: 7926010935901073156}
   m_Layer: 10
   m_Name: Seed
   m_TagString: Untagged
@@ -128,7 +129,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -138,7 +139,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6, y: 0.8}
+  m_Size: {x: 0.6, y: 0.5}
   m_EdgeRadius: 0
 --- !u!50 &7528680209769576113
 Rigidbody2D:
@@ -180,3 +181,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemHolder
   Data: {fileID: 11400000, guid: 36b2fc53284b1044ab9d417e478ed690, type: 2}
+--- !u!114 &7926010935901073156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012011878241832362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236a8f5f1bfb96b44a934e98fe19adaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BurnEffect
+  _shader: {fileID: -6465566751694194690, guid: 7e5b6e9c516174448aff44e0b2e4e5fe, type: 3}
+  _renderers:
+  - {fileID: 4126688244964679295}
+  _time: 2

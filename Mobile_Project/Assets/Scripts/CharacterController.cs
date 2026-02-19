@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,18 +8,16 @@ public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
-    //Liste du transorm des �l�ment qui composent le personnage pour pouvoir le retourner
-    [SerializeField] private List<Transform> spriteList;
-
-
     [Header("MOVE")] private bool startMoving = false;
     [SerializeField] private float runSpeed;
-    [SerializeField] private float climbSpeed;
+    [SerializeField] private float slowingSpeed;
+    [SerializeField] private float mudScaleSpeed;
     [SerializeField] private UnityEvent onWalk;
-    private int horizontal = 1; //Permet de savoir si on va � gauche ou � droite pour l'instant
 
     [Header("GROUND CHECK")] [SerializeField]
     private LayerMask groundLayer;
+
+    [SerializeField] private LayerMask _mudlayer;
 
     [SerializeField] private Vector2 groundCheck;
     [SerializeField] private float groundCastDistance;
@@ -29,13 +28,14 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Vector2 frontCheck;
     [SerializeField] private Vector3 wallCastoffset;
 
-    [Header("SLOPE CHECK")]
+    [Header("SLOPE CHECK")] [SerializeField]
+    private Vector2 slopeCheck;
 
-    [SerializeField] private Vector2 slopeCheck;
     [SerializeField] private Vector3 slopeCastoffset;
 
-    [Header("WATER CHECK")]
-    [SerializeField] private LayerMask waterLayer;
+    [Header("WATER CHECK")] [SerializeField]
+    private LayerMask waterLayer;
+
     [SerializeField] private Vector2 waterCheck;
 
     [SerializeField] private Animator animator;
@@ -51,8 +51,6 @@ public class CharacterController : MonoBehaviour
         TryGetComponent(out rb2D);
     }
 
-    Vector3 _lastPosition;
-    [SerializeField] private float _distance = .1f;
     [SerializeField] private bool _isEnnemie;
 
     float _timer = 5f;
@@ -61,7 +59,7 @@ public class CharacterController : MonoBehaviour
     {
         if (StartMoving && LevelClearedPanel.Instance is null)
         {
-            if((rb2D.linearVelocity.magnitude < .1f || IsUnderWater()) && !_isEnnemie)
+            if ((rb2D.linearVelocity.magnitude < .1f || IsUnderWater()) && !_isEnnemie)
             {
                 _timer -= Time.fixedDeltaTime;
                 if (_timer <= 0 && LossPanel.Instance is null)
@@ -74,12 +72,21 @@ public class CharacterController : MonoBehaviour
                 _timer = 5f;
             }
 
-            Move();
+            if (IsGrounded() && !IsWallInFront())
+            {
+                onWalk?.Invoke();
+                Move();
+            }
+            else
+            {
+                rb2D.linearVelocity = Vector2.Lerp(rb2D.linearVelocity, Vector2.zero, slowingSpeed * Time.fixedDeltaTime);
+            }
         }
         else
         {
-            animator.SetFloat("Speed", 0);
+            rb2D.linearVelocity = Vector2.Lerp(rb2D.linearVelocity, Vector2.zero, slowingSpeed * Time.fixedDeltaTime);
         }
+        animator.SetFloat("Speed", Mathf.Abs(rb2D.linearVelocity.x));
     }
 
 
@@ -100,24 +107,16 @@ public class CharacterController : MonoBehaviour
         //    wallCastDistance *= -1;
         //    horizontal *= -1;
         //}
-        Vector2 direction = Vector2.right;
-        if (IsGrounded())
+        float speedBonus = 0f;
+
+        if (IsSlope() && !IsMuded())
         {
-            onWalk?.Invoke();
-        }
-        if (IsSlope())
-        {
-            direction *= 1.5f;
-            direction += Vector2.up / 2;
-        }
-        if (IsWallInFront())
-        {
-            direction = Vector2.zero;
+            speedBonus = runSpeed / 2f;
         }
 
-        rb2D.position += direction * runSpeed * Time.fixedDeltaTime;
-        animator.SetFloat("Speed", 1);
-        _lastPosition = rb2D.position;
+        float speed = IsMuded() ? mudScaleSpeed * runSpeed : runSpeed;
+
+        rb2D.linearVelocity = new Vector2(speed + speedBonus, rb2D.linearVelocity.y);
     }
 
     //Check si le personnage touche un certain layer avec des BoxCasts
@@ -125,6 +124,20 @@ public class CharacterController : MonoBehaviour
     {
         if (Physics2D.BoxCast(transform.position + transform.up * groundCastDistance, groundCheck, 0, transform.up, 0,
                 groundLayer))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    //Check si le personnage touche un certain layer avec des BoxCasts
+    private bool IsMuded() //Check en lat�ral
+    {
+        if (Physics2D.BoxCast(transform.position + transform.up * groundCastDistance, groundCheck, 0, transform.up, 0,
+                _mudlayer))
         {
             return true;
         }
@@ -170,7 +183,6 @@ public class CharacterController : MonoBehaviour
             return false;
         }
     }
-
 
     //Permet de visualiser les BoxCasts et les Raycasts utilis�s
     private void OnDrawGizmos()
