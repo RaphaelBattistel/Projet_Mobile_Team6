@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -8,11 +10,15 @@ public class Rock : MonoBehaviour
     private Rigidbody2D rb2d;
     
     [SerializeField] private float speedLimit;
+    [SerializeField] private float speedLossInMudPerFrame;
     [SerializeField] private float radius;
     [SerializeField] private LayerMask boxLayer;
+    [SerializeField, Layer] private int mudLayer;
     [SerializeField] private UnityEvent onDestroyBox;
 
     [SerializeField] private GameObject effectForDestroy;
+
+    private bool isStuckInMud;
 
     void Start()
     {
@@ -21,7 +27,15 @@ public class Rock : MonoBehaviour
 
     void Update()
     {
-        if(rb2d.linearVelocityX >= speedLimit || rb2d.linearVelocityX <= -speedLimit)
+        if (isStuckInMud)
+        {
+            if (rb2d.linearVelocity.magnitude >= speedLimit * 3 / 4)
+            {
+                rb2d.linearVelocity -= rb2d.linearVelocity.normalized / 10 * speedLossInMudPerFrame;
+            }
+        }
+        
+        if(rb2d.linearVelocity.magnitude >= speedLimit)
         {
             DestroyBox();
         }
@@ -45,10 +59,26 @@ public class Rock : MonoBehaviour
         Gizmos.DrawSphere(transform.position, radius);
     }
 
-    //Désolé tu avait raison
+    //Dï¿½solï¿½ tu avait raison
     IEnumerator DestroyBox(GameObject box)
     {
         yield return new WaitForSeconds(.25f);
         Destroy(box);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == mudLayer)
+        {
+            isStuckInMud = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.layer == mudLayer)
+        {
+            isStuckInMud = false;
+        }
     }
 }

@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236a8f5f1bfb96b44a934e98fe19adaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurnEffect
-  _shader: {fileID: -6465566751694194690, guid: 7e5b6e9c516174448aff44e0b2e4e5fe, type: 3}
+  _fireMat: {fileID: 2100000, guid: b3efad7678b7839418b574c6488421b9, type: 2}
   _renderers:
   - {fileID: 1655916140588283315}
   - {fileID: 8312974054623533086}
