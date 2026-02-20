@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
 
         _transitionAnimator = _transitionScreen.GetComponent<Animator>();
         _transitionScreen.gameObject.SetActive(false);
+        
+        MainSceneCanvas.Instance.RebindCamera();
     }
 
     public void StartLevelAttempt()
@@ -88,6 +90,7 @@ public class GameManager : MonoBehaviour
         _players = FindObjectsByType<CharacterController>(FindObjectsSortMode.None);
         _inventoryContainer.Build(LevelManager.Instance.CurrentLevel.AvailableItems);
         _controlPanelAnimator.SetTrigger(_reset);
+        MainSceneCanvas.Instance.RebindCamera();
         
         _hasPlacedAnItem =  false;
     }

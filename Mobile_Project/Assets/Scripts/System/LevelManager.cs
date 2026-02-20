@@ -89,6 +89,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             GameManager.Instance.ReloadLevel();
+            _isLoadingNextLevel = false;
         }
 
         _loadingScreenAnimator.SetTrigger(_resetLoadingScreen);

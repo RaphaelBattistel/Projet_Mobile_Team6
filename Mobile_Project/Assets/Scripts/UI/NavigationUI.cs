@@ -15,13 +15,16 @@ public class NavigationUI : MonoBehaviour
 
     public void LoadLevelScene()
     {
-        _asyncOperation = SceneManager.LoadSceneAsync("TitleScreen");
-        if (_asyncOperation != null)
+        if (_asyncOperation == null)
         {
-            _asyncOperation.allowSceneActivation = false;
-        }
+            _asyncOperation = SceneManager.LoadSceneAsync("TitleScreen");
+            if (_asyncOperation != null)
+            {
+                _asyncOperation.allowSceneActivation = false;
+            }
         
-        _animator.SetTrigger("FadeIn");
+            _animator.SetTrigger("FadeIn");
+        }
     }
 
     private void EndLevelSceneLoading()
