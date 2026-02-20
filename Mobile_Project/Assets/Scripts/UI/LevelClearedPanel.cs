@@ -26,6 +26,11 @@ public class LevelClearedPanel : MonoBehaviour
         LevelManager.Instance.UnloadCurrentLevel();
     }
 
+    public void BackToMainMenu()
+    {
+        LevelManager.Instance.LoadMainMenu();
+    }
+
     public void NextLevel()
     {
         LevelManager.Instance.LoadNextLevel();
