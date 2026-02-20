@@ -30,4 +30,14 @@ public class SoundManager : MonoBehaviour
     {
         _effectSource.PlayOneShot(effect);
     }
+
+    public void SetVolumeMusic(float value)
+    {
+        _musicSource.volume = value;
+    }
+
+    public void SetVolumeEffect(float value)
+    {
+        _effectSource.volume = value;
+    }
 }
