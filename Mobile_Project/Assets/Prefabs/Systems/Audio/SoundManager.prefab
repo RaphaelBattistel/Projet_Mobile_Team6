@@ -304,6 +304,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094ea14dbea921c43a6d1d761c65b1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Instance: {fileID: 0}
   _musicSource: {fileID: 5732590440836211596}
   _effectSource: {fileID: 3159702599683139763}
