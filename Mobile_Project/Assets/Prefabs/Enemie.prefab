@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326794235924f2c4d840ac3c487de0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  startMoving: 0
   runSpeed: -1
   slowingSpeed: 5
   mudScaleSpeed: 0.3
@@ -70,7 +71,7 @@ MonoBehaviour:
         m_CallState: 2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 4416
+    m_Bits: 4432
   _mudlayer:
     serializedVersion: 2
     m_Bits: 32768

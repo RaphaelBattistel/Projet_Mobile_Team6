@@ -14,6 +14,7 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
 
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private BoxCollider2D _waterCollider;
+    [SerializeField] private BuoyancyEffector2D _waterEffector;
     [SerializeField] private BoxCollider2D _iceCollider;
 
     [SerializeField] private bool _startAsIce = false;
@@ -55,6 +56,10 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
         {
             UpdateScale();
         }
+        _waterCollider.enabled = true;
+        _waterCollider.usedByEffector = true;
+        _waterCollider.isTrigger = true;
+        _waterEffector.surfaceLevel = scaleLimit.y;
     }
 
     public void DoSnowInteraction()
@@ -62,7 +67,7 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
         if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f) return;
         _iceCollider.isTrigger = false;
         _sprite.sprite = _snowSprite;
-        SoundManager.Instance.PlayEffect(_soundIce);
+        //SoundManager.Instance.PlayEffect(_soundIce);
         FusionManager.Instance.OnFusionItem.Invoke(SnowItemData);
     }
 
@@ -71,6 +76,10 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
         if (Mathf.Abs(_sprite.size.y - scaleLimit.y) > .01f) return;
         _iceCollider.isTrigger = true;
         _sprite.sprite = _waterSprite;
+
+        _waterCollider.enabled = true;
+        _waterCollider.usedByEffector = true;
+        _waterEffector.surfaceLevel = scaleLimit.y;
         FusionManager.Instance.OnFusionItem.Invoke(WaterItemData);
     }
 
@@ -104,5 +113,10 @@ public class Water : MonoBehaviour, IWater, ISnow, IFire
         }
 
         isAnimating = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position, scaleLimit);
     }
 }

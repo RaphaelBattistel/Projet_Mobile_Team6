@@ -8,7 +8,8 @@ public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
-    [Header("MOVE")] private bool startMoving = false;
+    [Header("MOVE")]
+    [SerializeField] private bool startMoving = false;
     [SerializeField] private float runSpeed;
     [SerializeField] private float slowingSpeed;
     [SerializeField] private float mudScaleSpeed;

@@ -9,4 +9,10 @@ public class Drop : MonoBehaviour
         Instantiate(_effectForSplash).transform.position = transform.position;
         Destroy(gameObject);
     }
+
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        Instantiate(_effectForSplash).transform.position = transform.position;
+        Destroy(gameObject);
+    }
 }

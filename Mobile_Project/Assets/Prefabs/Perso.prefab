@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5986251963381641381}
   - component: {fileID: 8537825762967142145}
   - component: {fileID: 2123864206680831453}
+  - component: {fileID: 3512664249966354215}
   m_Layer: 0
   m_Name: Perso
   m_TagString: Player
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326794235924f2c4d840ac3c487de0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  startMoving: 0
   runSpeed: 2
   slowingSpeed: 5
   mudScaleSpeed: 0.3
@@ -68,7 +70,7 @@ MonoBehaviour:
         m_CallState: 2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 4928
+    m_Bits: 4944
   _mudlayer:
     serializedVersion: 2
     m_Bits: 32768
@@ -151,6 +153,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!210 &3512664249966354215
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989921270413319367}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1001 &2828081878377482898
 PrefabInstance:
   m_ObjectHideFlags: 0
