@@ -10,17 +10,19 @@ public class LossPanel : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            var canvas = GetComponent<Canvas>();
+            canvas.worldCamera = Camera.main;
             return;
         }
 
         Destroy(gameObject);
     }
-    
+
     public void Replay()
     {
         GameManager.Instance.ResetLevel();
     }
-    
+
     public void BackToMenu()
     {
         LevelManager.Instance.UnloadCurrentLevel();

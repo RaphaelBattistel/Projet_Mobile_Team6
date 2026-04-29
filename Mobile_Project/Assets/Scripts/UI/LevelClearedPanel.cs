@@ -10,6 +10,8 @@ public class LevelClearedPanel : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            var canvas = GetComponent<Canvas>();
+            canvas.worldCamera = Camera.main;
             return;
         }
         

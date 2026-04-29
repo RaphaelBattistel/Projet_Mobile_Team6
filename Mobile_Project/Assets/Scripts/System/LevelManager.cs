@@ -151,8 +151,8 @@ public class LevelManager : MonoBehaviour
         CurrentLevel = _levelDatabase.GetNextLevel(CurrentLevel.LevelId);
         if(CurrentLevel == null)
         {
-            SceneManager.LoadSceneAsync(2);
-            Destroy(gameObject);
+            _isLoadingNextLevel = false;
+            LoadMainMenu();
         }
         else
         {
